@@ -1,0 +1,23 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+// Page's styles
+@import "./styles/main-page";
+@import "./styles/about-fund";
+@import "./styles/application";
+@import "./styles/donation";
+@import "./styles/individuals";
+@import "./styles/legal-entities";
+@import "./styles/need-help";
+@import "./styles/official-docs";
+@import "./styles/our-mission";
+@import "./styles/questionnaire";
+@import "./styles/reports";
+@import "./styles/staff";
+@import "./styles/volunteering";
+@import "./styles/want-to-help";
