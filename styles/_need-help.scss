@@ -10,6 +10,7 @@ $color__white: #FFFFFF;
 
 .body-need-help {
     background-color: white;
+    height: 100vh;
 }
 
 // REQUESET HELP SECTION
@@ -63,7 +64,13 @@ $color__white: #FFFFFF;
 .shar-need-help {
     position: absolute;
 
-    transform: translate(510%, -45%);
+    transform: translate(500%, -50%);
+}
+
+.paint-need-help {
+    position: absolute;
+
+    transform: translate(-80%, -25%);
 }
 
 // HOW HELP SECTION
@@ -111,6 +118,7 @@ $color__white: #FFFFFF;
 
 .programs-first-kids-hospice {
     background-color: $color__yellow;
+    padding: 30px 0 63px;
 
     &__inner {
 
@@ -121,7 +129,6 @@ $color__white: #FFFFFF;
             font-style: normal;
 
             color: $color__black;
-            padding-top: 30px;
             margin-bottom: 11px;
         }
 
