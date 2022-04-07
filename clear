@@ -1,0 +1,65 @@
+[33mcommit ed6531d218915ea976849919e92057ce7021a768[m[33m ([m[1;36mHEAD -> [m[1;32mdevs[m[33m)[m
+Author: Diana Sadirbekkyzy <diana.sadirbekkyzy.kk@gmail.com>
+Date:   Thu Apr 7 21:51:43 2022 +0600
+
+    application text added
+
+[33mcommit ff68baa702c2657a013c9ebcf2e4cd285209f818[m[33m ([m[1;31morigin/devs[m[33m)[m
+Author: MOLDOGAZY <moldogazy.kabylbekov.kk@gmail.com>
+Date:   Thu Apr 7 02:12:11 2022 +0600
+
+    feat: update
+
+[33mcommit 9bf83a297cef942de76b313d89802165685c343f[m
+Author: MOLDOGAZY <64630832+MOLDOGAZY@users.noreply.github.com>
+Date:   Thu Apr 7 01:59:49 2022 +0600
+
+    Update .gitignore
+
+[33mcommit 93b83ac14577de8bf49f22c5004a2a7773cd4cb7[m
+Merge: a0490cd 6854f08
+Author: MOLDOGAZY <64630832+MOLDOGAZY@users.noreply.github.com>
+Date:   Thu Apr 7 01:58:55 2022 +0600
+
+    Merge pull request #2 from KelechekDigitalH/devs
+    
+    feat: ignore css
+
+[33mcommit 6854f08b965469dc110f2ec88e02b463e357b736[m
+Author: MOLDOGAZY <moldogazy.kabylbekov.kk@gmail.com>
+Date:   Thu Apr 7 01:57:08 2022 +0600
+
+    feat: ignore css
+
+[33mcommit a0490cd6c995c6c2f1663d9094bb8fb99cf0e5d8[m
+Merge: 4d9575b e7982aa
+Author: MOLDOGAZY <64630832+MOLDOGAZY@users.noreply.github.com>
+Date:   Thu Apr 7 01:48:53 2022 +0600
+
+    Merge pull request #1 from KelechekDigitalH/devs
+    
+    feat: add devs branch
+
+[33mcommit e7982aacb257bbcd1d65958a03cbc555a2dfb532[m
+Author: MOLDOGAZY <moldogazy.kabylbekov.kk@gmail.com>
+Date:   Thu Apr 7 01:48:23 2022 +0600
+
+    feat: add devs branch
+
+[33mcommit 4d9575b67832d0be26668743392f9a935fec2b3b[m
+Author: MOLDOGAZY <64630832+MOLDOGAZY@users.noreply.github.com>
+Date:   Thu Apr 7 01:47:01 2022 +0600
+
+    Update README.md
+
+[33mcommit eb1fc6b85efff932e5b33ba4d8d24512d62d0fe2[m
+Author: MOLDOGAZY <moldogazy.kabylbekov.kk@gmail.com>
+Date:   Thu Apr 7 01:44:03 2022 +0600
+
+    feat: setup styles, pages, vars
+
+[33mcommit fd5cc1fe0f97ba58c63a7bcec21c0f799da6b97f[m
+Author: MOLDOGAZY <moldogazy.kabylbekov.kk@gmail.com>
+Date:   Wed Apr 6 23:40:29 2022 +0600
+
+    feat: initial commot
