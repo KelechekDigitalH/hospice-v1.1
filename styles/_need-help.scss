@@ -31,25 +31,14 @@ $color__white: #FFFFFF;
                 color: $color__black;
             }
 
-            &__sub-title1 {
+            &__sub-title {
                 font-family: Rubik, sans-serif;
                 font-size: 24px;
                 font-weight: 400;
                 font-style: normal;
 
                 color: $color__black;
-                margin: 33px 0 0;
-            }
-
-            &__sub-title2 {
-                font-family: Rubik, sans-serif;
-                font-size: 24px;
-                font-weight: 400;
-                font-style: normal;
-
-                color: $color__black;
-
-                margin: 0 0 41px 0;
+                margin: 33px 0;
             }
 
             &__link {
