@@ -1,10 +1,113 @@
 @import "./vars";
 
 body {
-  background-color: #010101;
-  color: #fff;
+  background-color: #fff;
+  color: #010101;
 }
 
 .title {
   font-family: $ff-raleway;
+}
+
+.container {
+  padding: 57px 100px 100px;
+}
+
+.application {
+  font-family: $ff-rubik;
+
+  &__inner {
+    padding-bottom: 82px;
+    position: relative;
+
+    &__bg-circle {
+      &__large {
+        position: absolute;
+        left: 94.8%;
+        right: -6.76%;
+        top: 17.43%;
+        bottom: 72.62%;
+
+        background: rgba(255, 195, 5, 0.5);
+        transform: matrix(-1, 0, 0, 1, 0, 0);
+      }
+    }
+
+    &__title {
+      margin: 40px 0 33px;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 40px;
+      line-height: 41px;
+      font-feature-settings: "pnum" on, "lnum" on;
+    }
+    &__page {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 28px;
+      margin-bottom: 25px;
+    }
+  }
+
+  &__form {
+    background: rgba(227, 236, 255, 1);
+    &__inner {
+      padding: 35px 0 86px;
+      &__item-1 {
+        margin-bottom: 30px;
+      }
+
+      &__item {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+        background: #fff;
+        box-shadow: 6px 6px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 15px;
+        padding: 20px 0 20px 40px;
+
+        &__labels {
+          font-style: normal;
+          font-weight: 700;
+          font-size: 18px;
+          line-height: 21px;
+          color: #010101;
+          margin-bottom: 15px;
+        }
+
+        &__inputs {
+          max-width: 1021.98px;
+          width: 100%;
+          padding: 10px;
+          background: #ffffff;
+          border: 1px solid #686868;
+          box-sizing: border-box;
+          box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.1);
+          border-radius: 8px;
+          flex: none;
+          order: 0;
+          align-self: stretch;
+          flex-grow: 1;
+          margin: 0px 0px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 1021.98px) {
+  .application {
+    &__form {
+      &__inner {
+        &__item {
+          padding: 10px;
+          &__inputs {
+            width: 100%;
+            padding: 10px;
+          }
+        }
+      }
+    }
+  }
 }
