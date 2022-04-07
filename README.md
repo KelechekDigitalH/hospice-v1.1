@@ -1,9 +1,9 @@
-# [hospice v1.1](https://kelechekdigitalh.github.io/hospice-v1.1/main-page "Hospice v1.1")
+# [hospice-kd](https://kelechekdigitalh.github.io/hospice-v1.1/main-page "Hospice v1.1")
 
 1. Git Bash'ты сиз иштей турган папкадан ачасыз.
-2. `git clone https://github.com/KelechekDigitalH/hospice-v1.1.git` ушуну Git Bash'ка жазып Enter'ди базыңыз.
-3. `cd hospice-v1.1` жазыңыз жана Enter'ди базыңыз.
-   - бул команданын жардамы менен hospice-v1.1 деген папканын ичине киребиз
+2. `git clone https://github.com/KelechekDigitalH/hospice-kd.git` ушуну Git Bash'ка жазып Enter'ди базыңыз.
+3. `cd hospice-kd` жазыңыз жана Enter'ди базыңыз.
+   - бул команданын жардамы менен hospice-kd деген папканын ичине киребиз
 4. `code .` жазыңыз жана Enter'ди базыңыз.
    - бул аркылуу папкабызды VSCode'тон ачып алабыз.
 5. `git checkout devs` жазыңыз жана Enter'ди базыңыз.
