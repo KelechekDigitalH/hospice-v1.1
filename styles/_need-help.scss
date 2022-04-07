@@ -179,6 +179,10 @@ $color__white: #FFFFFF;
                     }
                 }
             }
+
+            &__accordion + &__accordion {
+                margin-top: 25px;
+            }
         }
     }
 }
