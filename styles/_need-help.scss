@@ -10,7 +10,6 @@ $color__white: #FFFFFF;
 
 .body-need-help {
     background-color: white;
-    height: 100vh;
 }
 
 // REQUESET HELP SECTION
@@ -74,6 +73,37 @@ $color__white: #FFFFFF;
 
     &__inner {
 
+        &__title {
+            font-family: Rubik, sans-serif;
+            font-size: 36px;
+            font-weight: 500;
+            font-style: normal;
+
+            color: $color__black;
+            
+            text-align: center;
+        }
+
+        &__sub-title1 {
+            font-family: Rubik, sans-serif;
+            font-size: 24px;
+            font-weight: 400;
+            font-style: normal;
+
+            color: $color__black;
+            margin: 40px 0 35px;
+        }
+
+        &__sub-title2 {
+            font-family: Rubik, sans-serif;
+            font-size: 24px;
+            font-weight: 400;
+            font-style: normal;
+
+            width: 960px;
+
+            color: $color__black;
+        }
     }
 }
 
