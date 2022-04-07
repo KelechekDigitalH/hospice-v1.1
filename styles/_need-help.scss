@@ -8,11 +8,11 @@ $color__violet: #775CA6;
 $color__black: #000000;
 $color__white: #FFFFFF;
 
-// REQUESET HELP SECTION
-
 .body-need-help {
     background-color: white;
 }
+
+// REQUESET HELP SECTION
 
 .request-help {
     min-height: 0;
@@ -58,6 +58,13 @@ $color__white: #FFFFFF;
     }
 }
 
+//  SHAR HEED HELP
+
+.shar-need-help {
+    position: absolute;
+    
+    transform: translate(510%, -45%);
+}
 
 // HOW HELP SECTION
 
@@ -437,6 +444,30 @@ $color__white: #FFFFFF;
     // }
 
     &__inner {
+
+        &__circles {
+            display: flex;
+            justify-content: center;
+
+            margin-top: 50px;
+
+            &__circle {
+                width: 20px;
+                height: 20px;
+
+                border-radius: 50%;
+
+                background-color: #C4C4C4;
+            }
+
+            &__circle + &__circle {
+                margin-left: 30px;
+            }
+
+            .active {
+                background-color: #9C9A9A;
+            }
+        }
 
         &__title {
             font-family: Rubik, sans-serif;
