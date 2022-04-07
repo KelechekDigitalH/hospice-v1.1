@@ -62,7 +62,7 @@ $color__white: #FFFFFF;
 
 .shar-need-help {
     position: absolute;
-    
+
     transform: translate(510%, -45%);
 }
 
@@ -80,7 +80,7 @@ $color__white: #FFFFFF;
             font-style: normal;
 
             color: $color__black;
-            
+
             text-align: center;
         }
 
@@ -109,114 +109,75 @@ $color__white: #FFFFFF;
 
 // MEDICAL PROGRAMS - SECTION
 
-.medical-programs {
-    background-color: #CFFFFD;
-    margin-top: 80px;
-    padding: 43px 0;
-
-    .slick-dots li button:before {
-        font-size: 80px;
-        margin-top: 10px;
-    }
-    
-    .slick-list {
-        padding: 0 0 40px 0;
-    }
-
-    // .slick-next:before {
-    //     font-size: 40px;
-
-    //     position: absolute;
-    //     transform: translate(-20%, 0);
-    // }
-
-    // .slick-prev:before {
-    //     font-size: 40px;
-
-    //     position: absolute;
-    //     transform: translate(-80%, 0);
-    // }
+.programs-first-kids-hospice {
+    background-color: $color__yellow;
 
     &__inner {
 
-        &__circles {
-            display: flex;
-            justify-content: center;
-
-            margin-top: 50px;
-
-            &__circle {
-                width: 20px;
-                height: 20px;
-
-                border-radius: 50%;
-
-                background-color: #C4C4C4;
-            }
-
-            &__circle + &__circle {
-                margin-left: 30px;
-            }
-
-            .active {
-                background-color: #9C9A9A;
-            }
-        }
-
         &__title {
-            font-family: Rubik, sans-serif;
-            font-size: 36px;
-            font-weight: 500;
+            font-family: Roboto, sans-serif;
+            font-size: 24px;
+            font-weight: 700;
             font-style: normal;
 
             color: $color__black;
-            text-align: center;
-            padding: 0 0 43px;
+            padding-top: 30px;
+            margin-bottom: 11px;
         }
 
-        &__blocks {
-            display: flex;
-            justify-content: center;
+        &__all-accordions {
 
-            &__block {
-                padding: 15px 20px;
+            &__accordion {
                 background-color: $color__white;
-                box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.25);
-                max-width: 295px;
-                min-height: 452px !important;
                 border-radius: 15px;
 
-                svg {
-                    width: 100%;
-                    margin: 0 auto;
-                }
+                &__header {
+                    padding: 18px 24px;
+                    min-height: 3.5rem;
 
-                &__title {
-                    font-family: Rubik, sans-serif;
-                    font-size: 16px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+
+                    position: relative;
+                    cursor: pointer;
+
+                    font-family: Inter, sans-serif;
+                    font-size: 18px;
                     font-weight: 700;
                     font-style: normal;
 
                     color: $color__black;
-                    text-align: center;
-                    line-height: 19px;
-                    margin: 13px 0;
+
+                    &::after {
+                        content: '˃';
+                        transition: 0.3s ease-in-out;
+                        font-weight: 400;
+                    }
                 }
 
-                &__pg {
-                    font-family: Rubik, sans-serif;
-                    font-size: 16px;
-                    font-weight: 400;
-                    font-style: normal;
+                .active {
 
-                    color: $color__black;
-                    text-align: start;
-                    line-height: 26px;
+                    &::after {
+                        transform: rotate(90deg);
+                    }
                 }
-            }
 
-            &__block+&__block {
-                margin-left: 15px;
+                &__body {
+                    max-height: 0;
+                    overflow: hidden;
+                    transition: max-height 0.3s ease-in-out;
+
+                    &__description {
+                        font-family: Inter, sans-serif;
+                        font-size: 16px;
+                        font-weight: 400;
+                        font-style: normal;
+
+                        color: rgba(60, 60, 67, 0.85);
+                        padding: 0 24px 18px;
+                    }
+                }
             }
         }
     }
