@@ -1,10 +1,529 @@
 @import "./vars";
 
-body {
-  background-color: #010101;
-  color: #fff;
+$color__blue: #E3ECFF;
+$color__light-blue: #CFFFFD;
+$color__yellow: #FFEFAB;
+$color__pink: #FFEBF9;
+$color__violet: #775CA6;
+$color__black: #000000;
+$color__white: #FFFFFF;
+
+.body-need-help {
+    background-color: white;
 }
 
-.title {
-  font-family: $ff-raleway;
+// REQUESET HELP SECTION
+
+.request-help {
+    min-height: 0;
+    margin-bottom: 86px;
+
+    &__inner {
+
+        &__all-elements {
+
+            &__title {
+                font-family: Rubik, sans-serif;
+                font-size: 40px;
+                font-weight: 700;
+                font-style: normal;
+
+                color: $color__black;
+            }
+
+            &__sub-title {
+                font-family: Rubik, sans-serif;
+                font-size: 24px;
+                font-weight: 400;
+                font-style: normal;
+
+                color: $color__black;
+                margin: 33px 0;
+            }
+
+            &__link {
+                font-family: Rubik, sans-serif;
+                font-size: 16px;
+                font-weight: 400;
+                font-style: normal;
+
+                background-color: $color__violet;
+                text-decoration: none;
+                color: $color__white;
+
+                padding: 10px 18px;
+                border-radius: 5px;
+            }
+        }
+    }
+}
+
+//  SHAR HEED HELP
+
+.shar-need-help {
+    position: absolute;
+    
+    transform: translate(510%, -45%);
+}
+
+// HOW HELP SECTION
+
+.how-help {
+    min-height: 0;
+
+    &__inner {
+
+        &__all-elements {
+
+            &__title {
+                font-family: Rubik, sans-serif;
+                font-size: 36px;
+                font-weight: 500;
+                font-style: normal;
+
+                color: $color__black;
+                text-align: center;
+
+                margin: 0 0 41px;
+            }
+
+            &__item-blocks {
+
+                &__first-row {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin-bottom: 24px;
+
+                    &__help-sick-children {
+                        background-color: $color__blue;
+                        border-radius: 15px;
+                        padding: 36px 0 46px 13px;
+                        width: 400px;
+                        box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.25);
+
+                        &__logo-and-title {
+                            display: flex;
+                            align-items: center;
+
+                            &__title {
+                                font-family: Rubik, sans-serif;
+                                font-size: 24px;
+                                font-weight: 700;
+                                font-style: normal;
+
+                                color: $color__black;
+                                margin: 0 0 0 10px;
+                            }
+                        }
+
+                        &__pg {
+                            font-family: Rubik, sans-serif;
+                            font-size: 18px;
+                            font-weight: 400;
+                            font-style: normal;
+
+                            color: $color__black;
+                            max-width: 353px;
+                            margin: 36px 0;
+                            line-height: 28px;
+                        }
+
+                        &__btn {
+                            font-family: Rubik, sans-serif;
+                            font-size: 16px;
+                            font-weight: 700;
+                            font-style: normal;
+
+                            background-color: $color__violet;
+                            color: $color__white;
+                            letter-spacing: 0.14em;
+
+                            padding: 10px 53px;
+                            border-radius: 5px;
+                            border: transparent;
+                            cursor: pointer;
+                        }
+                    }
+
+                    &__treatment-abroad {
+                        background-color: $color__light-blue;
+                        border-radius: 15px;
+                        padding: 36px 0 46px 13px;
+                        width: 400px;
+                        box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.25);
+                        margin: 0 20px;
+
+                        &__logo-and-title {
+                            display: flex;
+                            align-items: center;
+
+                            &__title {
+                                font-family: Rubik, sans-serif;
+                                font-size: 24px;
+                                font-weight: 700;
+                                font-style: normal;
+
+                                color: $color__black;
+                                margin: 0 0 0 10px;
+                            }
+                        }
+
+                        &__pg {
+                            font-family: Rubik, sans-serif;
+                            font-size: 18px;
+                            font-weight: 400;
+                            font-style: normal;
+
+                            color: $color__black;
+                            max-width: 353px;
+                            margin: 36px 0;
+                            line-height: 28px;
+                        }
+
+                        &__btn {
+                            font-family: Rubik, sans-serif;
+                            font-size: 16px;
+                            font-weight: 700;
+                            font-style: normal;
+
+                            background-color: $color__violet;
+                            color: $color__white;
+                            letter-spacing: 0.14em;
+
+                            padding: 10px 53px;
+                            border-radius: 5px;
+                            border: transparent;
+                            cursor: pointer;
+                        }
+                    }
+
+                    &__psychological-support {
+                        background-color: $color__yellow;
+                        border-radius: 15px;
+                        padding: 36px 0 46px 13px;
+                        width: 400px;
+                        box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.25);
+
+                        &__logo-and-title {
+                            display: flex;
+                            align-items: flex-start;
+
+                            &__title {
+                                font-family: Rubik, sans-serif;
+                                font-size: 24px;
+                                font-weight: 700;
+                                font-style: normal;
+
+                                color: $color__black;
+                                margin: 0 0 0 10px;
+                                line-height: 26px;
+                            }
+                        }
+
+                        &__pg {
+                            font-family: Rubik, sans-serif;
+                            font-size: 18px;
+                            font-weight: 400;
+                            font-style: normal;
+
+                            color: $color__black;
+                            max-width: 353px;
+                            margin: 36px 0;
+                            line-height: 28px;
+                        }
+
+                        &__btn {
+                            font-family: Rubik, sans-serif;
+                            font-size: 16px;
+                            font-weight: 700;
+                            font-style: normal;
+
+                            background-color: $color__violet;
+                            color: $color__white;
+                            letter-spacing: 0.14em;
+
+                            padding: 10px 53px;
+                            border-radius: 5px;
+                            border: transparent;
+                            cursor: pointer;
+                        }
+                    }
+                }
+
+                &__second-row {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    &__psy-social-help {
+                        background-color: $color__yellow;
+                        border-radius: 15px;
+                        padding: 36px 0 46px 13px;
+                        width: 400px;
+                        box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.25);
+
+                        &__logo-and-title {
+                            display: flex;
+                            align-items: center;
+
+                            &__title {
+                                font-family: Rubik, sans-serif;
+                                font-size: 24px;
+                                font-weight: 700;
+                                font-style: normal;
+
+                                color: $color__black;
+                                margin: 0 0 0 10px;
+                                line-height: 26px;
+                            }
+                        }
+
+                        &__pg {
+                            font-family: Rubik, sans-serif;
+                            font-size: 18px;
+                            font-weight: 400;
+                            font-style: normal;
+
+                            color: $color__black;
+                            max-width: 353px;
+                            margin: 36px 0 64px;
+                            line-height: 28px;
+                        }
+
+                        &__btn {
+                            font-family: Rubik, sans-serif;
+                            font-size: 16px;
+                            font-weight: 700;
+                            font-style: normal;
+
+                            background-color: $color__violet;
+                            color: $color__white;
+                            letter-spacing: 0.14em;
+
+                            padding: 10px 53px;
+                            border-radius: 5px;
+                            border: transparent;
+                            cursor: pointer;
+                        }
+                    }
+
+                    &__palliativnay-help {
+                        background-color: $color__pink;
+                        border-radius: 15px;
+                        padding: 36px 0 46px 13px;
+                        width: 400px;
+                        box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.25);
+                        margin: 0 20px;
+
+                        &__logo-and-title {
+                            display: flex;
+                            align-items: center;
+
+                            &__title {
+                                font-family: Rubik, sans-serif;
+                                font-size: 24px;
+                                font-weight: 700;
+                                font-style: normal;
+
+                                color: $color__black;
+                                margin: 0 0 0 10px;
+                                line-height: 26px;
+                            }
+                        }
+
+                        &__pg {
+                            font-family: Rubik, sans-serif;
+                            font-size: 18px;
+                            font-weight: 400;
+                            font-style: normal;
+
+                            color: $color__black;
+                            max-width: 353px;
+                            margin: 36px 0;
+                            line-height: 28px;
+                        }
+
+                        &__btn {
+                            font-family: Rubik, sans-serif;
+                            font-size: 16px;
+                            font-weight: 700;
+                            font-style: normal;
+
+                            background-color: $color__violet;
+                            color: $color__white;
+                            letter-spacing: 0.14em;
+
+                            padding: 10px 53px;
+                            border-radius: 5px;
+                            border: transparent;
+                            cursor: pointer;
+                        }
+                    }
+
+                    &__information-help {
+                        background-color: $color__blue;
+                        border-radius: 15px;
+                        padding: 36px 0 46px 13px;
+                        width: 400px;
+                        box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.25);
+
+                        &__logo-and-title {
+                            display: flex;
+                            align-items: flex-start;
+
+                            &__title {
+                                font-family: Rubik, sans-serif;
+                                font-size: 24px;
+                                font-weight: 700;
+                                font-style: normal;
+
+                                color: $color__black;
+                                margin: 0 0 0 10px;
+                            }
+                        }
+
+                        &__pg {
+                            font-family: Rubik, sans-serif;
+                            font-size: 18px;
+                            font-weight: 400;
+                            font-style: normal;
+
+                            color: $color__black;
+                            max-width: 353px;
+                            margin: 36px 0;
+                            line-height: 28px;
+                        }
+
+                        &__btn {
+                            font-family: Rubik, sans-serif;
+                            font-size: 16px;
+                            font-weight: 700;
+                            font-style: normal;
+
+                            background-color: $color__violet;
+                            color: $color__white;
+                            letter-spacing: 0.14em;
+
+                            padding: 10px 53px;
+                            border-radius: 5px;
+                            border: transparent;
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// MEDICAL PROGRAMS - SECTION
+
+.medical-programs {
+    background-color: #CFFFFD;
+    margin-top: 80px;
+    padding: 43px 0;
+
+    // .slick-dots li button:before {
+    //     font-size: 20px;
+    //     margin-top: 10px;
+    // }
+
+    // .slick-next:before {
+    //     font-size: 40px;
+
+    //     position: absolute;
+    //     transform: translate(-20%, 0);
+    // }
+
+    // .slick-prev:before {
+    //     font-size: 40px;
+
+    //     position: absolute;
+    //     transform: translate(-80%, 0);
+    // }
+
+    &__inner {
+
+        &__circles {
+            display: flex;
+            justify-content: center;
+
+            margin-top: 50px;
+
+            &__circle {
+                width: 20px;
+                height: 20px;
+
+                border-radius: 50%;
+
+                background-color: #C4C4C4;
+            }
+
+            &__circle + &__circle {
+                margin-left: 30px;
+            }
+
+            .active {
+                background-color: #9C9A9A;
+            }
+        }
+
+        &__title {
+            font-family: Rubik, sans-serif;
+            font-size: 36px;
+            font-weight: 500;
+            font-style: normal;
+
+            color: $color__black;
+            text-align: center;
+            padding: 0 0 43px;
+        }
+
+        &__blocks {
+            display: flex;
+            justify-content: center;
+
+            &__block {
+                padding: 15px 20px;
+                background-color: $color__white;
+                box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.25);
+                max-width: 295px;
+                min-height: 452px !important;
+                border-radius: 15px;
+
+                svg {
+                    width: 100%;
+                    margin: 0 auto;
+                }
+
+                &__title {
+                    font-family: Rubik, sans-serif;
+                    font-size: 16px;
+                    font-weight: 700;
+                    font-style: normal;
+
+                    color: $color__black;
+                    text-align: center;
+                    line-height: 19px;
+                    margin: 13px 0;
+                }
+
+                &__pg {
+                    font-family: Rubik, sans-serif;
+                    font-size: 16px;
+                    font-weight: 400;
+                    font-style: normal;
+
+                    color: $color__black;
+                    text-align: start;
+                    line-height: 26px;
+                }
+            }
+
+            &__block+&__block {
+                margin-left: 20px;
+            }
+        }
+    }
 }
