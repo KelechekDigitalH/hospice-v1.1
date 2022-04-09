@@ -10,7 +10,7 @@ $color__white: #FFFFFF;
 
 .body-need-help {
     background-color: white;
-    height: 100vh;
+    height: 100%;
 }
 
 // REQUESET HELP SECTION
@@ -61,16 +61,35 @@ $color__white: #FFFFFF;
 
 //  SHAR HEED HELP
 
-.shar-need-help {
+.finger-need-help {
     position: absolute;
-
-    transform: translate(500%, -50%);
+    
+    transform: translate(1050%, -360%);
+    
+    img {
+        width: 90px;
+    }
 }
 
 .paint-need-help {
     position: absolute;
+    
+    transform: translate(-80%, -10%);
+    
+    img {
+        width: 106px;
+    }
+}
 
-    transform: translate(-80%, -25%);
+.ballon-need-help {
+    position: absolute;
+    
+    transform: translate(600%, -50%);
+    
+    img {
+        width: 183.31px;
+        z-index: -1;
+    }
 }
 
 // HOW HELP SECTION
