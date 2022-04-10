@@ -424,10 +424,14 @@ $color__white: #FFFFFF;
     margin-top: 80px;
     padding: 43px 0;
 
-    // .slick-dots li button:before {
-    //     font-size: 20px;
-    //     margin-top: 10px;
-    // }
+    .slick-dots li button:before {
+        font-size: 80px;
+        margin-top: 10px;
+    }
+    
+    .slick-list {
+        padding: 0 0 40px 0;
+    }
 
     // .slick-next:before {
     //     font-size: 40px;
@@ -522,7 +526,7 @@ $color__white: #FFFFFF;
             }
 
             &__block+&__block {
-                margin-left: 20px;
+                margin-left: 15px;
             }
         }
     }
