@@ -11,17 +11,6 @@
     font-family: "Rubik";
 
 
-&_item {
-    display: inline-block;
-  
-    }
-
-&_link {
-    text-decoration: none;
-    color: rgba(97, 97, 97, 1);
-    transition: 0.5s;
-}
-
 &_link::after {
     content: " > ";
     color: rgba(97, 97, 97, 1);
