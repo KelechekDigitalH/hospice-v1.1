@@ -1,10 +1,167 @@
 @import "./vars";
-
-body {
-  background-color: #010101;
-  color: #fff;
-}
-
 .title {
   font-family: $ff-raleway;
+}
+.documents {
+  position: relative;
+}
+.breadcrumbs {
+    margin-top: 24px;
+    margin-bottom: 40px;
+    font-family: "Rubik";
+
+
+&_link::after {
+    content: " > ";
+    color: rgba(97, 97, 97, 1);
+    font-weight: 400;
+  }
+
+&_link:hover {
+    color: #fd6262;
+}
+
+&_active {
+    font-weight: $fw-medium;
+    color: rgba(97, 97, 97, 1);
+    text-decoration: none;
+  }
+
+&_active:hover {
+    color: #fd6262;
+  }
+}
+
+.box-document {
+  display: flex;
+  font-family: $ff-rubik;
+  font-weight: $fw-medium;
+}
+
+.document-cards {
+  display: flex;
+}
+.document-cards-item {
+  max-width: 259px;
+}
+.document-cards-item + .document-cards-item {
+  margin-left: 20px;
+}
+
+.document-title {
+  text-align: center;
+  font-size: 24px;
+  line-height: 41px;
+  color: #000000;
+  margin-bottom: 12px;
+}
+.document-cards-item img {
+  max-height: 343px;
+}
+
+.sidebar-bg {
+  position: fixed;
+  margin-left: 839px;
+  width: 400px;
+  background: #D5C8FC;
+  border-radius: 15px;
+  min-height: 282px;
+  margin-top: 55px;
+}
+.side-menu {
+  max-width: 303px;
+  margin-left: 59px;
+  margin-top: 50px;
+}
+
+.sidebar-link {
+font-style: normal;
+font-weight: $fw-bold;
+font-size: 18px;
+line-height: 21px;
+text-transform: uppercase;
+color: #000000;
+text-decoration: none;
+}
+
+.side-menu-item {
+  margin-bottom: 22px;
+}
+
+.call-to-action {
+  margin-top: 267px;
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: $color__blue;
+    padding: 70px 40px;
+    border-radius: 15px;
+
+    &__text,
+    &__money,
+    &__other-money,
+    &__btn {
+      font-family: $ff-rubik;
+      font-style: normal;
+      font-weight: $fw-regular;
+      font-size: 30px;
+      line-height: 36px;
+      color: #000000;
+      font-style: normal;
+    }
+
+    &__money {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 35%;
+      font-size: 36px;
+      line-height: 43px;
+    }
+    &__money__item {
+      font-family: $ff-rubik;
+      text-decoration: none;
+      font-style: normal;
+      font-weight: $fw-regular;
+      font-size: 36px;
+      line-height: 43px;
+      color: #000000;
+    }
+    &__other-money {
+      font-size: 24px;
+      line-height: 28px;
+      color: rgba(97, 97, 97, 0.59);
+    }
+
+    &__btn {
+      font-weight: $fw-medium;
+      font-size: 36px;
+      line-height: 43px;
+      color: #ffffff;
+      background: #FF7272;;
+      border-radius: 5px;
+      text-decoration: none;
+      padding: 18px 22px;
+      font-style: normal;
+    }
+  }
+}
+
+.bg-img {
+  position: absolute;
+  width: 171px;
+  height: 335px;
+  background-image: url(../assets/balloon_4-yellow.svg);
+  background-size: 171px 330px;
+  margin-left: -19px;
+  margin-top: 52px
+}
+.bg-img1 {
+  position: absolute;
+  width: 120px;
+  height: 132px;
+  background-image: url(../assets/finger_2.svg);
+  margin-left: 568px;
+  margin-top: 59px;
 }
