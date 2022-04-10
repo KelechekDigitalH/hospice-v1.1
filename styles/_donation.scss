@@ -8,3 +8,330 @@
 .title {
   font-family: $ff-raleway;
 }
+
+
+// DONATE SECTION
+
+*,
+*::before,
+*::after {
+   box-sizing: inherit;
+}
+
+body{
+   margin: 0;
+   padding: 0;
+   font-size: 14px;
+}
+
+.container{
+  width: 1242px;
+   margin: 0 auto;
+}
+
+.breadcrumb {
+  margin-top: 40px;
+
+&__item-link {
+  font-family: 'Rubik',Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: #616161;
+    text-decoration: none;
+}
+
+&____item-currant {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+}
+}
+.donate {
+    
+  &__title {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    color: $color__black;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 18px;
+  }
+
+  &__img {
+    margin-left: 1242px;
+    margin-top: -115px;
+
+
+  }
+}
+.pay-card {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex: 0 auto;
+  &__pay-card-bank {
+    width: 400px;
+    height: 381px;
+    background: #E3ECFF;
+    box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+    margin-right: 17px;
+  
+    &__img-baitushum {
+      margin-top: 20px;
+      margin-left: 10px;
+    }
+    &__maintitle {
+      font-family: 'Rubik';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 41px;
+      text-transform: capitalize;
+      font-feature-settings: 'pnum' on, 'lnum' on;
+      color: $color__black;
+      margin: -45px 0 0 180px;
+    }
+  &__title {
+    font-family: 'Rubik';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 28px;
+      color: $color__black;
+      margin: 40px 0px 0 18px;
+    &__one {
+      margin-bottom: 30px;
+    }
+  }   
+}
+&__pay-card-bankTwo {
+  background: #CFFFFD;
+  box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.25);
+  border-radius: 15px;
+  margin-right: 18px;
+  width: 400px;
+  height: 381px;
+
+  &__img-kicb {
+    margin-top: 20px;
+    margin-left: 10px;
+  }
+  &__kicbmain {
+    width: 200px;
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+    color: $color__black;
+    margin: -60px 0 0 180px;
+  }
+
+  &__titlekicb {
+    font-family: 'Rubik';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 28px;
+      color: $color__black;
+    margin: 41px 0 0 18px;
+  }
+}
+
+&__pay-card-bankThree {
+  background: #FFEBF9;
+  box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.25);
+  border-radius: 15px;
+  // margin-left: 20px;
+  &__img-optima {
+    margin-top: 20px;
+    margin-left: 10px;
+  }
+  &__maintitle {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+    color: $color__black;
+    margin: -38px 0 66px 180px;
+  }
+
+  &__titleoptima {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    color: $color__black;
+    width: 382px;
+    margin: 41px 0 0 18px;
+
+
+    &__optimaone {
+margin-bottom: 30px;
+    }
+    
+  }
+}
+  }
+
+
+  .rectangle {
+    width: 1240px;
+    background: #FFEFAB;
+    box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+    margin-top: 87px;
+    justify-content: center;
+    margin-bottom: -63px;
+
+
+    &__mainTitle {
+      margin-left: 444px;
+      padding-top: 85px;
+      margin-bottom: 44px;
+    &__title {
+        font-family: 'Rubik';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 26px;
+        font-feature-settings: 'pnum' on, 'lnum' on;
+        color: #000000;
+        margin: -31px 0 0 58px;
+      }
+    }
+
+    &__purse {
+      display: flex;
+      flex-direction: row;
+      margin-left: 109px;
+      padding-bottom: 45px;
+      margin-bottom: 135px;
+
+      &__mbank{
+        background: #CFFFFD;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 5px;
+        width: 190px;
+        height: 177px;
+        margin-right: 16px;
+        &__img {
+          margin: 18px 0 0 66px;
+        }
+        &__title {
+          font-family: 'Rubik';
+          font-style: normal;
+          font-weight: 700;
+          font-size: 18px;
+          line-height: 28px;
+          color: #000000;
+          text-align: center;
+          margin-top: 46px;
+
+        }
+      }
+
+      &__obank {
+        background: #CFFFFD;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 5px;
+        width: 190px;
+        height: 177px;
+        margin-right: 16px;
+        &__img {
+          margin: 18px 0 0 66px;
+        }
+        &__title {
+          font-family: 'Rubik';
+          font-style: normal;
+          font-weight: 700;
+          font-size: 18px;
+          line-height: 28px;
+          color: #000000;
+          text-align: center;
+          margin-top: 46px;
+
+        }
+      }
+
+      &__bilainbank {
+        background: #CFFFFD;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 5px;
+        width: 190px;
+        height: 177px;
+        margin-right: 16px;
+        &__img {
+          margin: 18px 0 0 66px;
+        }
+        &__title {
+          font-family: 'Rubik';
+          font-style: normal;
+          font-weight: 700;
+          font-size: 18px;
+          line-height: 28px;
+          color: #000000;
+          text-align: center;
+          margin-top: 46px;
+
+        }
+      }
+
+      &__elsom {
+        background: #CFFFFD;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 5px;
+        width: 190px;
+        height: 177px;
+        margin-right: 16px;
+        &__img {
+          margin: 18px 0 0 66px;
+        }
+        &__title {
+          font-family: 'Rubik';
+          font-style: normal;
+          font-weight: 700;
+          font-size: 18px;
+          line-height: 28px;
+          color: #000000;
+          text-align: center;
+          margin-top: 46px;
+
+        }
+      }
+
+      &__pay {
+        background: #CFFFFD;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 5px;
+        width: 190px;
+        height: 177px;
+        margin-right: 16px;
+        &__img {
+          margin: 18px 0 0 66px;
+        }
+        &__title {
+          font-family: 'Rubik';
+          font-style: normal;
+          font-weight: 700;
+          font-size: 18px;
+          line-height: 28px;
+          color: #000000;
+          text-align: center;
+          margin-top: 46px;
+
+        }
+      }
+    }
+    
+  }
+

@@ -20,3 +20,28 @@ accordionHeader.forEach(accordionHeader => {
         }
     });
 });
+
+
+$(document).ready(function () {
+	$('.blc-sponsor_slider').slick({
+		arrows: true,
+		dots: true,
+		slidesToShow: 4,
+		autoplay: true,
+		speed: 2000,
+		autoplaySpeed: 900,
+		responsive: [{
+				breakpoint: 768,
+				settings: {
+					slidesToShow: 2
+				}
+			},
+			{
+				breakpoint: 550,
+				settings: {
+					slidesToShow: 1
+				}
+			}
+		]
+	});
+});
