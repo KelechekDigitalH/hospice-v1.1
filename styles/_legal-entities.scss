@@ -9,7 +9,7 @@ $color__dark-grey: #616161;
 
 .breadcrumb {
   &__menu {
-    padding: 24px 0 40px;
+    padding: 24px 0 40px 0;
     display: flex;
     list-style: none;
   }
@@ -150,7 +150,7 @@ $color__dark-grey: #616161;
 .cooparation-info {
   &__inner {
     position: relative;
-    padding: 40px 0 90px;
+    padding: 40px 0 0 0;
 
     &__txt,
     &__link {
