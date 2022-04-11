@@ -20,7 +20,7 @@ accordionHeader.forEach(accordionHeader => {
 	});
 });
 
-
+//slider mainpage our-kins
 $('.slider-card').slick({
 	lazyLoad: 'ondemand',
 	slidesToShow: 3,
@@ -29,7 +29,7 @@ $('.slider-card').slick({
 	slidesToScroll: 1
 });
 
-
+//slider mainpage our-sponsors
 $(document).ready(function () {
 	$('.blc-sponsor_slider').slick({
 		arrows: true,
@@ -53,3 +53,5 @@ $(document).ready(function () {
 		]
 	});
 });
+
+
