@@ -9,6 +9,7 @@
     margin-top: 24px;
     margin-bottom: 40px;
     font-family: "Rubik";
+    margin-left: 0;
 
 
 &_link::after {
@@ -89,8 +90,10 @@ text-decoration: none;
 }
 
 .call-to-action {
-  margin-top:90px;
-  margin-bottom: 74px;
+
+  margin: 90px 0 119px;
+
+
   &__inner {
     display: flex;
     align-items: center;
@@ -98,7 +101,7 @@ text-decoration: none;
     background-color: $color__blue;
     padding: 70px 40px;
     border-radius: 15px;
-
+  
     &__text,
     &__money,
     &__other-money,
