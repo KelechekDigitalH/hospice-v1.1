@@ -90,7 +90,9 @@ text-decoration: none;
 }
 
 .call-to-action {
+
   margin: 90px 0 119px;
+
 
   &__inner {
     display: flex;
@@ -99,7 +101,7 @@ text-decoration: none;
     background-color: $color__blue;
     padding: 48px 40px;
     border-radius: 15px;
-
+  
     &__text,
     &__money,
     &__other-money,
