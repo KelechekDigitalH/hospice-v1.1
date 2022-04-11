@@ -8,3 +8,114 @@
 .title {
   font-family: $ff-raleway;
 }
+.application {
+  font-family: $ff-rubik;
+  width: 1244px;
+    margin: 0 auto;
+  &__inner {
+    position: relative;
+    padding-bottom: 82px;
+    &__title {
+      margin: 41px 0 33px;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 40px;
+        line-height: 41px;
+        color: #000000;
+    }
+    &__page {
+      font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 28px;
+        color: #000000;
+        margin-bottom: 30px;
+    }
+  }
+
+  &__form {
+    background: #e3ecff;
+    &__inner {
+      padding: 35px 0 82px;
+      &__item {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+        background: #fff;
+        box-shadow: 6px 6px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 15px;
+        padding: 20px 0 20px 40px;
+        margin-bottom: 30px;
+
+        &__labels {
+          font-style: normal;
+          font-weight: 700;
+          font-size: 18px;
+          line-height: 21px;
+          color: #000000;
+          margin-bottom: 15px;
+          &__help {
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 19px;
+            color: #000000;
+            margin-left: 10px;
+            padding-left: 2px;
+          }
+        }
+
+        &__inputs {
+          background: #ffffff;
+          border: 1px solid #686868;
+          box-sizing: border-box;
+          box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.1);
+          border-radius: 8px;
+          padding: 15px;
+          width: 1161px;
+
+          &__long {
+            background: #ffffff;
+          border: 1px solid #686868;
+          box-sizing: border-box;
+          box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.1);
+          border-radius: 8px;
+          padding: 15px;
+          width: 1161px;
+          height: 182px;
+          }
+
+          &::placeholder {
+            color: #866c6c;
+            font-size: 18px;
+          }
+          &__accurateDiagnosis {
+            width: 28px;
+            height: 22px;
+          }
+
+        }
+        &__elements {
+          display: flex;
+          align-items: center;
+          margin-bottom: 8px;
+        }
+      }
+    }
+    &__btn {
+      background-color: #fff;
+      width: 215px;
+      height: 40px;
+      text-decoration: none;
+      font-family: $ff-raleway;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 21px;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: $color__black;
+    }
+  }
+}
