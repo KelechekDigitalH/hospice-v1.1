@@ -61,9 +61,9 @@ $color__white: #FFFFFF;
 //  SHAR HEED HELP
 .finger-need-help {
     position: absolute;
-    
+
     transform: translate(1050%, -360%);
-    
+
     img {
         width: 90px;
     }
@@ -71,9 +71,9 @@ $color__white: #FFFFFF;
 
 .paint-need-help {
     position: absolute;
-    
+
     transform: translate(-80%, -10%);
-    
+
     img {
         width: 106px;
     }
@@ -81,9 +81,9 @@ $color__white: #FFFFFF;
 
 .ballon-need-help {
     position: absolute;
-    
+
     transform: translate(600%, -50%);
-    
+
     img {
         width: 183.31px;
         z-index: -1;
@@ -202,7 +202,7 @@ $color__white: #FFFFFF;
                 }
             }
 
-            &__accordion + &__accordion {
+            &__accordion+&__accordion {
                 margin-top: 25px;
             }
         }
@@ -220,9 +220,9 @@ $color__white: #FFFFFF;
 
     &__inner {
         position: absolute;
-        
+
         transform: translate(766px, -580px);
-        
+
         &__title {
             font-family: 'Rubik', sans-serif;
             font-weight: $fw-medium;
@@ -262,7 +262,7 @@ $color__white: #FFFFFF;
             margin-bottom: 43px;
             margin-top: 36px;
         }
-        
+
         &__link-btn {
             font-family: 'Rubik', sans-serif;
             font-weight: $fw-medium;
