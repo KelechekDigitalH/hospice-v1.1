@@ -22,6 +22,15 @@ accordionHeader.forEach(accordionHeader => {
 });
 
 
+  $('.slider-card').slick({
+	lazyLoad: 'ondemand',
+	slidesToShow: 3,
+	dots: true,
+	speed: 800,
+	slidesToScroll: 1
+  });
+	  
+
 $(document).ready(function () {
 	$('.blc-sponsor_slider').slick({
 		arrows: true,
