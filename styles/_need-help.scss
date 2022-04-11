@@ -14,10 +14,9 @@ $color__white: #FFFFFF;
 }
 
 // REQUESET HELP SECTION
-
 .request-help {
     min-height: 0;
-    margin-bottom: 86px;
+    margin-bottom: 91px;
 
     &__inner {
 
@@ -39,7 +38,7 @@ $color__white: #FFFFFF;
                 font-style: normal;
 
                 color: $color__black;
-                margin: 33px 0;
+                margin: 33px 0 42px;
             }
 
             &__link {
@@ -52,20 +51,21 @@ $color__white: #FFFFFF;
                 text-decoration: none;
                 color: $color__white;
 
-                padding: 10px 18px;
+                padding: 10px 22px;
                 border-radius: 5px;
+
+                letter-spacing: 2px;
             }
         }
     }
 }
 
 //  SHAR HEED HELP
-
 .finger-need-help {
     position: absolute;
-    
-    transform: translate(1050%, -360%);
-    
+
+    transform: translate(883%, -480%);
+
     img {
         width: 90px;
     }
@@ -73,27 +73,26 @@ $color__white: #FFFFFF;
 
 .paint-need-help {
     position: absolute;
-    
-    transform: translate(-80%, -10%);
-    
+
+    transform: translate(-79%, -20%);
+
     img {
-        width: 106px;
+        width: 125px;
     }
 }
 
 .ballon-need-help {
     position: absolute;
-    
-    transform: translate(600%, -50%);
-    
+
+    transform: translate(510%, -57%);
+
     img {
-        width: 183.31px;
+        width: 215px;
         z-index: -1;
     }
 }
 
 // HOW HELP SECTION
-
 .programs-hospice {
     min-height: 0;
 
@@ -117,7 +116,9 @@ $color__white: #FFFFFF;
             font-style: normal;
 
             color: $color__black;
-            margin: 40px 0 35px;
+            margin: 40px 0 31px;
+
+            line-height: 27.3px;
         }
 
         &__sub-title2 {
@@ -129,15 +130,17 @@ $color__white: #FFFFFF;
             width: 960px;
 
             color: $color__black;
+
+            line-height: 25px;
         }
     }
 }
 
 // MEDICAL PROGRAMS - SECTION
-
 .programs-first-kids-hospice {
     background-color: $color__yellow;
-    padding: 30px 0 63px;
+    padding: 33px 0 63px;
+    margin: 70px 0 0;
 
     &__inner {
 
@@ -148,7 +151,10 @@ $color__white: #FFFFFF;
             font-style: normal;
 
             color: $color__black;
-            margin-bottom: 11px;
+            margin-bottom: 21px;
+            margin-left: 26px;
+
+            letter-spacing: 0px;
         }
 
         &__all-accordions {
@@ -158,8 +164,7 @@ $color__white: #FFFFFF;
                 border-radius: 15px;
 
                 &__header {
-                    padding: 18px 24px;
-                    min-height: 3.5rem;
+                    padding: 19.8px 24px;
 
                     display: flex;
                     align-items: center;
@@ -206,9 +211,83 @@ $color__white: #FFFFFF;
                 }
             }
 
-            &__accordion + &__accordion {
+            &__accordion+&__accordion {
                 margin-top: 25px;
             }
+        }
+    }
+}
+
+// IMPORTANT KNOW - SECTION
+.important-khow-need-help {
+    // background-image: url('../assets/illustation_pro-palliativ.jpg');
+    margin-top: 83.56px;
+
+    .bg-img-need-help {
+        width: 100%;
+        height: 664px;
+    }
+
+    &__inner {
+        position: absolute;
+
+        transform: translate(766px, -590px);
+
+        &__title {
+            font-family: 'Rubik', sans-serif;
+            font-weight: $fw-medium;
+            font-style: normal;
+            font-size: 36px;
+
+            line-height: 34px;
+
+            color: $color-black;
+        }
+
+        &__subtitle1 {
+            font-family: 'Rubik', sans-serif;
+            font-weight: $fw-medium;
+            font-style: normal;
+            font-size: 18px;
+
+            line-height: 34px;
+
+            color: $color-black;
+
+            max-width: 503px;
+
+            margin-top: 28px;
+        }
+
+        &__subtitle2 {
+            font-family: 'Rubik', sans-serif;
+            font-weight: $fw-medium;
+            font-style: normal;
+            font-size: 18px;
+
+            line-height: 34px;
+
+            color: $color-black;
+
+            max-width: 503px;
+
+            margin-bottom: 43px;
+            margin-top: 16px;
+        }
+
+        &__link-btn {
+            font-family: 'Rubik', sans-serif;
+            font-weight: $fw-medium;
+            font-style: normal;
+            font-size: 26px;
+
+            line-height: 34px;
+
+            color: $color-black;
+
+            text-decoration: none;
+
+            letter-spacing: 2.8px;
         }
     }
 }
