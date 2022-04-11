@@ -5,6 +5,41 @@
 //   color: #fff;
 // }
 
-.title {
-  font-family: $ff-raleway;
+.breadcrumbs {
+  margin-top: 24px;
+      
+      .breadcrumb__item-link{
+        font-family: $ff-rubik;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        color: $color__dark-grey;
+        text-decoration: none;
+      }
+     
 }
+
+
+// .breadcrumb {
+//   margin-top: 40px;
+
+
+//   &__item-link {
+//    font-family: 'Rubik',Arial, Helvetica, sans-serif;
+//    font-size: 14px;
+//    color: $color__grey;
+//    text-decoration: none;
+   
+//  }
+
+ 
+//   &__item-currant {
+//      font-family: 'Rubik',Arial, Helvetica, sans-serif;
+//      font-size: 14px;
+//      font-weight: 600;
+//      color: $color__grey;
+//   }
+
+
+// }

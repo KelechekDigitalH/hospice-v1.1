@@ -9,6 +9,17 @@ header{
     padding: 14px  0  13.2px 0;
 }
 
+.logo {
+    width: 282.27px;
+    height: 94.8px;
+
+    img{
+        width: 100%;
+        object-fit: contain;
+    }
+}
+
+
 .nav{
     display: flex;
 }
