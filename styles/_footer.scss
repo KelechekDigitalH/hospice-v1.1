@@ -1,145 +1,353 @@
 @import "./vars";
 
-.footer {
-    margin-top: 40px;
-    background-color: #775CA6;
-    font-family: $ff-rubik;
-    position: relative;
+
+.footer{
+    background-color: $color__violet;
+    margin-top: 90px;
+    position:relative;
     justify-content: center;
 
     &::after {
         content: '';
         width: 93%;
         height: 10%;
-        background-image: url(/assets/main/beforefooter.svg);
+        background-image: url("/assets/main/beforefooter.svg");
         background-repeat: no-repeat;
         background-size: cover;
         position: absolute;
         right: 79px;
-        top: calc(50% - 17.1rem);
+        top: calc(50% - 17.5rem);
+    }
+    
+
+    &__logo img{
+        width: 255px;
+        height: 86px;
+        margin-bottom: 17px;
     }
 
-
-    &__inner {
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        padding: 70px 0;
-        padding-top: 70px;
-
-
-    }
-
-    &__col {
-        // flex: 1 0 6%;
-        // flex: 0 0 19%;
-        color: #fff;
-
-    }
-
-    &__link {
-        display: block;
-        font-weight: 500;
-        font-size: 14px;
-        line-height: 30px;
-        color: #ffffff;
-        text-decoration: none;
-        position: relative;
-        color: rgba(white, 1);
-        transition: 0.2s ease color;
-
-        &:hover {
-            color: rgba(rgb(189, 189, 189), 0.5);
-        }
-    }
-
-    &__item {
+    &__social{
         list-style: none;
+        display: flex;
+        align-items: center;
     }
 
-    &_text {
-        font-weight: 500;
+    &__item+&__item{
+        margin-left: 20.5px;
+    }
+
+    &__item-facebook{
+        margin-left: 11.5px!important;
+    }
+
+    &__text{
+        font-family: $ff-rubik;
+        font-style: normal;
+        font-weight: $fw-medium;
         font-size: 14px;
         line-height: 16px;
-        padding-top: 13px;
         letter-spacing: 0.01em;
+        color: $color__white;
+        margin-bottom: 40px;
     }
 
-    &_title {
-        font-weight: 500;
+    &__social-title{
+        font-family: $ff-roboto;
+        font-style: normal;
+        font-weight: $fw-medium;
         font-size: 16px;
         line-height: 19px;
-        padding-top: 39px;
+        color: $color__white;
+        margin-bottom: 9px;
     }
 
-    &_h1 {
-        font-weight: 700;
+
+}
+
+
+
+.footer-inner{
+    display: flex;
+    justify-content: space-between;
+    padding: 65px 0;
+
+    &__rightside{
+        display: flex;
+        
+ }
+
+
+}
+
+.footer-rightside {
+    &__title{
+        font-family: $ff-rubik;
+        font-style: normal;
+        font-weight: $fw-bold;
         font-size: 16px;
         line-height: 16px;
         letter-spacing: 0.01em;
-        padding-top: 25px;
-        padding-bottom: 20px;
+        color: $color__white;
+        padding-top: 27px;
+        margin-bottom: 35px;
     }
 
-    &__social {
-        text-decoration: none;
+    &__list {
         list-style: none;
-        display: flex;
-        justify-content: space-between;
-        padding-top: 10px;
-        margin-right: 102px;
-
-        &_img1 {
-            position: absolute;
-        }
-
-        &_img2 {
-            position: absolute;
-            left: 19px;
-        }
-
-        &_img3 {
-            position: absolute;
-            top: 5px;
-            left: 40px;
-        }
-
-        &_img4 {
-            position: absolute;
-            left: 54px;
-        }
-
-        &_img5 {
-            position: absolute;
-            left: 67px;
-        }
+        padding-left: 0;
     }
 
-    &__rekvizit {
+    &__item{
+        padding-left: 0;
+        font-family: $ff-rubik;
+        font-style: normal;
         font-weight: 500;
         font-size: 14px;
-        line-height: 20px;
+        line-height: 17px;
+        color: $color__white;
+        padding-left: 0;
+    }
+
+    &__link{
         text-decoration: none;
+        font-family: $ff-rubik;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 17px;
+        color: $color__white;
+        padding-left: 0;
     }
 
-    &-geo {
-        position: relative;
-        padding-right: 17px;
-        top: 3px;
-        left: 3px;
+    &__requisite{
+        font-family: $ff-rubik;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 17px;
+        color: $color__white;
     }
-    &-gmail {
-        position: relative;
-        padding-right: 10px;
-        // padding-top: 10px;
-        top: 9px;
-    }
+    
+}
 
-    &-phone {
-        position: relative;
-        padding-right: 10px;
-        top: 8px;
-    }
+.requisites__item{
+    margin-bottom: 5px;
+}
+
+.contacts {
+    margin-left: 82px;
+}
+
+.info{
+    margin-left: 20px;
+
+}
+
+.info-item{
+    margin-bottom: 7px;
+}
+
+.contact-info{
+    margin-bottom: 10px;
+}
+
+.contact-phone a{
+    display: flex;
+}
+
+.footer-geo,
+.footer-gmail,
+.footer-phone{
+    margin-right: 12px;
+    margin-top: 5px;
+}
+
+.footer-gmail{
+    position: relative;
+    top:5px
+}
+
+
+
+
+
+// .phone-number{
+
+// }
+
+// .contact-pin::before{
+//     content: "";
+//     display: block;
+//     width: 24px;
+//     height: 24px;
+//     background-image: url("../assets/main/geo.svg");
+//     background-repeat: no-repeat;
+//     background-position: left;
+//     position: absolute;
+//     right: 79px;
+//     top: calc(50% - 17.1rem);
+
+// }
+
+// .contact-mail::before{
+//     content: "";
+//     display: block;
+//     width: 100%;
+//     height: 24px;
+//     background-image: url("../assets/main/gmail.svg");
+//     background-repeat: no-repeat;
+// }
+
+// .contact-phone::before{
+//     content: "";
+//     display: block;
+//     width: 100%;
+//     height: 24px;
+//     background-image: url("../assets/main/phone.svg");
+//     background-repeat: no-repeat;
+// }
+
+
+// .footer {
+//     margin-top: 40px;
+//     background-color: #775CA6;
+//     font-family: $ff-rubik;
+//     position: relative;
+//     justify-content: center;
+
+//     &::after {
+//         content: '';
+//         width: 93%;
+//         height: 10%;
+//         background-image: url(/assets/main/beforefooter.svg);
+//         background-repeat: no-repeat;
+//         background-size: cover;
+//         position: absolute;
+//         right: 79px;
+//         top: calc(50% - 17.1rem);
+//     }
+
+
+//     &__inner {
+//         display: flex;
+//         justify-content: space-between;
+//         flex-wrap: wrap;
+//         padding: 70px 0;
+//         padding-top: 70px;
+
+
+//     }
+
+//     &__col {
+//         // flex: 1 0 6%;
+//         // flex: 0 0 19%;
+//         color: #fff;
+
+//     }
+
+//     &__link {
+//         display: block;
+//         font-weight: 500;
+//         font-size: 14px;
+//         line-height: 30px;
+//         color: #ffffff;
+//         text-decoration: none;
+//         position: relative;
+//         color: rgba(white, 1);
+//         transition: 0.2s ease color;
+
+//         &:hover {
+//             color: rgba(rgb(189, 189, 189), 0.5);
+//         }
+//     }
+
+//     &__item {
+//         list-style: none;
+//     }
+
+//     &_text {
+//         font-weight: 500;
+//         font-size: 14px;
+//         line-height: 16px;
+//         padding-top: 13px;
+//         letter-spacing: 0.01em;
+//     }
+
+//     &_title {
+//         font-weight: 500;
+//         font-size: 16px;
+//         line-height: 19px;
+//         padding-top: 39px;
+//     }
+
+//     &_h1 {
+//         font-weight: 700;
+//         font-size: 16px;
+//         line-height: 16px;
+//         letter-spacing: 0.01em;
+//         padding-top: 25px;
+//         padding-bottom: 20px;
+//     }
+
+//     &__social {
+//         text-decoration: none;
+//         list-style: none;
+//         display: flex;
+//         justify-content: space-between;
+//         padding-top: 10px;
+//         margin-right: 102px;
+
+//         &_img1 {
+//             position: absolute;
+//         }
+
+//         &_img2 {
+//             position: absolute;
+//             left: 19px;
+//         }
+
+//         &_img3 {
+//             position: absolute;
+//             top: 5px;
+//             left: 40px;
+//         }
+
+//         &_img4 {
+//             position: absolute;
+//             left: 54px;
+//         }
+
+//         &_img5 {
+//             position: absolute;
+//             left: 67px;
+//         }
+//     }
+
+//     &__rekvizit {
+//         font-weight: 500;
+//         font-size: 14px;
+//         line-height: 20px;
+//         text-decoration: none;
+//     }
+
+//     &-geo {
+//         position: relative;
+//         padding-right: 17px;
+//         top: 3px;
+//         left: 3px;
+//     }
+//     &-gmail {
+//         position: relative;
+//         padding-right: 10px;
+//         // padding-top: 10px;
+//         top: 9px;
+//     }
+
+//     &-phone {
+//         position: relative;
+//         padding-right: 10px;
+//         top: 8px;
+//     }
 
     // MEDIA
     // @media (max-width: $laptop){
@@ -175,4 +383,4 @@
     //         margin-bottom: 40px;
     //     }
     // }
-}
+    // }
