@@ -68,23 +68,23 @@
 
     &__title {
       padding-bottom: 24px;
-      font-family: "Rubik";
+      font-family: $ff-rubik;
       font-style: normal;
-      font-weight: 700;
+      font-weight: $fw-bold;
       font-size: 40px;
       line-height: 41px;
-      color: #000000;
+      $color__black: #000000;
     }
 
     &__descr {
       max-width: 812px;
       padding-bottom: 53px;
-      font-family: "Rubik";
+      font-family: $ff-rubik;
       font-style: normal;
-      font-weight: 400;
+      font-weight: $fw-regular;
       font-size: 24px;
       line-height: 34px;
-      color: #000000;
+      $color__black: #000000;
       text-align: justify;
     }
   }
@@ -100,8 +100,8 @@
       width: 400px;
       min-height: 370px;
       margin-top: 25px;
-      margin-bottom: 120px;
-      background: #ff7272;
+      margin-bottom: 100px;
+      background: $color__coral;
       border-radius: 20px;
 
       &__img {
@@ -116,23 +116,23 @@
 
       &__title {
         padding-bottom: 9px;
-        font-family: "Poppins";
+        font-family: $ff-poppins;
         font-style: normal;
-        font-weight: 700;
+        font-weight: $fw-bold;
         font-size: 38px;
         line-height: 34px;
         text-align: center;
-        color: #ffffff;
+        color: $color__white;
       }
 
       &__subtitle {
-        font-family: "Rubik";
+        font-family: $ff-rubik;
         font-style: italic;
-        font-weight: 500;
+        font-weight: $fw-medium;
         font-size: 24px;
         line-height: 28px;
         text-align: center;
-        color: #ffffff;
+        color: $color__white;
       }
     }
   }
@@ -143,7 +143,7 @@
   margin-left: 842px;
   z-index: 1;
   // padding: 52px;
-  background: #d5c8fc;
+  background: $color__lilac;
   border-radius: 15px;
   width: 401px;
   height: 282px;
@@ -163,14 +163,14 @@
         // list-style: none;
 
         &__link {
-          font-family: "Rubik", sans-serif;
+          font-family: $ff-rubik;
           font-style: normal;
           font-weight: bold;
           font-size: 18px;
           line-height: 25px;
           text-transform: uppercase;
           text-decoration: none;
-          color: #000000;
+          color: $color__black;
         }
       }
       &__item {
