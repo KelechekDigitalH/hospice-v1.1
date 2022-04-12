@@ -8,6 +8,7 @@ $color__dark-grey: #616161;
 // Breadcrumb---------------------------------
 
 .breadcrumb {
+  margin-top: 0;
   &__menu {
     padding: 24px 0 40px 0;
     display: flex;
@@ -15,7 +16,7 @@ $color__dark-grey: #616161;
   }
 
   &__item:not(:last-of-type)::after {
-    content: "\203a";
+    content: ">";
     margin: 0 5px;
     color: $color__dark-grey;
   }
@@ -187,7 +188,7 @@ $color__dark-grey: #616161;
       position: absolute;
 
       left: 3px;
-      bottom: 66px;
+      bottom: -24px;
     }
 
     &__balloon-yellow {
@@ -199,7 +200,7 @@ $color__dark-grey: #616161;
     &__finger {
       position: absolute;
       right: 24px;
-      bottom: 180px;
+      bottom: 90px;
     }
   }
 }
