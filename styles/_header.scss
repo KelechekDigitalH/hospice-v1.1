@@ -1,5 +1,5 @@
 header {
-    background-color: #E3ECFF;
+    background-color: $color__blue;
 }
 
 .header-inner {
@@ -55,10 +55,10 @@ header {
 
 
         &__btn {
-            background: #775CA6;
+            background:  $color__violet;
             border-radius: 5px;
             padding: 10px 26.93px 11px 27.93px;
-            color: white;
+            color: $color__white;
             transition: 0.8s ease;
             font-family: $ff-raleway;
             font-style: normal;
