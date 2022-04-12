@@ -1,10 +1,206 @@
 @import "./vars";
 
-// body {
-//   background-color: #010101;
-//   color: #fff;
-// }
+$color__blue: #e3ecff;
+$color__black: #000000;
+$color__white: #ffffff;
+$color__dark-grey: #616161;
 
-.title {
-  font-family: $ff-raleway;
+// Breadcrumb---------------------------------
+
+.breadcrumb {
+  margin-top: 0;
+  &__menu {
+    padding: 24px 0 40px 0;
+    display: flex;
+    list-style: none;
+  }
+
+  &__item:not(:last-of-type)::after {
+    content: ">";
+    margin: 0 5px;
+    color: $color__dark-grey;
+  }
+
+  &__link {
+    font-family: $ff-rubik;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: $color__dark-grey;
+    text-decoration: none;
+  }
+
+  &__link--active {
+    font-weight: 500;
+  }
+}
+
+// legal-entities-section-----------
+
+.legal-entities {
+  &__inner {
+    &__title {
+      font-family: $ff-rubik;
+      font-weight: 700;
+      font-size: 40px;
+      line-height: 41px;
+
+      color: $color__black;
+    }
+
+    &__txt {
+      padding: 38px 0 40px;
+      font-family: $ff-rubik;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 28px;
+      color: $color__black;
+    }
+  }
+}
+
+// Cooparation-accord section-----------------
+
+.cooparation-accord {
+  background-color: $color__blue;
+  padding: 0 0 58px;
+
+  &__inner {
+    &__title {
+      font-family: $ff-roboto;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 41px;
+      color: $color__black;
+      padding: 29px 0 27px 24px;
+    }
+
+    &__item {
+      background-color: $color__white;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      border-radius: 15px;
+    }
+
+    &__item + &__item {
+      margin-top: 24px;
+    }
+
+    &__input {
+      width: 0;
+      height: 0;
+      appearance: none;
+      position: absolute;
+    }
+
+    &__input:checked ~ &__text {
+      p {
+        display: block;
+      }
+    }
+
+    &__input:checked ~ &__subtitle::after {
+      transform: rotate(135deg);
+    }
+
+    &__subtitle {
+      display: block;
+      padding: 18px 24px;
+      font-family: $ff-inter;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 120%;
+      cursor: pointer;
+
+      position: relative;
+    }
+
+    &__subtitle::after {
+      content: "";
+      display: block;
+
+      width: 9.87px;
+      height: 9.87px;
+      border-top: 2px solid $color__dark-grey;
+      border-right: 2px solid $color__dark-grey;
+
+      position: absolute;
+      top: 40%;
+      right: 24px;
+      transform: rotate(45deg);
+    }
+
+    &__text {
+      p {
+        padding: 0 24px 18px;
+        font-family: $ff-inter;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 140%;
+        display: none;
+      }
+    }
+  }
+}
+
+// Cooparation-info-section------------------
+
+.cooparation-info {
+  &__inner {
+    position: relative;
+    padding: 40px 0 0 0;
+
+    &__txt,
+    &__link {
+      font-family: $ff-rubik;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 28px;
+      text-decoration: none;
+      color: $color__black;
+    }
+
+    &__link:hover {
+      border-bottom: 1px solid $color__black;
+    }
+
+    &__txt--bold {
+      font-weight: 500;
+      padding-top: 30px;
+    }
+
+    &__img {
+      margin: 60px auto 0;
+      max-width: 610px;
+      height: 427px;
+    }
+
+    &__photo {
+      width: 100%;
+      border-radius: 15px;
+    }
+
+    &__balloon-pink {
+      position: absolute;
+
+      left: 3px;
+      bottom: -24px;
+    }
+
+    &__balloon-yellow {
+      position: absolute;
+      top: 104px;
+      right: -18px;
+    }
+
+    &__finger {
+      position: absolute;
+      right: 24px;
+      bottom: 90px;
+    }
+  }
 }

@@ -21,9 +21,11 @@
 @import "./styles/staff";
 @import "./styles/volunteering";
 @import "./styles/want-to-help";
-
+@import "./styles/header";
+@import "./styles/footer";
 
 .container {
-  max-width: 1240px;
+  max-width: 1270px;
   margin: 0 auto;
+  padding: 0 15px;
 }
