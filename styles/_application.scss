@@ -11,27 +11,50 @@
 .application {
   font-family: $ff-rubik;
   width: 1244px;
-    margin: 0 auto;
+  margin: 0 auto;
   &__inner {
     position: relative;
     padding-bottom: 82px;
     &__title {
       margin: 41px 0 33px;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 40px;
-        line-height: 41px;
-        color: #000000;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 40px;
+      line-height: 41px;
+      color: #000000;
     }
     &__page {
       font-style: normal;
-        font-weight: normal;
-        font-size: 18px;
-        line-height: 28px;
-        color: #000000;
-        margin-bottom: 30px;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 28px;
+      color: #000000;
+      margin-bottom: 30px;
     }
-  }
+
+    &__bg-img-pink {
+      width: 183.31px;
+      height: 351.24px;
+      background-image: url(/assets/balloon_3.svg);
+      left: 78.63%;
+      right: 8.64%;
+      top: 20.28%;
+      bottom: 70.77%;
+      transform: matrix(-1, 0, 0, 1, 0, 0);
+      margin-left: 949px;
+      margin-bottom: 200px;
+    }
+  //   &__bg-img-yellow {
+  //     width: 172.19px;
+  //     height: 393.4px;
+  //     background-image: url(/assets/balloon_4-yellow.svg);
+  //     left: 94.8%;
+  //     right: -6.76%;
+  //     top: 17.6%;
+  //     bottom: 72.37%;
+  //     transform: matrix(-1, 0, 0, 1, 0, 0);
+  //   }
+  // }
 
   &__form {
     background: #e3ecff;
@@ -77,13 +100,13 @@
 
           &__long {
             background: #ffffff;
-          border: 1px solid #686868;
-          box-sizing: border-box;
-          box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.1);
-          border-radius: 8px;
-          padding: 15px;
-          width: 1161px;
-          height: 182px;
+            border: 1px solid #686868;
+            box-sizing: border-box;
+            box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            padding: 15px;
+            width: 1161px;
+            height: 182px;
           }
 
           &::placeholder {
@@ -94,7 +117,6 @@
             width: 28px;
             height: 22px;
           }
-
         }
         &__elements {
           display: flex;
@@ -103,10 +125,8 @@
         }
       }
     }
-    &__btn {
-      background-color: #fff;
-      width: 215px;
-      height: 40px;
+
+    &__link {
       text-decoration: none;
       font-family: $ff-raleway;
       font-style: normal;
@@ -115,7 +135,31 @@
       line-height: 21px;
       letter-spacing: 0.14em;
       text-transform: uppercase;
-      color: $color__black;
+      color: rgba($color__black, 1);
+      transition: 0.2s ease color;
+
+      &:hover {
+        color: rgba($color__black, 0.5);
+      }
+
+      &__btn {
+        width: 215px;
+        background: #775ca6;
+        border-radius: 5px;
+        padding: 10px 26.93px 11px 27.93px;
+        color: white;
+        transition: 0.8s ease;
+        font-family: $ff-raleway;
+        font-style: normal;
+        font-weight: 800;
+        font-size: 16px;
+        line-height: 19px;
+        letter-spacing: 0.14em;
+        color: $color__white;
+        margin-left: 1195px;
+        margin-bottom: 75px;
+      }
     }
   }
+}
 }
