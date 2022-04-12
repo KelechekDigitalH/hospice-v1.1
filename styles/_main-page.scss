@@ -2,10 +2,10 @@
 
 $white: #fff;
 $black: #000;
-$azure: #E3ECFF;
-$lime:#A1EB7C;
-$rose: #FFEBF9;
-$maroon: #FF7272;
+$azure: #e3ecff;
+$lime: #a1eb7c;
+$rose: #ffebf9;
+$maroon: #ff7272;
 $grey: #949494;
 
 body {
@@ -17,8 +17,9 @@ body {
 
 .section-banner {
   position: relative;
-  max-width: 1240px;
+  max-width: 1270px;
   margin: 0 auto;
+  padding: 0 15px;
 
   &__image {
     position: absolute;
@@ -43,7 +44,6 @@ body {
     left: 49px;
     top: 522px;
   }
-
 }
 
 .banner {
@@ -83,22 +83,18 @@ body {
     }
 
     &__btn-main {
-      background: #775CA6;
+      background: #775ca6;
       color: white;
       position: relative;
       box-shadow: 0px 4px 50px rgba(50, 108, 255, 0.5);
-      transition: .2s ease box-shadow;
+      transition: 0.2s ease box-shadow;
 
       &:hover {
         box-shadow: 0px 0px 0px rgba(50, 108, 255, 1);
       }
-
     }
   }
 }
-
-
-
 
 .section {
   padding-top: 5rem;
@@ -112,7 +108,6 @@ body {
   }
 }
 
-
 .blc-kids {
   margin-top: 54px;
 
@@ -125,40 +120,36 @@ body {
     position: absolute;
     transform: translate(734px, -146px);
   }
-
 }
 
-.slider-card{
-.slick-dots li button:before {
-  font-size: 40px;
-  margin-top: 10px;
-  // display: none;
-}
+.slider-card {
+  .slick-dots li button:before {
+    font-size: 40px;
+    margin-top: 10px;
+    // display: none;
+  }
 
-.slick-next {
-  font-size: 30px;
-  background-image: url(/assets/main/after.svg);
-  position: absolute;
-  transform: translate(-20%, 0);
-  height: 7%;
-  background-repeat: no-repeat;
-  right: -50px;
-  top: 375px;
-}
+  .slick-next {
+    font-size: 30px;
+    background-image: url(../assets/main/after.svg);
+    position: absolute;
+    transform: translate(-20%, 0);
+    height: 7%;
+    background-repeat: no-repeat;
+    right: -50px;
+    top: 375px;
+  }
 
-
-
-.slick-prev {
-  font-size: 30px;
-  background-image: url(/assets/main/before.svg);
-  position: absolute;
-  transform: translate(-80%, 0);
-  height: 7%;
-  background-repeat: no-repeat;
-  left: -16px;
-	top: 371px;
-}
-
+  .slick-prev {
+    font-size: 30px;
+    background-image: url(../assets/main/before.svg);
+    position: absolute;
+    transform: translate(-80%, 0);
+    height: 7%;
+    background-repeat: no-repeat;
+    left: -16px;
+    top: 371px;
+  }
 }
 
 .cardd {
@@ -170,7 +161,6 @@ body {
   padding-left: 10px;
   display: flex;
   justify-content: space-between;
-
 
   &-item {
     text-align: center;
@@ -241,7 +231,6 @@ body {
     position: absolute;
     transform: translate(1001px, -146px);
   }
-
 }
 
 .rectangle-blc {
@@ -295,7 +284,6 @@ body {
     font-weight: 700;
     display: inline-block;
 
-
     &-link {
       // color: $white;
       text-decoration: none;
@@ -306,7 +294,6 @@ body {
       &:hover {
         color: rgba($white, 0.5);
       }
-
     }
 
     &_img {
@@ -367,7 +354,7 @@ body {
     padding: 0.6rem 2.5rem;
 
     box-shadow: 0px 4px 50px rgba(241, 114, 82, 0.5);
-    transition: .2s ease box-shadow;
+    transition: 0.2s ease box-shadow;
 
     &:hover {
       box-shadow: 0px 0px 0px rgb(184, 88, 73);
@@ -411,10 +398,10 @@ body {
     display: block;
     width: 100%;
     overflow: hidden;
-    transition: box-shadow .2s linear;
+    transition: box-shadow 0.2s linear;
 
     &:hover {
-      box-shadow: 0 0 20px rgba(#26FFF2, .5);
+      box-shadow: 0 0 20px rgba(#26fff2, 0.5);
 
       img {
         transform: scale(1.1);
@@ -426,9 +413,8 @@ body {
     display: block;
     max-width: 100%;
     height: auto;
-    transition: transform .8s linear;
+    transition: transform 0.8s linear;
   }
-
 
   &__title {
     font-family: $ff-rubik;
@@ -451,7 +437,6 @@ body {
     color: $black;
     text-decoration: none;
   }
-
 }
 
 .blc-sponsor {
@@ -483,14 +468,13 @@ body {
     margin-top: 95px;
   }
 
-  @media (max-width:767px) {
+  @media (max-width: 767px) {
     .wrapper {
       padding: 50px 10px;
     }
   }
 
-
-  @media (max-width:767px) {
+  @media (max-width: 767px) {
     .slider {
       padding: 0px 40px;
     }
@@ -498,7 +482,7 @@ body {
 
   .slick-next {
     font-size: 30px;
-    background-image: url(/assets/main/after.svg);
+    background-image: url(../assets/main/after.svg);
     position: absolute;
     transform: translate(-20%, 0);
     height: 40%;
@@ -506,11 +490,9 @@ body {
     right: -46px;
   }
 
-
-
   .slick-prev {
     font-size: 30px;
-    background-image: url(/assets/main/before.svg);
+    background-image: url(../assets/main/before.svg);
     position: absolute;
     transform: translate(-80%, 0);
     height: 40%;
@@ -522,7 +504,6 @@ body {
     position: absolute;
     transform: translate(1124px, -15px);
   }
-
 }
 
 .blc_contact {

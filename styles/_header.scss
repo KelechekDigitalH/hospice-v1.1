@@ -1,4 +1,4 @@
-header{
+header {
     background-color: #E3ECFF;
 }
 
@@ -6,10 +6,23 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 14px  0  13.2px 0;
+    padding: 14px 0 13.2px 0;
 }
 
-.nav{
+
+.logo {
+    width: 281.26px;
+    height: 94.8px;
+
+    img{
+        width: 100%;
+        object-fit: contain;
+    }
+}
+
+
+.nav {
+
     display: flex;
 }
 
@@ -18,39 +31,46 @@ header{
     display: flex;
     align-items: center;
     padding-left: 0;
-          
-          &__item + &__item{
-              margin-left: 40px;
-          }
 
-          &__link {
-              text-decoration: none;
-              font-family: $ff-raleway;
-              font-style: normal;
-              font-weight: 700;
-              font-size: 18px;
-              line-height: 21px;
-              letter-spacing: 0.14em;
-              text-transform: uppercase;
-              color: $color__black;
-               
+    &__item+&__item {
+        margin-left: 40px;
+    }
 
-               &__btn{
-                   background: #775CA6;
-                   border-radius: 5px;
-                   padding: 10px 26.93px 11px 27.93px;
-                   color: white;
-                   transition: 0.8s ease;
-                   font-family: $ff-raleway;
-                   font-style: normal;
-                   font-weight: 800;
-                   font-size: 16px;
-                   line-height: 19px;
-                   letter-spacing: 0.14em;
-                   color: $color__white;
-                   margin-left: 51.6px;
-               }
-           }
+
+    &__link {
+        text-decoration: none;
+        font-family: $ff-raleway;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 21px;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+        color: rgba($color__black, 1);
+        transition: 0.2s ease color;
+
+        &:hover {
+            color: rgba($color__black, 0.5);
+        }
+
+
+        &__btn {
+            background: #775CA6;
+            border-radius: 5px;
+            padding: 10px 26.93px 11px 27.93px;
+            color: white;
+            transition: 0.8s ease;
+            font-family: $ff-raleway;
+            font-style: normal;
+            font-weight: 800;
+            font-size: 16px;
+            line-height: 19px;
+            letter-spacing: 0.14em;
+            color: $color__white;
+            margin-left: 51.6px;
+        }
+    }
+
 }
 
 

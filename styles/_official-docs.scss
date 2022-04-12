@@ -3,12 +3,12 @@
   font-family: $ff-raleway;
 }
 .documents {
-  position: relative;
+  margin-bottom: 267px;
 }
 .breadcrumbs {
     margin-top: 24px;
     margin-bottom: 40px;
-    font-family: "Rubik";
+    font-family: $ff-rubik;
     margin-left: 0;
 
 
@@ -90,18 +90,16 @@ text-decoration: none;
 }
 
 .call-to-action {
-
   margin: 90px 0 119px;
-
 
   &__inner {
     display: flex;
     align-items: center;
     justify-content: space-between;
     background-color: $color__blue;
-    padding: 48px 40px;
+    padding: 70px 40px;
     border-radius: 15px;
-  
+
     &__text,
     &__money,
     &__other-money,
