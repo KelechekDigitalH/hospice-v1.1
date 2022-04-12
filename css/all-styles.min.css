@@ -2334,7 +2334,7 @@ header {
   font-weight: bold;
 }
 
-.sidebar {
+.reports-sidebar {
   position: fixed;
   z-index: 1;
   width: 401px;
@@ -2346,7 +2346,7 @@ header {
           border-radius: 15px;
 }
 
-.sidebar__inner {
+.reports-sidebar__inner {
   margin-left: 80px;
   margin-top: 50px;
   font-family: 'Rubik';
@@ -2358,7 +2358,7 @@ header {
   color: #000000;
 }
 
-.sidebar__inner__menu__item__link {
+.reports-sidebar__inner__menu__item__link {
   text-decoration: none;
 }
 
