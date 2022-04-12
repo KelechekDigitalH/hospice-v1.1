@@ -9,7 +9,20 @@ header {
     padding: 14px 0 13.2px 0;
 }
 
+
+.logo {
+    width: 281.26px;
+    height: 94.8px;
+
+    img{
+        width: 100%;
+        object-fit: contain;
+    }
+}
+
+
 .nav {
+
     display: flex;
 }
 
@@ -22,6 +35,7 @@ header {
     &__item+&__item {
         margin-left: 40px;
     }
+
 
     &__link {
         text-decoration: none;
@@ -56,6 +70,7 @@ header {
             margin-left: 51.6px;
         }
     }
+
 }
 
 
