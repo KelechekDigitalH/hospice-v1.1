@@ -8,6 +8,38 @@
 .title {
   font-family: $ff-raleway;
 }
+
+.breadcrumbs {
+  margin-top: 0;
+  &__menu {
+    padding: 24px 0 40px 0;
+    display: flex;
+    list-style: none;
+    padding-left: 20px;
+  }
+
+  &__item:not(:last-of-type)::after {
+    content: ">";
+    margin: 0 5px;
+    color: $color__dark-grey;
+    
+  }
+
+  &__link {
+    font-family: $ff-rubik;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: $color__dark-grey;
+    text-decoration: none;
+  }
+
+  &__link--active {
+    font-weight: 500;
+  }
+}
+
 .application {
   font-family: $ff-rubik;
   width: 1244px;
@@ -15,8 +47,31 @@
   &__inner {
     position: relative;
     padding-bottom: 82px;
+
+    &__bg-imgpink {
+      align-items: flex-start;
+      position: absolute;
+      width: 183.31px;
+      height: 351.24px;
+      background-image: url(../assets/balloon_3.svg);
+  margin-left: 919px;
+      top: 518px;
+    }
+
+    &__bg-imgyellow {
+      align-items: flex-start;
+      position: absolute;
+      width: 172.19px;
+      height: 393.4px;
+      background-image: url(../assets/balloon_4.svg);
+  margin-left: 1192px;
+  top: 413px; 
+    }
+    
+
     &__title {
-      margin: 41px 0 33px;
+      margin: 40px 0 33px;
+      margin-top: 40px;
       font-style: normal;
       font-weight: bold;
       font-size: 40px;
@@ -31,30 +86,7 @@
       color: #000000;
       margin-bottom: 30px;
     }
-
-    &__bg-img-pink {
-      width: 183.31px;
-      height: 351.24px;
-      background-image: url(/assets/balloon_3.svg);
-      left: 78.63%;
-      right: 8.64%;
-      top: 20.28%;
-      bottom: 70.77%;
-      transform: matrix(-1, 0, 0, 1, 0, 0);
-      margin-left: 949px;
-      margin-bottom: 200px;
-    }
-  //   &__bg-img-yellow {
-  //     width: 172.19px;
-  //     height: 393.4px;
-  //     background-image: url(/assets/balloon_4-yellow.svg);
-  //     left: 94.8%;
-  //     right: -6.76%;
-  //     top: 17.6%;
-  //     bottom: 72.37%;
-  //     transform: matrix(-1, 0, 0, 1, 0, 0);
-  //   }
-  // }
+  }
 
   &__form {
     background: #e3ecff;
@@ -141,9 +173,8 @@
       &:hover {
         color: rgba($color__black, 0.5);
       }
-
       &__btn {
-        width: 215px;
+        width: 180px;
         background: #775ca6;
         border-radius: 5px;
         padding: 10px 26.93px 11px 27.93px;
@@ -152,14 +183,13 @@
         font-family: $ff-raleway;
         font-style: normal;
         font-weight: 800;
-        font-size: 16px;
+        font-size: 18px;
         line-height: 19px;
         letter-spacing: 0.14em;
         color: $color__white;
-        margin-left: 1195px;
+        margin-left: 1214px;
         margin-bottom: 75px;
       }
     }
   }
-}
 }
