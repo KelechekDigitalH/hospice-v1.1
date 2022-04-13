@@ -8,9 +8,9 @@ $color__dark-grey: #616161;
 // Breadcrumb---------------------------------
 
 .breadcrumb {
-  margin-top: 0;
+  margin: 24px 0 40px;
+
   &__menu {
-    padding: 24px 0 40px 0;
     display: flex;
     list-style: none;
   }
@@ -160,7 +160,7 @@ $color__dark-grey: #616161;
     }
 
     &__img {
-      margin: 60px auto 0;
+      margin: 60px auto 90px;
       max-width: 610px;
       height: 427px;
     }
