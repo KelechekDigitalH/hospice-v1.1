@@ -8,3 +8,188 @@
 .title {
   font-family: $ff-raleway;
 }
+
+.breadcrumbs {
+  margin-top: 0;
+  &__menu {
+    padding: 24px 0 40px 0;
+    display: flex;
+    list-style: none;
+    padding-left: 20px;
+  }
+
+  &__item:not(:last-of-type)::after {
+    content: ">";
+    margin: 0 5px;
+    color: $color__dark-grey;
+    
+  }
+
+  &__link {
+    font-family: $ff-rubik;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: $color__dark-grey;
+    text-decoration: none;
+  }
+
+  &__link--active {
+    font-weight: 500;
+  }
+}
+
+.application {
+  font-family: $ff-rubik;
+  width: 1244px;
+  margin: 0 auto;
+  &__inner {
+    position: relative;
+    padding-bottom: 82px;
+
+    &__bg-imgpink {
+      align-items: flex-start;
+      position: absolute;
+      width: 183.31px;
+      height: 351.24px;
+      background-image: url(../assets/balloon_3.svg);
+  margin-left: 919px;
+      top: 518px;
+    }
+
+    &__bg-imgyellow {
+      align-items: flex-start;
+      position: absolute;
+      width: 172.19px;
+      height: 393.4px;
+      background-image: url(../assets/balloon_4.svg);
+  margin-left: 1192px;
+  top: 413px; 
+    }
+    
+
+    &__title {
+      margin: 40px 0 33px;
+      margin-top: 40px;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 40px;
+      line-height: 41px;
+      color: #000000;
+    }
+    &__page {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 28px;
+      color: #000000;
+      margin-bottom: 30px;
+    }
+  }
+
+  &__form {
+    background: #e3ecff;
+    &__inner {
+      padding: 35px 0 82px;
+      &__item {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+        background: #fff;
+        box-shadow: 6px 6px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 15px;
+        padding: 20px 0 20px 40px;
+        margin-bottom: 30px;
+
+        &__labels {
+          font-style: normal;
+          font-weight: 700;
+          font-size: 18px;
+          line-height: 21px;
+          color: #000000;
+          margin-bottom: 15px;
+          &__help {
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 19px;
+            color: #000000;
+            margin-left: 10px;
+            padding-left: 2px;
+          }
+        }
+
+        &__inputs {
+          background: #ffffff;
+          border: 1px solid #686868;
+          box-sizing: border-box;
+          box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.1);
+          border-radius: 8px;
+          padding: 15px;
+          width: 1161px;
+
+          &__long {
+            background: #ffffff;
+            border: 1px solid #686868;
+            box-sizing: border-box;
+            box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            padding: 15px;
+            width: 1161px;
+            height: 182px;
+          }
+
+          &::placeholder {
+            color: #866c6c;
+            font-size: 18px;
+          }
+          &__accurateDiagnosis {
+            width: 28px;
+            height: 22px;
+          }
+        }
+        &__elements {
+          display: flex;
+          align-items: center;
+          margin-bottom: 8px;
+        }
+      }
+    }
+
+    &__link {
+      text-decoration: none;
+      font-family: $ff-raleway;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 21px;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: rgba($color__black, 1);
+      transition: 0.2s ease color;
+
+      &:hover {
+        color: rgba($color__black, 0.5);
+      }
+      &__btn {
+        width: 180px;
+        background: #775ca6;
+        border-radius: 5px;
+        padding: 10px 26.93px 11px 27.93px;
+        color: white;
+        transition: 0.8s ease;
+        font-family: $ff-raleway;
+        font-style: normal;
+        font-weight: 800;
+        font-size: 18px;
+        line-height: 19px;
+        letter-spacing: 0.14em;
+        color: $color__white;
+        margin-left: 1214px;
+        margin-bottom: 75px;
+      }
+    }
+  }
+}
