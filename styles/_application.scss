@@ -42,8 +42,10 @@
 
 .application {
   font-family: $ff-rubik;
-  width: 1244px;
+  width: 1240px;
   margin: 0 auto;
+  margin-top: -69px;
+  padding-right: 280px;
   &__inner {
     position: relative;
     padding-bottom: 82px;
@@ -54,8 +56,8 @@
       width: 183.31px;
       height: 351.24px;
       background-image: url(../assets/balloon_3.svg);
-  margin-left: 919px;
-      top: 518px;
+  margin-left: 850px;
+      top: 590px;
     }
 
     &__bg-imgyellow {
@@ -64,8 +66,8 @@
       width: 172.19px;
       height: 393.4px;
       background-image: url(../assets/balloon_4.svg);
-  margin-left: 1192px;
-  top: 413px; 
+  margin-left: 1092px;
+  top: 490px; 
     }
     
 
@@ -82,7 +84,6 @@
       font-style: normal;
       font-weight: normal;
       font-size: 18px;
-      line-height: 28px;
       color: #000000;
       margin-bottom: 30px;
     }
@@ -90,6 +91,8 @@
 
   &__form {
     background: #e3ecff;
+    padding-right: 251px;
+    margin-top: -70px;
     &__inner {
       padding: 35px 0 82px;
       &__item {
@@ -101,9 +104,11 @@
         box-shadow: 6px 6px 4px rgba(0, 0, 0, 0.25);
         border-radius: 15px;
         padding: 20px 0 20px 40px;
-        margin-bottom: 30px;
+        margin-bottom: 28px;
+        width: 1200px;
 
         &__labels {
+          font-family: $ff-roboto;
           font-style: normal;
           font-weight: 700;
           font-size: 18px;
@@ -156,6 +161,45 @@
           margin-bottom: 8px;
         }
       }
+      &__item-hperson {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+        background: #fff;
+        box-shadow: 6px 6px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 15px;
+        padding: 20px 0 20px 40px;
+        margin-bottom: 30px;
+        width: 1200px;
+        // height: 245px;
+      }
+      &__item-text {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+        background: #fff;
+        box-shadow: 6px 6px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 15px;
+        padding: 20px 0 20px 40px;
+        margin-bottom: 30px;
+        width: 1200px;
+        // height: 241px;
+      }
+      &__item-status {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+        background: #fff;
+        box-shadow: 6px 6px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 15px;
+        padding: 20px 0 20px 40px;
+        margin-bottom: 30px;
+        width: 1200px;
+        // height: 156px;
+      }
     }
 
     &__link {
@@ -163,18 +207,19 @@
       font-family: $ff-raleway;
       font-style: normal;
       font-weight: 700;
-      font-size: 18px;
+      // font-size: 48px;
       line-height: 21px;
       letter-spacing: 0.14em;
       text-transform: uppercase;
       color: rgba($color__black, 1);
       transition: 0.2s ease color;
+      
 
       &:hover {
         color: rgba($color__black, 0.5);
       }
       &__btn {
-        width: 180px;
+        // width: 180px;
         background: #775ca6;
         border-radius: 5px;
         padding: 10px 26.93px 11px 27.93px;
@@ -187,8 +232,9 @@
         line-height: 19px;
         letter-spacing: 0.14em;
         color: $color__white;
-        margin-left: 1214px;
-        margin-bottom: 75px;
+        margin-left: 1120px;
+        margin-bottom: 85px;
+        width: 160px;
       }
     }
   }
