@@ -33,10 +33,12 @@
 
 .individuals {
     width: 1244px;
-    margin: 0 auto;
+    // margin: 0 auto;
+    margin-left: 155px;
  
 
 &_list {
+    margin-top: 40px;
     display:grid;
     grid-template-columns: 1fr 1fr;
     grid-row-gap: 41px;
@@ -63,7 +65,7 @@
 }
 
 &_descr {
-    margin-top: 44px;
+    margin-top: 40px;
     margin-left: 70px;
     width: 468px;
     height: 112px;
@@ -76,9 +78,9 @@
 &_link {
     position: absolute;
     margin-top: 20px;
-    margin-left: -185px;
-    width: 215px;
-    height: 40px;
+    margin-left: -116px;
+    width: 200px;
+    height: 36px;
     background: $color__violet;
     border-radius: 5px;
     text-decoration: none;
@@ -87,7 +89,7 @@
     font-size: 16px;
     font-weight: bold;
     letter-spacing: 2px;
-    padding: 15px 77px 0px;
+    padding: 14px 17px 0px;
     align-items: center;
    
 }
@@ -124,7 +126,7 @@
       background-color: $color__blue;
       padding: 70px 40px;
       border-radius: 15px;
-    }
+    
       &__text,
       &__money,
       &__other-money,
@@ -163,4 +165,4 @@
         padding: 18px 22px;
       }
     }
-
+}

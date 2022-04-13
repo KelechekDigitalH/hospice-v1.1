@@ -7,8 +7,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../css/all-styles.min.css" />
-    <link rel="stylesheet" href="../libs/slick/slick.css">
-    <link rel="stylesheet" href="../libs/slick/slick-theme.css">
 </head>
 
 <body>
@@ -17,7 +15,7 @@
             <div class="container">
                 <div class="header-inner">
                     <a href="#">
-                        <img src="/assets/main/logo.svg" alt="Logo">
+                        <img src="../assets/main/logo.svg" alt="Logo">
                     </a>
                     <nav class="nav">
                         <ul class="menu">
@@ -64,19 +62,19 @@
 
             <div class="container">
                 <div class="finger-need-help">
-                    <img src="../assets/finger.png" alt="">
+                    <img src="../assets/need-help/finger.png" alt="">
                 </div>
             </div>
 
             <div class="container">
                 <div class="paint-need-help">
-                    <img src="../assets/paints.png" alt="">
+                    <img src="../assets/need-help/paints.png" alt="">
                 </div>
             </div>
 
             <div class="container">
                 <div class="ballon-need-help">
-                    <img src="../assets/balloon.png" alt="">
+                    <img src="../assets/need-help/balloon.png" alt="">
                 </div>
             </div>
 
@@ -253,7 +251,7 @@
             </section>
 
             <section class="important-khow-need-help">
-                <img class="bg-img-need-help" src="../assets/illustation_pro-palliativ.jpg" alt="">
+                <img class="bg-img-need-help" src="../assets/need-help/illustation_pro-palliativ.jpg" alt="">
                 <div class="container">
                     <div class="important-khow-need-help__inner">
                         <h4 class="important-khow-need-help__inner__title">Важно знать!</h4>
@@ -269,22 +267,20 @@
             </section>
         </main>
 
-        <div class="call-to-action">
-            <div class="container">
-                <div class="call-to-action__inner">
-                    <p class="call-to-action__inner__text">
-                        Хочу пожертвовать
-                    </p>
-                    <div class="call-to-action__inner__money">
-                        <span class="call-to-action__inner__money__item">100</span>
-                        <span class="call-to-action__inner__money__item">200</span>
-                        <span class="call-to-action__inner__money__item">500</span>
-                        <span class="call-to-action__inner__money__item">1000</span>
+        <div class="container">
+            <div class="blc-call-to-action">
+                <div class="call-to-action-inner">
+                    <p class="call-to-action-inner__text">Хочу пожертвовать</p>
+                    <div class="call-to-action-inner__money">
+                        <span class="call-to-action-inner__money__item">100</span>
+                        <span class="call-to-action-inner__money__item">200</span>
+                        <span class="call-to-action-inner__money__item">500</span>
+                        <span class="call-to-action-inner__money__item">1000</span>
                     </div>
-                    <div class="call-to-action__inner__other-money">
-                        <span class="call-to-action__inner__other-money__item">Другая сумма</span>
+                    <div class="call-to-action-inner__other-money">
+                        <span class="call-to-action-inner__other-money__item">Другая сумма</span>
                     </div>
-                    <a class="call-to-action__inner__btn" href="#">
+                    <a class="call-to-action-inner__btn" href="#">
                         Помочь
                     </a>
                 </div>
@@ -293,90 +289,105 @@
 
         <footer class="footer">
             <div class="container">
-                <div class="footer__inner">
-                    <div class="footer__col"><a class="header__logo" href="#"><img src="/assets/main/logo-footer.svg"
-                                alt="logo"></a>
-                        <h3 class="footer_text">Общественный Благотворительный
+                <div class="footer-inner">
+                    <div class="footer-inner__leftside">
+                        <a class="footer__logo" href="#">
+                            <img src="/assets/main/logo-footer.svg" alt="logo">
+                        </a>
+                        <p class="footer__text">Общественный Благотворительный
                             <br> Фонд «Первый детский хоспис» </h3>
-                        <h3 class="footer_title">Мы в социальных сетях:</h3>
-                        <ul class="footer__social">
-                            <li class="footer__item"><a class="footer__link" href="#">
-                                    <img src="/assets/main/Solid/Brands/Telegram.svg" class="footer__social_img1"></a>
-                            </li>
-                            <li class="footer__item"><a class="footer__link" href="#">
-                                    <img src="/assets/main/Solid/Brands/Whatsapp.svg" class="footer__social_img2"></a>
-                            </li>
-                            <li class="footer__item"><a class="footer__link" href="#">
-                                    <img src="/assets/main/ins.svg" class="footer__social_img3"></a></li>
-                            <li class="footer__item"><a class="footer__link" href="#">
-                                    <img src="/assets/main/Solid/Brands/Youtube.svg" class="footer__social_img4"></a>
-                            </li>
-                            <li class="footer__item"><a class="footer__link" href="#">
-                                    <img src="/assets/main/Solid/Brands/Facebook.svg" class="footer__social_img5"></a>
-                            </li>
-                        </ul>
+                            <p class="footer__social-title">Мы в социальных сетях:</p>
+                            <ul class="footer__social">
+                                <li class="footer__item">
+                                    <a class="footer__link" href="#">
+                                        <img src="/assets/main/Solid/Brands/Telegram.svg" class="footer__social_img1">
+                                    </a>
+                                </li>
+                                <li class="footer__item">
+                                    <a class="footer__link" href="#">
+                                        <img src="/assets/main/Solid/Brands/Whatsapp.svg" class="footer__social_img2">
+                                    </a>
+                                </li>
+                                <li class="footer__item"><a class="footer__link" href="#">
+                                        <img src="/assets/main/ins.svg" class="footer__social_img3">
+                                    </a>
+                                </li>
+                                <li class="footer__item">
+                                    <a class="footer__link" href="#">
+                                        <img src="/assets/main/Solid/Brands/Youtube.svg" class="footer__social_img4">
+                                    </a>
+                                </li>
+                                <li class="footer__item footer__item-facebook">
+                                    <a class="footer__link" href="#">
+                                        <img src="/assets/main/Solid/Brands/Facebook.svg" class="footer__social_img5">
+                                    </a>
+                                </li>
+                            </ul>
                     </div>
 
-                    <div class="footer__col  footer-flex1">
-                        <h1 class="footer_h1">РЕКВИЗИТЫ</h1>
-                        <ul class="footer__list">
-                            <li class="footer__item">
-                                <p class="footer__rekvizit">
-                                    ОБФ "Первый детский хоспис" <br>
-                                    ИНН 01502201610205 <br>
-                                    ОКПО 29400184 <br>
-                                    ОАО Банк « Бай Тушум»<br>
-                                    KGS 1371040001440439<br>
-                                    БИК 137001<br>
-                                    Optima 4169615189595451<br>
-                                    ЗАО "КИКБ"<br>
-                                    Расчетный Счет KGS: 1280096037288596<br>
-                                    БИК 128009<br>
-                                    Элсом 0559647457<br>
-                                    О деньги 0707040602<br>
-                                    MegaPay 0559647457<br>
-                                </p>
-                            </li>
-                            <li class="footer__item"><a class="footer__link" href="https://paypal.me/hospicekgz">
-                                    <p>PayPal https://paypal.me/hospicekgz</p>
-                                </a></li>
+                    <div class="footer-inner__rightside footer-rightside">
+                        <div class="requisites">
+                            <h1 class="footer-rightside__title">РЕКВИЗИТЫ</h1>
+                            <ul class="footer-rightside__list">
+                                <li class="footer-rightside__item requisites__item">ОБФ "Первый детский хоспис"</li>
+                                <li class="footer-rightside__item requisites__item">ИНН 01502201610205 </li>
+                                <li class="footer-rightside__item requisites__item">ОКПО 29400184</li>
+                                <li class="footer-rightside__item requisites__item">ОАО Банк « Бай Тушум»</li>
+                                <li class="footer-rightside__item requisites__item">KGS 1371040001440439</li>
+                                <li class="footer-rightside__item requisites__item">БИК 137001</li>
+                                <li class="footer-rightside__item requisites__item">Optima 4169615189595451</li>
+                                <li class="footer-rightside__item requisites__item">ЗАО "КИКБ"</li>
+                                <li class="footer-rightside__item requisites__item">Расчетный Счет KGS: 1280096037288596
+                                </li>
+                                <li class="footer-rightside__item requisites__item">БИК 128009</li>
+                                <li class="footer-rightside__item requisites__item">Элсом 0559647457</li>
+                                <li class="footer-rightside__item requisites__item">О деньги 0707040602</li>
+                                <li class="footer-rightside__item requisites__item"> MegaPay 0559647457</li>
+                                <li class="footer-rightside__item">
+                                    <a class="footer-rightside__link" href="https://paypal.me/hospicekgz">PayPal
+                                        https://paypal.me/hospicekgz</a>
+                                </li>
 
-                        </ul>
-                    </div>
-                    <div class="footer__col footer-flex2">
-                        <h1 class="footer_h1">ИНФОРМАЦИЯ</h1>
-                        <ul class="footer__list">
-                            <li class="footer__item"><a class="footer__link" href="#">
-                                    <p>ГЛАВНАЯ</p>
-                                </a></li>
-                            <li class="footer__item"><a class="footer__link" href="#">
-                                    <p>О ФОНДЕ</p>
-                                </a></li>
-                            <li class="footer__item"><a class="footer__link" href="#">
-                                    <p>ХОЧУ ПОМОЧЬ</p>
-                                </a></li>
-                            <li class="footer__item"><a class="footer__link" href="#">
-                                    <p>НУЖНА ПОМОЧЬ</p>
-                                </a></li>
-                        </ul>
-                    </div>
-                    <div class="footer__col footer-flex3">
-                        <h1 class="footer_h1">КОНТАКТЫ</h1>
-                        <ul class="footer__list">
-                            <li class="footer__item">
-                                <p><img src="/assets/main/geo.svg" class="footer-geo"> г. Бишкек, бул. Молодой Гвардии
-                                    71а</p>
-                            </li>
-                            <li class="footer__item"><a class="footer__link"
-                                    href="mailto:childrenshospice.kg@gmail.com">
-                                    <img src="/assets/main/gmail.svg" class="footer-gmail">
-                                    childrenshospice.kg@gmail.com
-                                </a></li>
-                            <li class="footer__item"><a class="footer__link" href="tel:+996550050440">
-                                    <img src="/assets/main/phone.svg" class="footer-phone"> +996 (550) 050440. +996
-                                    (559) 647457
-                                </a></li>
-                        </ul>
+                            </ul>
+                        </div>
+                        <div class="info">
+                            <h1 class="footer-rightside__title">ИНФОРМАЦИЯ</h1>
+                            <ul class="footer-rightside__list">
+                                <li class="footer-rightside__item info-item">
+                                    <a class="footer-rightside__link" href="#">Главная</a>
+                                </li>
+                                <li class="footer-rightside__item info-item">
+                                    <a class="footer-rightside__link" href="#">О фонде</a>
+                                </li>
+                                <li class="footer-rightside__item info-item">
+                                    <a class="footer-rightside__link " href="#">Хочу помочь</a>
+                                </li>
+                                <li class="footer-rightside__item"><a class="footer-rightside__link" href="#">Нужна
+                                        помощь</a></li>
+                            </ul>
+                        </div>
+                        <div class="contacts">
+                            <h1 class="footer-rightside__title">КОНТАКТЫ</h1>
+                            <ul class="footer-rightside__list">
+                                <li class="footer-rightside__item contact-info contact-pin">
+
+                                    <img src="/assets/main/geo.svg" class="footer-geo">
+                                    г. Бишкек, бул. Молодой Гвардии 71а
+                                </li>
+                                <li class="footer-rightside__item contact-info contact-mail"><a
+                                        class="footer-rightside__link" href="mailto:childrenshospice.kg@gmail.com">
+                                        <img src="/assets/main/gmail.svg" class="footer-gmail">
+                                        childrenshospice.kg@gmail.com
+                                    </a></li>
+                                <li class="footer-rightside__item contact-info contact-phone"><a
+                                        class="footer-rightside__link" href="tel:+996550050440">
+                                        <img src="/assets/main/phone.svg" class="footer-phone">
+                                        <p class="phone-number">+996 (550) 050440</br>
+                                            +996 (559) 647457</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>

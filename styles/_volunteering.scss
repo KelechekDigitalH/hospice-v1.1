@@ -14,6 +14,7 @@
   line-height: 17px;
   color: #616161;
 }
+
 .blc__title-volunteering {
   margin-top: 24px;
   position: relative;
@@ -23,7 +24,7 @@
     justify-content: space-between;
 
     &__aroow-img {
-      padding-right: 200px;
+      padding-right: 240px;
     }
 
     &__title {
@@ -48,48 +49,48 @@
         padding: 0 30px;
         position: absolute;
         top: -15px;
-        left: 1150px;
+        left: 1100px;
       }
       &__first {
         position: absolute;
-        left: 1000px;
+        left: 900px;
+        padding-bottom: 30px;
       }
     }
   }
 }
 //according
+
+.volunteering__according {
+  padding-left: 40px;
+
+  &__item {
+    &__link {
+      text-decoration: none;
+      color: $color-text-vol;
+    }
+  }
+}
+
+
+
+
+//accordion from Erbol
+
 .blc__volunteering-accordion {
   background-color: $color__yellow;
-
-  .accord {
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 15px;
-    padding: 18px 24px;
-    margin-bottom: 24px;
-    background-color: $color__white;
-  }
-  .title {
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 120%;
-  }
-
   &__inner {
     padding: 41px 0 46.5px;
 
     &__accord1 {
-      &__coll {
-        display: flex;
-        justify-content: space-between;
-      }
-
       &__title-txt {
         font-weight: 700;
         font-size: 18px;
         line-height: 120%;
+        margin: 0;
       }
       &__txt {
-        padding-top: 24px;
+        padding-top: 18px;
         color: $color-text-vol;
       }
       &__link {
@@ -98,39 +99,21 @@
         color: $color-text-vol;
       }
     }
-    &__accord2 {
-      a {
-        text-decoration: none;
-        color: $color-text-vol;
-      }
-      &__title-txt {
-        padding-left: 10px;
-      }
-      &__coll {
-        display: flex;
-        justify-content: space-between;
 
-      }
-      &__list {
-        padding: 18px 24px;
-      }
-    }
     &__accord3 {
+      background-color: $color__white;
+      &__title-txt {
+        margin: 0;
+      }
       &__coll {
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
       }
-      &__comment {
-        font-size: 14px;
-        font-weight: 400;
-        line-height: 140%;
-        padding-top: 18px;
-        color: $color-text-vol;
-      }
+
       &__slider {
         padding: 15px 0 33px;
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         align-items: center;
 
         &__img {
@@ -142,9 +125,22 @@
 }
 //according end
 
+
 //callToAction
 .call-to-action {
   position: relative;
   margin: 30px 0;
 
+  &__paint-element {
+    position: absolute;
+    top: 180px;
+    left: -10px;
+    transform: rotate(-19.82deg);
+  }
 }
+
+
+
+
+
+
