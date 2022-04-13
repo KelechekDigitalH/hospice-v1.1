@@ -24,7 +24,7 @@
     justify-content: space-between;
 
     &__aroow-img {
-      padding-right: 200px;
+      padding-right: 240px;
     }
 
     &__title {
@@ -49,11 +49,12 @@
         padding: 0 30px;
         position: absolute;
         top: -15px;
-        left: 1150px;
+        left: 1100px;
       }
       &__first {
         position: absolute;
-        left: 1000px;
+        left: 900px;
+        padding-bottom: 30px;
       }
     }
   }
@@ -72,11 +73,7 @@
 }
 
 
-.blc__volunteering-accordion {
-  background-color: $color__yellow;
 
-  
-}
 
 //accordion from Erbol
 
@@ -86,11 +83,6 @@
     padding: 41px 0 46.5px;
 
     &__accord1 {
-      &__coll {
-        display: flex;
-        justify-content: space-between;
-      }
-
       &__title-txt {
         font-weight: 700;
         font-size: 18px;
@@ -115,13 +107,13 @@
       }
       &__coll {
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
       }
 
       &__slider {
         padding: 15px 0 33px;
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         align-items: center;
 
         &__img {
@@ -131,17 +123,24 @@
     }
   }
 }
-
-
-
 //according end
+
 
 //callToAction
 .call-to-action {
   position: relative;
   margin: 30px 0;
-}
-.vol-margin {
-  margin-top: 0px;
 
+  &__paint-element {
+    position: absolute;
+    top: 180px;
+    left: -10px;
+    transform: rotate(-19.82deg);
+  }
 }
+
+
+
+
+
+
