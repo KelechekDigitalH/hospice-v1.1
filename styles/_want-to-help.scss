@@ -1,44 +1,46 @@
 @import "./vars";
 
-.container {
-  margin: 80px 0;
-}
-
 .wantToHelp-blc {
-  width: 75%;
-  height: auto;
+  width: 1240px;
+  height: 629px;
   border-radius: 15px;
-  margin: 50px auto;
-  padding: 30px 100px;
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
 
-  &__blc-bg1{
+  &__road {
+    margin-left: 15px;
+  }
+
+  &__blc-bg1 {
     background: $color__light-blue;
+    margin-top: 40px;
   }
 
-  &__blc-bg2{
+  &__blc-bg2 {
     background: $color__blue;
+    margin-top: 80px;
   }
 
-  &__blc-bg3{
+  &__blc-bg3 {
     background: $color__yellow;
+    margin-top: 80px;
   }
 
-  &__btn-bg1{
+  &__btn-bg1 {
     background: $color__green;
   }
-  
-  &__btn-bg2{
+
+  &__btn-bg2 {
     background: $color__violet;
   }
-  
-  &__btn-bg3{
+
+  &__btn-bg3 {
     background: $color__dark-violet;
   }
 
   &__title {
-    margin-top: 110px;
+    margin: 156px 0 0 105px;
     font-family: $ff-rubik;
     font-style: normal;
     font-weight: bold;
@@ -49,7 +51,7 @@
   }
 
   &__text {
-    margin: 50px 0 80px 0;
+    margin: 46px 0 93px 105px;
     width: 450px;
     font-family: $ff-rubik;
     font-style: normal;
@@ -62,6 +64,7 @@
   }
 
   &__btn {
+    margin-left: 104px;
     border-radius: 5px;
     border: none;
     padding: 10px 48px;
@@ -73,5 +76,20 @@
     letter-spacing: 0.14em;
     color: $color__white;
     text-decoration: none;
+  }
+
+  &__bg-img1 {
+    width: 572.63px;
+    margin: 35px 101px 0 0;
+  }
+  
+  &__bg-img2 {
+    width: 572.63px;
+    margin: 35px 101px 0 0;
+  }
+
+  &__bg-img3 {
+    width: 554.63px;
+    margin: 111px 55px 0 0;
   }
 }
