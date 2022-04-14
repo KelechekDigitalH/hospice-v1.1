@@ -11,11 +11,14 @@
 
 .breadcrumbs {
   margin-top: 0;
+  padding-right: 355px;
+  top: 30px;
   &__menu {
+    padding-bottom: 30px;
     padding: 24px 0 40px 0;
     display: flex;
     list-style: none;
-    padding-left: 20px;
+    // padding-left: 20px;
   }
 
   &__item:not(:last-of-type)::after {
@@ -45,7 +48,7 @@
   width: 1240px;
   margin: 0 auto;
   margin-top: -69px;
-  padding-right: 280px;
+  padding-right: 390px;
   &__inner {
     position: relative;
     padding-bottom: 82px;
@@ -91,7 +94,7 @@
 
   &__form {
     background: #e3ecff;
-    padding-right: 251px;
+    padding-right: 360px;
     margin-top: -70px;
     &__inner {
       padding: 35px 0 82px;
