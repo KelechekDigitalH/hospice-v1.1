@@ -500,15 +500,63 @@ body {
 }
 
 .blc_contact {
-  margin-top: 140px;
+  margin-top: 95px;
   justify-content: center;
   align-items: center;
 }
 
 .beforefoo-content {
   display: flex;
-  align-items: center;
   justify-content: space-between;
   text-align: center;
   margin-top: 2.1rem;
+}
+
+.blc__form {
+  width: 529px;
+  height: 493px;
+}
+
+.input-box {
+  margin-bottom: 30px;
+  width: 480px;
+  height: 50px;
+}
+
+.input-box input,
+.input-box textarea {
+  height: 100%;
+  width: 100%;
+  border-radius: 5px;
+  padding: 0 20px;
+  border: 2px solid rgba(97, 97, 97, 0.59);
+}
+
+.input-box textarea {
+  resize: none;
+  padding: 20px;
+  font-family: $ff-rubik;
+}
+.message-box {
+  min-height: 210px;
+  margin-bottom: 84px;
+}
+.bbutton {
+  display: inline-block;
+}
+.bbutton input[type="button"] {
+  color: $color__white;
+  font-weight: 700;
+  font-size: 18px;
+  background: $color__violet;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  padding: 0.6rem 6.4rem;
+  box-shadow: 0px 4px 50px rgba(50, 108, 255, 0.5);
+  transition: 0.2s ease box-shadow;
+
+  &:hover {
+    box-shadow: 0px 0px 0px rgba(50, 108, 255, 1);
+  }
 }
