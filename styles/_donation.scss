@@ -1,9 +1,5 @@
 @import "./vars";
 
-// body {
-//   background-color: #010101;
-//   color: #fff;
-// }
 // DONATE SECTION
 
 *,
@@ -40,12 +36,12 @@ body {
     font-weight: $fw-medium;
     font-size: 14px;
     line-height: 17px;
-    margin-left: 3px!important;
+    margin-left: 3px !important;
   }
 }
 .donate {
   &__title {
-    font-family: "Roboto",sans-serif;
+    font-family: "Roboto", sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 36px;
@@ -64,11 +60,11 @@ body {
 }
 .pay-card {
   display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    column-gap: 20px;
-    transition: transform 0.6s ease;
-    margin-top: -23px;
-    margin-left: 31px;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 20px;
+  transition: transform 0.6s ease;
+  margin-top: -23px;
+  margin-left: 31px;
   &__pay-card-bank {
     width: 400px;
     height: 381px;
@@ -115,16 +111,15 @@ body {
 
     &__img-kicb {
       margin-top: 22px;
-    margin-left: 13px;
+      margin-left: 13px;
     }
     &__kicbmain {
       width: 200px;
       font-size: 16px;
       line-height: 16px;
-      -webkit-font-feature-settings: "pnum" on,"lnum" on;
-      font-feature-settings: "pnum" on,"lnum" on;
+      -webkit-font-feature-settings: "pnum" on, "lnum" on;
+      font-feature-settings: "pnum" on, "lnum" on;
       margin: -62px 0 0 180px;
-  
     }
     &__titlekicb {
       font-size: 18px;
@@ -181,8 +176,8 @@ body {
 .rectangle {
   width: 1240px;
   background: #ffefab;
-  -webkit-box-shadow: 6px 6px 6px rgb(0 0 0 / 25%);
-  box-shadow: 6px 6px 6px rgb(0 0 0 / 25%);
+  // -webkit-box-shadow: 6px 6px 6px rgb(0 0 0 / 25%);
+  // box-shadow: 6px 6px 6px rgb(0 0 0 / 25%);
   border-radius: 15px;
   margin-top: 90px;
   -webkit-box-pack: center;
@@ -218,7 +213,7 @@ body {
     margin-left: 94px;
     padding-bottom: 45px;
     margin-bottom: 135px;
-    font-family: "Rubik",sans-serif;
+    font-family: "Rubik", sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 18px;
@@ -231,7 +226,7 @@ body {
       height: 177px;
       background-color: $color__light-blue;
       margin-right: 16px;
-      
+
       &__img {
         margin: 18px 0 0 0px;
       }
