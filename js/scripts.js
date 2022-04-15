@@ -19,6 +19,34 @@ accordionHeader.forEach(accordionHeader => {
 		}
 	});
 });
+// END NEED HELP PAGE SCRIPTS
+
+
+
+// LEGAL ENTITIES PAGE SCRIPTS
+const accordionHeaderLegal = document.querySelectorAll('.legal-programs-first-kids-hospice__inner__all-accordions__accordion__header');
+
+accordionHeaderLegal.forEach(accordionHeaderLegal => {
+	accordionHeaderLegal.addEventListener('click', event => {
+		const currentActiveHeaderLegal = document.querySelector('.legal-programs-first-kids-hospice__inner__all-accordions__accordion__header.active-legal');
+		if (currentActiveHeaderLegal && currentActiveHeaderLegal !== accordionHeaderLegal) {
+			currentActiveHeaderLegal.classList.toggle('active-legal');
+			currentActiveHeaderLegal.nextElementSibling.style.maxHeight = 0;
+		}
+
+		accordionHeaderLegal.classList.toggle('active-legal');
+		const accordionBodyLegal = accordionHeaderLegal.nextElementSibling;
+
+		if (accordionHeaderLegal.classList.contains('active-legal')) {
+			accordionBodyLegal.style.maxHeight = accordionBodyLegal.scrollHeight + 'px';
+		} else {
+			accordionBodyLegal.style.maxHeight = 0;
+		}
+	});
+});
+// END LEGAL ENTITIES PAGE SCRIPTS
+
+
 
 //slider mainpage our-kins
 $('.slider-card').slick({

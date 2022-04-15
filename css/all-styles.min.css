@@ -14,6 +14,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Open+Sans:wght@700&family=Poppins:wght@500;600&family=Raleway:wght@700;800&family=Roboto:ital,wght@0,400;0,500;0,700;1,400&family=Rubik:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Open+Sans:wght@700&family=Poppins:wght@500;600&family=Raleway:wght@700;800&family=Roboto:ital,wght@0,400;0,500;0,700;1,400&family=Rubik:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Open+Sans:wght@700&family=Poppins:wght@500;600&family=Raleway:wght@700;800&family=Roboto:ital,wght@0,400;0,500;0,700;1,400&family=Rubik:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Open+Sans:wght@700&family=Poppins:wght@500;600&family=Raleway:wght@700;800&family=Roboto:ital,wght@0,400;0,500;0,700;1,400&family=Rubik:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap");
 *,
 *::after,
 *::before {
@@ -1206,61 +1207,39 @@ body {
   width: 160px;
 }
 
-*,
-*::before,
-*::after {
-  -webkit-box-sizing: inherit;
-          box-sizing: inherit;
+.breadcrumbs {
+  margin: 24px 0;
 }
 
-body {
-  margin: 0;
-  padding: 0;
-  font-size: 14px;
-}
-
-.container {
-  width: 1242px;
-  margin: 0 auto;
-}
-
-.breadcrumb {
-  margin-top: 20px !important;
-  margin-left: 47px;
-}
-
-.breadcrumb__item-link {
+.breadcrumbs .breadcrumb__item-link {
   font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: 400;
   font-size: 14px;
+  line-height: 17px;
   color: #616161;
   text-decoration: none;
 }
 
-.breadcrumb____item-currant {
-  font-family: "Rubik", sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 17px;
-  margin-left: 3px !important;
+.elements-img {
+  position: absolute;
+  z-index: -1;
+  margin-left: 1271px;
+}
+
+.donate {
+  margin-bottom: 40px;
 }
 
 .donate__title {
-  font-family: "Roboto",sans-serif;
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 36px;
   line-height: 42px;
   color: #000;
   text-align: center;
-  margin-top: 40px;
-  margin-bottom: 15px;
-  margin-left: 61px;
-}
-
-.donate__img {
-  margin-left: 1271px;
-  margin-top: -89px;
+  margin-top: 81px;
 }
 
 .pay-card {
@@ -1276,8 +1255,6 @@ body {
   -o-transition: transform 0.6s ease;
   transition: transform 0.6s ease;
   transition: transform 0.6s ease, -webkit-transform 0.6s ease;
-  margin-top: -23px;
-  margin-left: 31px;
 }
 
 .pay-card__pay-card-bank {
@@ -1296,8 +1273,8 @@ body {
 }
 
 .pay-card__pay-card-bank__img-baitushum {
-  margin-top: 20px;
-  margin-left: 10px;
+  margin-top: 31px;
+  margin-left: 21px;
 }
 
 .pay-card__pay-card-bank__maintitle {
@@ -1305,12 +1282,13 @@ body {
   text-transform: capitalize;
   -webkit-font-feature-settings: "pnum" on, "lnum" on;
           font-feature-settings: "pnum" on, "lnum" on;
-  margin: -52px 0 0 183px;
+  margin-left: 183px;
+  margin-top: -55px;
 }
 
 .pay-card__pay-card-bank__title {
   line-height: 28px;
-  margin: 36px 0px 0 17px;
+  margin: 37px 0px 0 18px;
 }
 
 .pay-card__pay-card-bank__title__one {
@@ -1346,7 +1324,8 @@ body {
   line-height: 16px;
   -webkit-font-feature-settings: "pnum" on,"lnum" on;
   font-feature-settings: "pnum" on,"lnum" on;
-  margin: -62px 0 0 180px;
+  margin-left: 179px;
+  margin-top: -60px;
 }
 
 .pay-card__pay-card-bankTwo__titlekicb {
@@ -1377,23 +1356,20 @@ body {
   line-height: 26px;
   -webkit-font-feature-settings: "pnum" on, "lnum" on;
           font-feature-settings: "pnum" on, "lnum" on;
-  margin: -46px 0 57px 193px;
+  margin-left: 179px;
+  margin-top: -38px;
 }
 
 .pay-card__pay-card-bankThree__titleoptima {
   font-size: 18px;
   line-height: 28px;
   width: 382px;
-  margin: 41px 0 0 18px;
+  margin-left: 13px;
 }
 
 .pay-card__pay-card-bankThree__titleoptima__optimaone {
   margin-bottom: 27px;
-  margin-left: -5px;
-}
-
-.pay-card__pay-card-bankThree__titleoptima__optimatwo {
-  margin-left: -5px;
+  margin-top: 56px;
 }
 
 .bank {
@@ -1408,6 +1384,7 @@ body {
 
 .rectangle {
   width: 1240px;
+  height: 381px;
   background: #ffefab;
   -webkit-box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.25);
   box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.25);
@@ -1418,14 +1395,13 @@ body {
   -ms-flex-pack: center;
   -webkit-justify-content: center;
           justify-content: center;
-  margin-bottom: -45px;
-  margin-left: 46px;
+  margin-bottom: 90px;
 }
 
 .rectangle__mainTitle {
-  margin-left: 429px;
+  margin-left: 444px;
   padding-top: 85px;
-  margin-bottom: 42px;
+  margin-bottom: 41px;
 }
 
 .rectangle__mainTitle__title {
@@ -1450,9 +1426,9 @@ body {
   -ms-flex-direction: row;
   -webkit-flex-direction: row;
           flex-direction: row;
-  margin-left: 94px;
-  padding-bottom: 45px;
-  margin-bottom: 135px;
+  -webkit-column-gap: 20px;
+     -moz-column-gap: 20px;
+          column-gap: 20px;
   font-family: "Rubik",sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -1460,13 +1436,14 @@ body {
   line-height: 28px;
   color: #000;
   text-align: center;
+  margin-left: 109px;
+  margin-bottom: 135px;
 }
 
 .rectangle__purse__mbank {
   width: 190px;
   height: 177px;
   background-color: #CFFFFD;
-  margin-right: 16px;
 }
 
 .rectangle__purse__mbank__img {
@@ -1474,14 +1451,13 @@ body {
 }
 
 .rectangle__purse__mbank__title {
-  margin-top: 38px;
+  margin-top: 46px;
 }
 
 .rectangle__purse__obank {
   width: 190px;
   height: 177px;
   background-color: #CFFFFD;
-  margin-right: 19px;
 }
 
 .rectangle__purse__obank__img {
@@ -1489,14 +1465,13 @@ body {
 }
 
 .rectangle__purse__obank__title {
-  margin-top: 38px;
+  margin-top: 46px;
 }
 
 .rectangle__purse__bilainbank {
   width: 190px;
   height: 177px;
   background-color: #CFFFFD;
-  margin-right: 20px;
 }
 
 .rectangle__purse__bilainbank__img {
@@ -1504,14 +1479,13 @@ body {
 }
 
 .rectangle__purse__bilainbank__title {
-  margin-top: 38px;
+  margin-top: 46px;
 }
 
 .rectangle__purse__elsom {
   width: 190px;
   height: 177px;
   background-color: #CFFFFD;
-  margin-right: 20px;
 }
 
 .rectangle__purse__elsom__img {
@@ -1519,14 +1493,13 @@ body {
 }
 
 .rectangle__purse__elsom__title {
-  margin-top: 38px;
+  margin-top: 46px;
 }
 
 .rectangle__purse__pay {
   width: 190px;
   height: 177px;
   background-color: #CFFFFD;
-  margin-right: 16px;
 }
 
 .rectangle__purse__pay__img {
@@ -1534,7 +1507,7 @@ body {
 }
 
 .rectangle__purse__pay__title {
-  margin-top: 38px;
+  margin-top: 46px;
 }
 
 .breadcrumbs {
@@ -1652,6 +1625,7 @@ body {
 
 .breadcrumb {
   margin-top: 0;
+  margin-left: 0;
 }
 
 .breadcrumb__menu {
@@ -1701,70 +1675,66 @@ body {
   color: #000000;
 }
 
-.cooparation-accord {
+.legal-programs-first-kids-hospice {
   background-color: #e3ecff;
-  padding: 0 0 58px;
+  padding: 31.5px 0 63px;
 }
 
-.cooparation-accord__inner__title {
-  padding: 29px 0 27px 24px;
-  font-family: "Roboto", sans-serif;
+.legal-programs-first-kids-hospice__inner__title {
+  font-family: Roboto, sans-serif;
   font-size: 24px;
   font-weight: 700;
-  line-height: 41px;
+  font-style: normal;
   color: #000000;
+  margin-bottom: 21px;
+  margin-left: 28px;
+  letter-spacing: 0px;
 }
 
-.cooparation-accord__inner__all-accordions__accordion + .cooparation-accord__inner__all-accordions__accordion {
-  margin-top: 24px;
-}
-
-.cooparation-accord__inner__all-accordions__accordion {
+.legal-programs-first-kids-hospice__inner__all-accordions__accordion {
   background-color: #ffffff;
-  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   -webkit-border-radius: 15px;
           border-radius: 15px;
 }
 
-.cooparation-accord__inner__all-accordions__accordion__header {
-  padding: 18px 24px;
+.legal-programs-first-kids-hospice__inner__all-accordions__accordion__header {
+  padding: 19.8px 24px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   -webkit-box-align: center;
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  font-family: "Inter", sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 120%;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   position: relative;
   cursor: pointer;
+  font-family: Inter, sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  font-style: normal;
+  color: #000000;
 }
 
-.cooparation-accord__inner__all-accordions__accordion__header::after {
-  content: "˃";
+.legal-programs-first-kids-hospice__inner__all-accordions__accordion__header::after {
+  content: '˃';
   -webkit-transition: 0.3s ease-in-out;
   -o-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
   font-weight: 400;
 }
 
-.cooparation-accord__inner__all-accordions__accordion .active::after {
+.legal-programs-first-kids-hospice__inner__all-accordions__accordion .active-legal::after {
   -webkit-transform: rotate(90deg);
       -ms-transform: rotate(90deg);
           transform: rotate(90deg);
 }
 
-.cooparation-accord__inner__all-accordions__accordion__body {
+.legal-programs-first-kids-hospice__inner__all-accordions__accordion__body {
   max-height: 0;
   overflow: hidden;
   -webkit-transition: max-height 0.3s ease-in-out;
@@ -1772,13 +1742,17 @@ body {
   transition: max-height 0.3s ease-in-out;
 }
 
-.cooparation-accord__inner__all-accordions__accordion__body__description {
-  padding: 0 24px 18px;
-  font-family: "Inter", sans-serif;
-  font-style: normal;
+.legal-programs-first-kids-hospice__inner__all-accordions__accordion__body__description {
+  font-family: Inter, sans-serif;
+  font-size: 16px;
   font-weight: 400;
-  font-size: 18px;
-  line-height: 140%;
+  font-style: normal;
+  color: rgba(60, 60, 67, 0.85);
+  padding: 0 24px 18px;
+}
+
+.legal-programs-first-kids-hospice__inner__all-accordions__accordion + .legal-programs-first-kids-hospice__inner__all-accordions__accordion {
+  margin-top: 25px;
 }
 
 .cooparation-info__inner {
@@ -3250,17 +3224,12 @@ body {
           transform: rotate(-19.82deg);
 }
 
-.container {
-  margin: 80px 0;
-}
-
 .wantToHelp-blc {
-  width: 75%;
-  height: auto;
+  width: 1240px;
+  height: 629px;
   -webkit-border-radius: 15px;
           border-radius: 15px;
-  margin: 50px auto;
-  padding: 30px 100px;
+  margin: 0 auto;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3271,16 +3240,25 @@ body {
           justify-content: space-between;
 }
 
+.wantToHelp-blc__road {
+  width: 1240px;
+  margin: 0 auto;
+  margin-top: -4px;
+}
+
 .wantToHelp-blc__blc-bg1 {
   background: #CFFFFD;
+  margin-top: 40px;
 }
 
 .wantToHelp-blc__blc-bg2 {
   background: #E3ECFF;
+  margin-top: 80px;
 }
 
 .wantToHelp-blc__blc-bg3 {
   background: #FFEFAB;
+  margin-top: 80px;
 }
 
 .wantToHelp-blc__btn-bg1 {
@@ -3296,7 +3274,7 @@ body {
 }
 
 .wantToHelp-blc__title {
-  margin-top: 110px;
+  margin: 156px 0 0 105px;
   font-family: "Rubik", sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -3307,21 +3285,8 @@ body {
   color: #000000;
 }
 
-.wantToHelp-blc__text {
-  margin: 50px 0 80px 0;
-  width: 450px;
-  font-family: "Rubik", sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 138.5%;
-  letter-spacing: 0.08em;
-  -webkit-font-feature-settings: "pnum" on, "lnum" on;
-          font-feature-settings: "pnum" on, "lnum" on;
-  color: #000000;
-}
-
 .wantToHelp-blc__btn {
+  margin-left: 104px;
   -webkit-border-radius: 5px;
           border-radius: 5px;
   border: none;
@@ -3334,6 +3299,220 @@ body {
   letter-spacing: 0.14em;
   color: #ffffff;
   text-decoration: none;
+}
+
+.wantToHelp-blc__bg-img1 {
+  width: 572.63px;
+  margin: 35px 100px 0 -100px;
+  z-index: 1;
+  position: relative;
+}
+
+.wantToHelp-blc__bg-img2 {
+  width: 572.63px;
+  margin: 35px 100px 0 -100px;
+  z-index: 1;
+  position: relative;
+}
+
+.wantToHelp-blc__bg-img3 {
+  width: 554.63px;
+  margin: 111px 55px 0 0;
+  z-index: 1;
+  position: relative;
+}
+
+.wantToHelp-blc__text {
+  margin: 46px 0 93px 105px;
+  width: 468px;
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 138.5%;
+  letter-spacing: 0.08em;
+  -webkit-font-feature-settings: "pnum" on, "lnum" on;
+          font-feature-settings: "pnum" on, "lnum" on;
+  color: #000000;
+  z-index: 2;
+  position: relative;
+}
+
+@media (min-width: 769px) and (max-width: 1000.98px) {
+  .wantToHelp-blc {
+    width: 972px;
+    margin: 0 auto;
+  }
+  .wantToHelp-blc__road {
+    width: 972px;
+    margin: 0 auto;
+    margin-top: -10px;
+  }
+  .wantToHelp-blc__blc-bg1 {
+    margin-top: 34px;
+    height: 493px;
+  }
+  .wantToHelp-blc__blc-bg2 {
+    margin-top: 36.05px;
+    height: 489px;
+  }
+  .wantToHelp-blc__blc-bg3 {
+    margin-top: 35px;
+    height: 492px;
+  }
+  .wantToHelp-blc__title {
+    margin: 133px 0 0 82px;
+    font-weight: 600;
+    font-size: 30px;
+  }
+  .wantToHelp-blc__btn {
+    margin-left: 82px;
+    padding: 8.5px 39px;
+    font-weight: 800;
+    font-size: 12px;
+    line-height: 14px;
+  }
+  .wantToHelp-blc__bg-img1 {
+    width: 448.87px;
+    margin: 17px 78px 0 -78px;
+  }
+  .wantToHelp-blc__bg-img2 {
+    width: 448.87px;
+    margin: 30px 78px 0 -78px;
+  }
+  .wantToHelp-blc__bg-img3 {
+    width: 433.83px;
+    margin: 87px 45px 0 -45px;
+  }
+  .wantToHelp-blc__text {
+    margin: 28px 0 60px 82px;
+    width: 395px;
+    font-family: "Rubik", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768.98px) {
+  .wantToHelp-blc {
+    width: 709px;
+    margin: 0 auto;
+  }
+  .wantToHelp-blc__road {
+    width: 709px;
+    margin: 0 auto;
+    margin-top: -8px;
+  }
+  .wantToHelp-blc__blc-bg1 {
+    margin-top: 34px;
+    padding-top: 94px;
+    height: 273.21px;
+  }
+  .wantToHelp-blc__blc-bg2 {
+    margin-top: 37px;
+    padding-top: 90px;
+    height: 265px;
+  }
+  .wantToHelp-blc__blc-bg3 {
+    margin-top: 37px;
+    padding-top: 90px;
+    height: 263px;
+  }
+  .wantToHelp-blc__title {
+    margin: 0 0 0 65px;
+    font-weight: 600;
+    font-size: 28px;
+  }
+  .wantToHelp-blc__text {
+    margin: 17px 0 28.5px 66px;
+    width: 395px;
+    font-family: "Rubik", sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+  }
+  .wantToHelp-blc__btn {
+    margin-left: 66px;
+    padding: 6px 55px 6px 38px;
+    font-weight: 800;
+    font-size: 10px;
+    line-height: 12px;
+    width: 168.61px;
+    height: 23.35px;
+  }
+  .wantToHelp-blc__bg-img1 {
+    width: 327.41px;
+    height: 302.29px;
+    margin: -56.5px 134px 56.5px -134px;
+  }
+  .wantToHelp-blc__bg-img2 {
+    width: 327.24px;
+    height: 303.7px;
+    margin: -56.5px 134px 56.5px -134px;
+  }
+  .wantToHelp-blc__bg-img3 {
+    width: 313.03px;
+    height: 270.1px;
+    margin: -16.5px 102px 16.5px -102px;
+  }
+}
+
+@media (max-width: 480.98px) {
+  .wantToHelp-blc {
+    width: 450px;
+    margin: 0 auto;
+  }
+  .wantToHelp-blc__road {
+    width: 450px;
+    margin: 0 auto;
+    margin-top: -5px;
+  }
+  .wantToHelp-blc__road-child {
+    width: 450px;
+  }
+  .wantToHelp-blc__blc-bg1 {
+    margin-top: 26px;
+    height: 223px;
+  }
+  .wantToHelp-blc__blc-bg2 {
+    margin-top: 26px;
+    height: 242px;
+  }
+  .wantToHelp-blc__blc-bg3 {
+    margin-top: 25px;
+    height: 269px;
+  }
+  .wantToHelp-blc__title {
+    margin: 50px 0 0 42px;
+    font-weight: 600;
+    font-size: 18px;
+  }
+  .wantToHelp-blc__text {
+    margin: 0 0 9px 42px;
+    width: 250.71px;
+    font-family: "Rubik", sans-serif;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 138.5%;
+  }
+  .wantToHelp-blc__btn {
+    margin-left: 42px;
+    padding: 4px 38px 4px 24px;
+    font-weight: 800;
+    font-size: 6px;
+    line-height: 7px;
+  }
+  .wantToHelp-blc__bg-img1 {
+    width: 207.81px;
+    margin: 10px 86px 0 -86px;
+  }
+  .wantToHelp-blc__bg-img2 {
+    width: 207.81px;
+    margin: 10px 86px 0 -86px;
+  }
+  .wantToHelp-blc__bg-img3 {
+    width: 201.28px;
+    margin: 10px 86px 0 -86px;
+  }
 }
 
 header {
