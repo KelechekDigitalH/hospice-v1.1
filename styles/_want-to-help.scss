@@ -9,7 +9,8 @@
   justify-content: space-between;
 
   &__road {
-    margin-left: 15px;
+    width: 1240px;
+    margin: 0 auto;
   }
 
   &__blc-bg1 {
@@ -52,7 +53,7 @@
 
   &__text {
     margin: 46px 0 93px 105px;
-    width: 450px;
+    width: 468px;
     font-family: $ff-rubik;
     font-style: normal;
     font-weight: normal;
@@ -82,7 +83,7 @@
     width: 572.63px;
     margin: 35px 101px 0 0;
   }
-  
+
   &__bg-img2 {
     width: 572.63px;
     margin: 35px 101px 0 0;
@@ -91,5 +92,201 @@
   &__bg-img3 {
     width: 554.63px;
     margin: 111px 55px 0 0;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1000.98px) {
+  .wantToHelp-blc {
+    width: 972px;
+    margin: 0 auto;
+
+    &__road {
+      width: 972px;
+      margin: 0 auto;
+      margin-top: -10px;
+    }
+
+    &__blc-bg1 {
+      margin-top: 34px;
+      height: 493px;
+    }
+
+    &__blc-bg2 {
+      margin-top: 36.05px;
+      height: 489px;
+    }
+
+    &__blc-bg3 {
+      margin-top: 35px;
+      height: 492px;
+    }
+
+    &__title {
+      margin: 133px 0 0 82px;
+      font-weight: 600;
+      font-size: 30px;
+    }
+
+    &__text {
+      margin: 28px 0 60px 82px;
+      width: 395px;
+      font-family: $ff-rubik;
+      font-weight: 400;
+      font-size: 16px;
+    }
+
+    &__btn {
+      margin-left: 82px;
+      padding: 8.5px 39px;
+      font-weight: $fw-extraBold;
+      font-size: 12px;
+      line-height: 14px;
+    }
+
+    &__bg-img1 {
+      width: 448.87px;
+      margin: 30px 0 0 -20px;
+      position: relative;
+    }
+
+    &__bg-img2 {
+      width: 448.87px;
+    }
+
+    &__bg-img3 {
+      width: 433.83px;
+    }
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768.98px) {
+  .wantToHelp-blc {
+    max-width: 709px;
+    margin: 0 auto;
+
+    &__road {
+      width: 972px;
+      margin: 0 auto;
+      margin-top: -10px;
+    }
+
+    &__blc-bg1 {
+      margin-top: 34px;
+      height: 367.21px;
+    }
+
+    &__blc-bg2 {
+      margin-top: 35px;
+      height: 368.92px;
+    }
+
+    &__blc-bg3 {
+      margin-top: 35px;
+      height: 355px;
+    }
+
+    &__title {
+      margin: 133px 0 0 82px;
+      font-weight: 600;
+      font-size: 30px;
+    }
+
+    &__text {
+      margin: 28px 0 60px 82px;
+      width: 395px;
+      font-family: $ff-rubik;
+      font-weight: 400;
+      font-size: 16px;
+    }
+
+    &__btn {
+      margin-left: 82px;
+      padding: 8.5px 39px;
+      font-weight: $fw-extraBold;
+      font-size: 12px;
+      line-height: 14px;
+    }
+
+    &__bg-img1 {
+      width: 327.41px;
+      height: 302.29px;
+    }
+
+    &__bg-img2 {
+      width: 327.24px;
+      height: 303.7px;
+    }
+
+    &__bg-img3 {
+      width: 313.03px;
+      height: 270.1px;
+    }
+  }
+}
+
+@media (max-width: 480.98px) {
+  .wantToHelp-blc {
+    width: 972px;
+    margin: 0 auto;
+
+    &__road {
+      width: 972px;
+      margin: 0 auto;
+      margin-top: -10px;
+    }
+
+    &__blc-bg1 {
+      margin-top: 34px;
+      height: 493px;
+    }
+
+    &__blc-bg2 {
+      margin-top: 36.05px;
+      height: 489px;
+    }
+
+    &__blc-bg3 {
+      margin-top: 35px;
+      height: 492px;
+    }
+
+    &__title {
+      margin: 133px 0 0 82px;
+      font-weight: 600;
+      font-size: 30px;
+    }
+
+    &__text {
+      margin: 28px 0 60px 82px;
+      width: 395px;
+      font-family: $ff-rubik;
+      font-weight: 400;
+      font-size: 16px;
+    }
+
+    &__btn {
+      margin-left: 82px;
+      padding: 8.5px 39px;
+      font-weight: $fw-extraBold;
+      font-size: 12px;
+      line-height: 14px;
+    }
+
+    &__bg-img1 {
+      width: 448.87px;
+      margin: 243px 91px 0 0;
+      position: absolute;
+      z-index: 1;
+    }
+
+    &__bg-img2 {
+      width: 448.87px;
+      margin: 35px 101px 0 0;
+    }
+
+    &__bg-img3 {
+      width: 433.83px;
+      margin: 111px 55px 0 0;
+    }
   }
 }
