@@ -11,11 +11,11 @@
 
 .breadcrumbs {
   margin-top: 0;
-  padding-right: 355px;
   top: 30px;
+  margin-bottom: 40px;
   &__menu {
     padding-bottom: 30px;
-    padding: 24px 0 40px 0;
+    padding: 24px 0 40px 45px;
     display: flex;
     list-style: none;
     // padding-left: 20px;
@@ -48,7 +48,7 @@
   width: 1240px;
   margin: 0 auto;
   margin-top: -69px;
-  padding-right: 390px;
+  margin-left: 82px;
   &__inner {
     position: relative;
     padding-bottom: 82px;
@@ -56,6 +56,7 @@
     &__bg-imgpink {
       align-items: flex-start;
       position: absolute;
+      z-index: -1;
       width: 183.31px;
       height: 351.24px;
       background-image: url(../assets/balloon_3.svg);
@@ -66,6 +67,7 @@
     &__bg-imgyellow {
       align-items: flex-start;
       position: absolute;
+      z-index: -1;
       width: 172.19px;
       height: 393.4px;
       background-image: url(../assets/balloon_4.svg);
@@ -94,8 +96,8 @@
 
   &__form {
     background: #e3ecff;
-    padding-right: 360px;
-    margin-top: -70px;
+    width: 1440px;
+    margin-top: -100px;
     &__inner {
       padding: 35px 0 82px;
       &__item {
@@ -106,8 +108,9 @@
         background: #fff;
         box-shadow: 6px 6px 4px rgba(0, 0, 0, 0.25);
         border-radius: 15px;
-        padding: 20px 0 20px 40px;
-        margin-bottom: 28px;
+        padding: 16px 0 16px 38px;
+        margin-bottom: 40px;
+        margin-top: 15px;
         width: 1200px;
 
         &__labels {
@@ -117,7 +120,7 @@
           font-size: 18px;
           line-height: 21px;
           color: #000000;
-          margin-bottom: 15px;
+          margin-bottom: 13px;
           &__help {
             font-style: normal;
             font-weight: normal;
@@ -125,7 +128,7 @@
             line-height: 19px;
             color: #000000;
             margin-left: 10px;
-            padding-left: 2px;
+            // padding-right: 9px;
           }
         }
 
@@ -156,6 +159,7 @@
           &__accurateDiagnosis {
             width: 28px;
             height: 22px;
+            margin-left: -7px;
           }
         }
         &__elements {
@@ -172,8 +176,9 @@
         background: #fff;
         box-shadow: 6px 6px 4px rgba(0, 0, 0, 0.25);
         border-radius: 15px;
-        padding: 20px 0 20px 40px;
-        margin-bottom: 30px;
+        padding: 16px 0 16px 38px;
+        margin-bottom: 40px;
+        margin-top: 45px;
         width: 1200px;
         // height: 245px;
       }
@@ -185,8 +190,9 @@
         background: #fff;
         box-shadow: 6px 6px 4px rgba(0, 0, 0, 0.25);
         border-radius: 15px;
-        padding: 20px 0 20px 40px;
-        margin-bottom: 30px;
+        padding: 1px 0 16px 38px;
+        margin-bottom: 40px;
+        margin-top: -8px;
         width: 1200px;
         // height: 241px;
       }
@@ -198,8 +204,9 @@
         background: #fff;
         box-shadow: 6px 6px 4px rgba(0, 0, 0, 0.25);
         border-radius: 15px;
-        padding: 20px 0 20px 40px;
-        margin-bottom: 30px;
+        padding: 16px 0 16px 38px;
+        margin-bottom: 40px;
+        margin-top: -5px;
         width: 1200px;
         // height: 156px;
       }
@@ -235,8 +242,8 @@
         line-height: 19px;
         letter-spacing: 0.14em;
         color: $color__white;
-        margin-left: 1120px;
-        margin-bottom: 85px;
+        margin-left: 1125px;
+        margin-bottom: 75px;
         width: 160px;
       }
     }
