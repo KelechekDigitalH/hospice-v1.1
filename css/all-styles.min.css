@@ -2060,96 +2060,6 @@ body {
   font-family: "Raleway", sans-serif;
 }
 
-body {
-  background-position: 10px;
-}
-
-.title {
-  font-family: "Raleway", sans-serif;
-}
-
-header {
-  background-color: #e3ecff;
-}
-
-.header-inner {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 14px 0 13.2px 0;
-}
-
-.nav {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.menu {
-  list-style: none;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding-left: 0;
-}
-
-.menu__item + .menu__item {
-  margin-left: 40px;
-}
-
-.menu__link {
-  text-decoration: none;
-  font-family: "Raleway", sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 21px;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-  color: black;
-  -webkit-transition: 0.2s ease color;
-  -o-transition: 0.2s ease color;
-  transition: 0.2s ease color;
-}
-
-.menu__link:hover {
-  color: rgba(0, 0, 0, 0.5);
-}
-
-.menu__link__btn {
-  background: #775ca6;
-  -webkit-border-radius: 5px;
-          border-radius: 5px;
-  padding: 10px 26.93px 11px 27.93px;
-  color: white;
-  -webkit-transition: 0.8s ease;
-  -o-transition: 0.8s ease;
-  transition: 0.8s ease;
-  font-family: "Raleway", sans-serif;
-  font-style: normal;
-  font-weight: 800;
-  font-size: 16px;
-  line-height: 19px;
-  letter-spacing: 0.14em;
-  color: #ffffff;
-  margin-left: 51.6px;
-}
-
 .reports {
   margin-left: 689px;
   background-image: url("../assets/design_elements(reports).svg");
@@ -2340,7 +2250,7 @@ header {
   width: 401px;
   height: 282px;
   left: 980px;
-  top: 175px;
+  top: 337px;
   background: #D5C8FC;
   -webkit-border-radius: 15px;
           border-radius: 15px;
