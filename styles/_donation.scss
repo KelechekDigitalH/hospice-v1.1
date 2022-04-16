@@ -1,40 +1,30 @@
 @import "./vars";
 
-
 // DONATE SECTION
-
 
 @import "./vars";
 
-
 // DONATE SECTION
-
 
 .breadcrumbs {
   margin: 24px 0;
- 
-      
-      .breadcrumb__item-link{
-        font-family: $ff-rubik;
-        font-style: normal;
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 17px;
-        color: $color__dark-grey;
-        text-decoration: none;
-      }
-     
-}
 
+  .breadcrumb__item-link {
+    font-family: $ff-rubik;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: $color__dark-grey;
+    text-decoration: none;
+  }
+}
 
 .elements-img {
   position: absolute;
   z-index: -1;
   margin-left: 1271px;
-  
 }
-
-
 
 .donate {
   margin-bottom: 40px;
@@ -50,12 +40,11 @@
   }
 }
 
-
 .pay-card {
   display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    column-gap: 20px;
-    transition: transform 0.6s ease;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 20px;
+  transition: transform 0.6s ease;
   &__pay-card-bank {
     width: 400px;
     height: 381px;
@@ -103,17 +92,16 @@
 
     &__img-kicb {
       margin-top: 22px;
-    margin-left: 13px;
+      margin-left: 13px;
     }
     &__kicbmain {
       width: 200px;
       font-size: 16px;
       line-height: 16px;
-      -webkit-font-feature-settings: "pnum" on,"lnum" on;
-      font-feature-settings: "pnum" on,"lnum" on;
+      -webkit-font-feature-settings: "pnum" on, "lnum" on;
+      font-feature-settings: "pnum" on, "lnum" on;
       margin-left: 179px;
       margin-top: -60px;
-  
     }
     &__titlekicb {
       font-size: 18px;
@@ -202,7 +190,7 @@
     -ms-flex-direction: row;
     flex-direction: row;
     column-gap: 20px;
-    font-family: "Rubik",sans-serif;
+    font-family: "Rubik", sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 18px;
@@ -216,8 +204,7 @@
       width: 190px;
       height: 177px;
       background-color: $color__light-blue;
-  
-      
+
       &__img {
         margin: 18px 0 0 0px;
       }
@@ -230,7 +217,7 @@
       width: 190px;
       height: 177px;
       background-color: $color__light-blue;
-     
+
       &__img {
         margin: 18px 0 0 0px;
       }
@@ -243,7 +230,7 @@
       width: 190px;
       height: 177px;
       background-color: $color__light-blue;
-     
+
       &__img {
         margin: 18px 0 0 0px;
       }
@@ -256,7 +243,7 @@
       width: 190px;
       height: 177px;
       background-color: $color__light-blue;
-     
+
       &__img {
         margin: 18px 0 0 0px;
       }
@@ -269,7 +256,7 @@
       width: 190px;
       height: 177px;
       background-color: $color__light-blue;
-     
+
       &__img {
         margin: 18px 0 0 0px;
       }
