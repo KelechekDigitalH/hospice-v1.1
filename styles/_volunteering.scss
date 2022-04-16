@@ -16,7 +16,7 @@
 }
 
 .blc__title-volunteering {
-  margin-top: 24px;
+  margin-top:18px;
   position: relative;
   &__inner {
     position: relative;
@@ -82,7 +82,7 @@
 .blc__volunteering-accordion {
   background-color: $color__yellow;
   &__inner {
-    padding: 41px 0 46.5px;
+    padding: 9px 0 46.5px;
 
     &__accord1 {
       &__title-txt {
@@ -131,7 +131,7 @@
 .blc__volunteering-accordion {
   background-color: $color__yellow;
   padding: 31.5px 0 63px;
-  margin: -3px 0 0;
+  margin: 2px 0 0;
 
   &__inner {
 
@@ -223,7 +223,7 @@
     position: absolute;
     top: 180px;
     left: -10px;
-    transform: rotate(-19.82deg);
+    transform: rotate(-20.82deg);
   }
 }
 
