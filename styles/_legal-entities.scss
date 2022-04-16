@@ -9,6 +9,7 @@ $color__dark-grey: #616161;
 
 .breadcrumb {
   margin-top: 0;
+  margin-left: 0;
 
   &__menu {
     padding: 24px 0 40px;
@@ -64,74 +65,154 @@ $color__dark-grey: #616161;
 
 // Cooparation-accord section-----------------
 
-.cooparation-accord {
+.legal-programs-first-kids-hospice {
   background-color: $color__blue;
-  padding: 0 0 58px;
-
+  padding: 31.5px 0 63px;
+  
   &__inner {
-    &__title {
-      padding: 29px 0 27px 24px;
-      font-family: $ff-roboto;
-      font-size: 24px;
-      font-weight: 700;
-      line-height: 41px;
-      color: $color__black;
-    }
 
-    &__all-accordions {
-      &__accordion + &__accordion {
-        margin-top: 24px;
-      }
-
-      &__accordion {
-        background-color: $color__white;
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-        border-radius: 15px;
-
-        &__header {
-          padding: 18px 24px;
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
-          font-family: $ff-inter;
-          font-style: normal;
+      &__title {
+          font-family: Roboto, sans-serif;
+          font-size: 24px;
           font-weight: 700;
-          font-size: 18px;
-          line-height: 120%;
+          font-style: normal;
 
-          position: relative;
-          cursor: pointer;
+          color: $color__black;
+          margin-bottom: 21px;
+          margin-left: 28px;
 
-          &::after {
-            content: "˃";
-            transition: 0.3s ease-in-out;
-            font-weight: 400;
-          }
-        }
-        .active {
-          &::after {
-            transform: rotate(90deg);
-          }
-        }
-
-        &__body {
-          max-height: 0;
-          overflow: hidden;
-          transition: max-height 0.3s ease-in-out;
-
-          &__description {
-            padding: 0 24px 18px;
-            font-family: $ff-inter;
-            font-style: normal;
-            font-weight: 400;
-            font-size: 18px;
-            line-height: 140%;
-          }
-        }
+          letter-spacing: 0px;
       }
-    }
+
+      &__all-accordions {
+
+          &__accordion {
+              background-color: $color__white;
+              border-radius: 15px;
+
+              &__header {
+                  padding: 19.8px 24px;
+
+                  display: flex;
+                  align-items: center;
+                  justify-content: space-between;
+
+                  position: relative;
+                  cursor: pointer;
+
+                  font-family: Inter, sans-serif;
+                  font-size: 18px;
+                  font-weight: 700;
+                  font-style: normal;
+
+                  color: $color__black;
+
+                  &::after {
+                      content: '˃';
+                      transition: 0.3s ease-in-out;
+                      font-weight: 400;
+                  }
+              }
+
+              .active-legal {
+
+                  &::after {
+                      transform: rotate(90deg);
+                  }
+              }
+
+              &__body {
+                  max-height: 0;
+                  overflow: hidden;
+                  transition: max-height 0.3s ease-in-out;
+
+                  &__description {
+                      font-family: Inter, sans-serif;
+                      font-size: 16px;
+                      font-weight: 400;
+                      font-style: normal;
+
+                      color: rgba(60, 60, 67, 0.85);
+                      padding: 0 24px 18px;
+                  }
+              }
+          }
+
+          &__accordion+&__accordion {
+              margin-top: 25px;
+          }
+      }
   }
 }
+
+// .cooparation-accord {
+//   background-color: $color__blue;
+//   padding: 0 0 58px;
+
+//   &__inner {
+//     &__title {
+//       padding: 29px 0 27px 24px;
+//       font-family: $ff-roboto;
+//       font-size: 24px;
+//       font-weight: 700;
+//       line-height: 41px;
+//       color: $color__black;
+//     }
+
+//     &__all-accordions {
+//       &__accordion + &__accordion {
+//         margin-top: 24px;
+//       }
+
+//       &__accordion {
+//         background-color: $color__white;
+//         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+//         border-radius: 15px;
+
+//         &__header {
+//           padding: 18px 24px;
+//           display: flex;
+//           justify-content: space-between;
+//           align-items: center;
+//           font-family: $ff-inter;
+//           font-style: normal;
+//           font-weight: 700;
+//           font-size: 18px;
+//           line-height: 120%;
+
+//           position: relative;
+//           cursor: pointer;
+
+//           &::after {
+//             content: "˃";
+//             transition: 0.3s ease-in-out;
+//             font-weight: 400;
+//           }
+//         }
+//         .active {
+//           &::after {
+//             transform: rotate(90deg);
+//           }
+//         }
+
+//         &__body {
+//           max-height: 0;
+//           overflow: hidden;
+//           transition: max-height 0.3s ease-in-out;
+
+//           &__description {
+//             padding: 0 24px 18px;
+//             font-family: $ff-inter;
+//             font-style: normal;
+//             font-weight: 400;
+//             font-size: 18px;
+//             line-height: 140%;
+//           }
+//         }
+//       }
+//     }
+//   }
+// }
 
 // Cooparation-info-section------------------
 
