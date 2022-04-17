@@ -48,6 +48,29 @@ accordionHeaderLegal.forEach(accordionHeaderLegal => {
 
 
 
+
+//Volunteering accordion 
+const accordionHeaderVolunteering = document.querySelectorAll('.blc__volunteering-accordion__inner__all-accordions__accordion__header');
+
+accordionHeaderVolunteering.forEach(accordionHeaderVolunteering => {
+	accordionHeaderVolunteering.addEventListener('click', event => {
+		const currentActiveHeaderVolunteering = document.querySelector('.blc__volunteering-accordion__inner__all-accordions__accordion__header.active-volunteering');
+		if (currentActiveHeaderVolunteering && currentActiveHeaderVolunteering !== accordionHeaderVolunteering) {
+			currentActiveHeaderVolunteering.classList.toggle('active-volunteering');
+			currentActiveHeaderVolunteering.nextElementSibling.style.maxHeight = 0;
+		}
+
+		accordionHeaderVolunteering.classList.toggle('active-volunteering');
+		const accordionBodyVolunteering = accordionHeaderVolunteering.nextElementSibling;
+
+		if (accordionHeaderVolunteering.classList.contains('active-volunteering')) {
+			accordionBodyVolunteering.style.maxHeight = accordionBodyVolunteering.scrollHeight + 'px';
+		} else {
+			accordionBodyVolunteering.style.maxHeight = 0;
+		}
+	});
+});
+
 //slider mainpage our-kins
 $('.slider-card').slick({
 	lazyLoad: 'ondemand',
@@ -79,5 +102,26 @@ $(document).ready(function () {
 			}
 		}
 		]
+	});
+});
+
+const accordionHeaderLegalEntities = document.querySelectorAll('.cooparation-accord__inner__all-accordions__accordion__header');
+
+accordionHeaderLegalEntities.forEach(accordionHeaderLgalEntities => {
+	accordionHeaderLgalEntities.addEventListener('click', event => {
+		const currentActiveHeaderLegalEntities = document.querySelector('.cooparation-accord__inner__all-accordions__accordion__header.active');
+		if (currentActiveHeaderLegalEntities && currentActiveHeaderLegalEntities !== accordionHeaderLegalEntities) {
+			currentActiveHeaderLegalEntities.classList.toggle('active');
+			currentActiveHeaderLegalEntities.nextElementSibling.style.maxHeight = 0;
+		}
+
+		accordionHeaderLegalEntities.classList.toggle('active');
+		const accordionBodyLegalEntities = accordionHeaderLegalEntities.nextElementSibling;
+
+		if (accordionHeaderLegalEntities.classList.contains('active')) {
+			accordionBodyLegalEntities.style.maxHeight = LegalEntities.scrollHeight + 'px';
+		} else {
+			accordionBodyLegalEntities.style.maxHeight = 0;
+		}
 	});
 });
