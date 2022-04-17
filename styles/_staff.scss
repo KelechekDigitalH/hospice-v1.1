@@ -12,6 +12,7 @@
 
   & li {
     display: inline;
+    color: #616161;
   }
 
   & a {
@@ -56,7 +57,7 @@
 
 .our-staff {
   width: 822px;
-  margin-right: 85px;
+  margin-right: 20px;
   margin-bottom: 60px;
 
   &__elements {
@@ -144,7 +145,7 @@
 
 .sidebar {
   position: sticky;
-  margin-left: 843px;
+  // margin-left: 843px;
   z-index: 1;
   // padding: 52px;
   background: $color__lilac;

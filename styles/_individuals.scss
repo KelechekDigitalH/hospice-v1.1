@@ -28,6 +28,14 @@
 
     &_active {
         font-weight: 500;
+        text-decoration: none;
+        color: #000;
+        transition: 0.5s;
+
+        &:hover {
+            color: #fd6262;
+            transition: 0.5s;
+        }
     }
 }
 
