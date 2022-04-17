@@ -14,7 +14,7 @@
   margin-bottom: 30px;
   &__menu {
     padding-top: -500px;
-    padding: 24px 0 40px 45px;
+    padding: 24px 0 40px 20px;
     display: flex;
     list-style: none;
     margin-top: -27px;
@@ -46,7 +46,7 @@
   width: 1240px;
   margin: 0 auto;
   margin-top: -44px;
-  margin-left: 82px;
+  // margin-left: 82px;
   &__inner {
     position: relative;
     padding-bottom: 82px;
@@ -95,6 +95,7 @@
   &__form {
     background: #e3ecff;
     width: 1440px;
+    margin: 0 auto;
     margin-top: -40px;
     &__inner {
       padding: 35px 0 82px;
