@@ -1,76 +1,56 @@
 @import "./vars";
 
-// body {
-//   background-color: #010101;
-//   color: #fff;
-// }
 // DONATE SECTION
 
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-}
+@import "./vars";
 
-body {
-  margin: 0;
-  padding: 0;
-  font-size: 14px;
-}
+// DONATE SECTION
 
-.container {
-  width: 1242px;
-  margin: 0 auto;
-}
+.breadcrumbs {
+  margin: 24px 0;
 
-.breadcrumb {
-  margin-top: 40px!important;
-
-  &__item-link {
+  .breadcrumb__item-link {
     font-family: $ff-rubik;
+    font-style: normal;
+    font-weight: 400;
     font-size: 14px;
+    line-height: 17px;
     color: $color__dark-grey;
     text-decoration: none;
   }
-
-  &____item-currant {
-    font-family: $ff-rubik;
-    font-style: normal;
-    font-weight: $fw-medium;
-    font-size: 14px;
-    line-height: 17px;
-  }
 }
+
+.elements-img {
+  position: absolute;
+  z-index: -1;
+  margin-left: 1271px;
+}
+
 .donate {
+  margin-bottom: 40px;
   &__title {
     font-family: $ff-roboto;
     font-style: normal;
-    font-weight: $fw-bold;
+    font-weight: 700;
     font-size: 36px;
     line-height: 42px;
-    color: $color__black;
+    color: #000;
     text-align: center;
-    margin-top: 40px;
-    margin-bottom: 18px;
-  }
-
-  &__img {
-    margin-left: 1342px;
-    margin-top: -115px;
+    margin-top: 81px;
   }
 }
+
 .pay-card {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  flex: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 20px;
+  transition: transform 0.6s ease;
   &__pay-card-bank {
     width: 400px;
     height: 381px;
     background: $color__blue;
     box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.25);
     border-radius: 15px;
-    margin-right: 17px;
     font-family: $ff-rubik;
     font-style: normal;
     font-weight: $fw-regular;
@@ -78,20 +58,24 @@ body {
     color: $color__black;
 
     &__img-baitushum {
-      margin-top: 20px;
-      margin-left: 10px;
+      margin-top: 31px;
+      margin-left: 21px;
     }
     &__maintitle {
       line-height: 41px;
       text-transform: capitalize;
       font-feature-settings: "pnum" on, "lnum" on;
-      margin: -45px 0 0 180px;
+      margin-left: 183px;
+      margin-top: -55px;
     }
     &__title {
       line-height: 28px;
-      margin: 40px 0px 0 18px;
+      margin: 37px 0px 0 18px;
       &__one {
-        margin-bottom: 30px;
+        margin-bottom: 28px;
+      }
+      &__two {
+        margin-left: 1px;
       }
     }
   }
@@ -103,20 +87,21 @@ body {
     background: $color__light-blue;
     box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.25);
     border-radius: 15px;
-    margin-right: 18px;
     width: 400px;
     height: 381px;
 
     &__img-kicb {
-      margin-top: 20px;
-      margin-left: 10px;
+      margin-top: 22px;
+      margin-left: 13px;
     }
     &__kicbmain {
       width: 200px;
       font-size: 16px;
-      line-height: 18px;
+      line-height: 16px;
+      -webkit-font-feature-settings: "pnum" on, "lnum" on;
       font-feature-settings: "pnum" on, "lnum" on;
-      margin: -60px 0 0 180px;
+      margin-left: 179px;
+      margin-top: -60px;
     }
     &__titlekicb {
       font-size: 18px;
@@ -135,24 +120,26 @@ body {
     color: $color__black;
 
     &__img-optima {
-      margin-top: 20px;
-      margin-left: 10px;
+      margin-top: 31px;
+      margin-left: 24px;
     }
     &__maintitle {
       font-size: 16px;
       line-height: 26px;
       font-feature-settings: "pnum" on, "lnum" on;
-      margin: -38px 0 66px 180px;
+      margin-left: 179px;
+      margin-top: -38px;
     }
 
     &__titleoptima {
       font-size: 18px;
       line-height: 28px;
       width: 382px;
-      margin: 41px 0 0 18px;
+      margin-left: 13px;
 
       &__optimaone {
-        margin-bottom: 30px;
+        margin-bottom: 27px;
+        margin-top: 56px;
       }
     }
   }
@@ -167,18 +154,21 @@ body {
 }
 .rectangle {
   width: 1240px;
-  background: $color__yellow;
+  height: 381px;
+  background: #ffefab;
+  -webkit-box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.25);
   box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.25);
   border-radius: 15px;
-  margin-top: 87px;
+  margin-top: 90px;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
-  margin-bottom: -63px;
-  margin-left: 16px;
+  margin-bottom: 90px;
 
   &__mainTitle {
     margin-left: 444px;
     padding-top: 85px;
-    margin-bottom: 44px;
+    margin-bottom: 41px;
     &__title {
       font-family: $ff-rubik;
       font-style: normal;
@@ -187,30 +177,34 @@ body {
       line-height: 26px;
       font-feature-settings: "pnum" on, "lnum" on;
       color: $color__black;
-      margin: -31px 0 0 58px;
+      margin: -33px 0 44px 60px;
     }
   }
 
   &__purse {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
     flex-direction: row;
-    margin-left: 109px;
-    padding-bottom: 45px;
-    margin-bottom: 135px;
-    font-family: $ff-rubik;
+    column-gap: 20px;
+    font-family: "Rubik", sans-serif;
     font-style: normal;
-    font-weight: $fw-bold;
+    font-weight: 700;
     font-size: 18px;
     line-height: 28px;
-    color: $color__black;
+    color: #000;
     text-align: center;
+    margin-left: 109px;
+    margin-bottom: 135px;
 
     &__mbank {
       width: 190px;
       height: 177px;
       background-color: $color__light-blue;
-      margin-right: 16px;
-      
+
       &__img {
         margin: 18px 0 0 0px;
       }
@@ -223,7 +217,7 @@ body {
       width: 190px;
       height: 177px;
       background-color: $color__light-blue;
-      margin-right: 16px;
+
       &__img {
         margin: 18px 0 0 0px;
       }
@@ -236,7 +230,7 @@ body {
       width: 190px;
       height: 177px;
       background-color: $color__light-blue;
-      margin-right: 16px;
+
       &__img {
         margin: 18px 0 0 0px;
       }
@@ -249,7 +243,7 @@ body {
       width: 190px;
       height: 177px;
       background-color: $color__light-blue;
-      margin-right: 16px;
+
       &__img {
         margin: 18px 0 0 0px;
       }
@@ -262,7 +256,7 @@ body {
       width: 190px;
       height: 177px;
       background-color: $color__light-blue;
-      margin-right: 16px;
+
       &__img {
         margin: 18px 0 0 0px;
       }

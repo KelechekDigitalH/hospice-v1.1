@@ -9,8 +9,10 @@ $color__dark-grey: #616161;
 
 .breadcrumb {
   margin-top: 0;
+  margin-left: 0;
+
   &__menu {
-    padding: 24px 0 40px 0;
+    padding: 24px 0 40px;
     display: flex;
     list-style: none;
   }
@@ -63,88 +65,154 @@ $color__dark-grey: #616161;
 
 // Cooparation-accord section-----------------
 
-.cooparation-accord {
+.legal-programs-first-kids-hospice {
   background-color: $color__blue;
-  padding: 0 0 58px;
-
+  padding: 31.5px 0 63px;
+  
   &__inner {
-    &__title {
-      font-family: $ff-roboto;
-      font-weight: 700;
-      font-size: 24px;
-      line-height: 41px;
-      color: $color__black;
-      padding: 29px 0 27px 24px;
-    }
 
-    &__item {
-      background-color: $color__white;
-      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-      border-radius: 15px;
-    }
+      &__title {
+          font-family: Roboto, sans-serif;
+          font-size: 24px;
+          font-weight: 700;
+          font-style: normal;
 
-    &__item + &__item {
-      margin-top: 24px;
-    }
+          color: $color__black;
+          margin-bottom: 21px;
+          margin-left: 28px;
 
-    &__input {
-      width: 0;
-      height: 0;
-      appearance: none;
-      position: absolute;
-    }
-
-    &__input:checked ~ &__text {
-      p {
-        display: block;
+          letter-spacing: 0px;
       }
-    }
 
-    &__input:checked ~ &__subtitle::after {
-      transform: rotate(135deg);
-    }
+      &__all-accordions {
 
-    &__subtitle {
-      display: block;
-      padding: 18px 24px;
-      font-family: $ff-inter;
-      font-style: normal;
-      font-weight: 700;
-      font-size: 18px;
-      line-height: 120%;
-      cursor: pointer;
+          &__accordion {
+              background-color: $color__white;
+              border-radius: 15px;
 
-      position: relative;
-    }
+              &__header {
+                  padding: 19.8px 24px;
 
-    &__subtitle::after {
-      content: "";
-      display: block;
+                  display: flex;
+                  align-items: center;
+                  justify-content: space-between;
 
-      width: 9.87px;
-      height: 9.87px;
-      border-top: 2px solid $color__dark-grey;
-      border-right: 2px solid $color__dark-grey;
+                  position: relative;
+                  cursor: pointer;
 
-      position: absolute;
-      top: 40%;
-      right: 24px;
-      transform: rotate(45deg);
-    }
+                  font-family: Inter, sans-serif;
+                  font-size: 18px;
+                  font-weight: 700;
+                  font-style: normal;
 
-    &__text {
-      p {
-        padding: 0 24px 18px;
-        font-family: $ff-inter;
-        font-style: normal;
-        font-weight: 400;
-        font-size: 18px;
-        line-height: 140%;
-        display: none;
+                  color: $color__black;
+
+                  &::after {
+                      content: '˃';
+                      transition: 0.3s ease-in-out;
+                      font-weight: 400;
+                  }
+              }
+
+              .active-legal {
+
+                  &::after {
+                      transform: rotate(90deg);
+                  }
+              }
+
+              &__body {
+                  max-height: 0;
+                  overflow: hidden;
+                  transition: max-height 0.3s ease-in-out;
+
+                  &__description {
+                      font-family: Inter, sans-serif;
+                      font-size: 16px;
+                      font-weight: 400;
+                      font-style: normal;
+
+                      color: rgba(60, 60, 67, 0.85);
+                      padding: 0 24px 18px;
+                  }
+              }
+          }
+
+          &__accordion+&__accordion {
+              margin-top: 25px;
+          }
       }
-    }
   }
 }
+
+// .cooparation-accord {
+//   background-color: $color__blue;
+//   padding: 0 0 58px;
+
+//   &__inner {
+//     &__title {
+//       padding: 29px 0 27px 24px;
+//       font-family: $ff-roboto;
+//       font-size: 24px;
+//       font-weight: 700;
+//       line-height: 41px;
+//       color: $color__black;
+//     }
+
+//     &__all-accordions {
+//       &__accordion + &__accordion {
+//         margin-top: 24px;
+//       }
+
+//       &__accordion {
+//         background-color: $color__white;
+//         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+//         border-radius: 15px;
+
+//         &__header {
+//           padding: 18px 24px;
+//           display: flex;
+//           justify-content: space-between;
+//           align-items: center;
+//           font-family: $ff-inter;
+//           font-style: normal;
+//           font-weight: 700;
+//           font-size: 18px;
+//           line-height: 120%;
+
+//           position: relative;
+//           cursor: pointer;
+
+//           &::after {
+//             content: "˃";
+//             transition: 0.3s ease-in-out;
+//             font-weight: 400;
+//           }
+//         }
+//         .active {
+//           &::after {
+//             transform: rotate(90deg);
+//           }
+//         }
+
+//         &__body {
+//           max-height: 0;
+//           overflow: hidden;
+//           transition: max-height 0.3s ease-in-out;
+
+//           &__description {
+//             padding: 0 24px 18px;
+//             font-family: $ff-inter;
+//             font-style: normal;
+//             font-weight: 400;
+//             font-size: 18px;
+//             line-height: 140%;
+//           }
+//         }
+//       }
+//     }
+//   }
+// }
 
 // Cooparation-info-section------------------
 
@@ -174,7 +242,7 @@ $color__dark-grey: #616161;
     }
 
     &__img {
-      margin: 60px auto 0;
+      margin: 60px auto 90px;
       max-width: 610px;
       height: 427px;
     }

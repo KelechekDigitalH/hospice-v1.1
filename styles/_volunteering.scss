@@ -16,15 +16,16 @@
 }
 
 .blc__title-volunteering {
-  margin-top: 24px;
+  margin-top:18px;
   position: relative;
   &__inner {
+    position: relative;
     padding-top: 40px;
     display: flex;
     justify-content: space-between;
 
     &__aroow-img {
-      padding-right: 200px;
+      padding-right: 240px;
     }
 
     &__title {
@@ -48,12 +49,14 @@
       &__second {
         padding: 0 30px;
         position: absolute;
-        top: -15px;
-        left: 1150px;
+        top: -34px;
+        left: 1032px;
       }
       &__first {
         position: absolute;
-        left: 1000px;
+        left: 852px;
+        top: 33px;
+        padding-bottom: 30px;
       }
     }
   }
@@ -72,25 +75,16 @@
 }
 
 
-.blc__volunteering-accordion {
-  background-color: $color__yellow;
 
-  
-}
 
 //accordion from Erbol
 
 .blc__volunteering-accordion {
   background-color: $color__yellow;
   &__inner {
-    padding: 41px 0 46.5px;
+    padding: 9px 0 46.5px;
 
     &__accord1 {
-      &__coll {
-        display: flex;
-        justify-content: space-between;
-      }
-
       &__title-txt {
         font-weight: 700;
         font-size: 18px;
@@ -115,13 +109,13 @@
       }
       &__coll {
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
       }
 
       &__slider {
         padding: 15px 0 33px;
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         align-items: center;
 
         &__img {
@@ -134,14 +128,107 @@
 
 
 
+.blc__volunteering-accordion {
+  background-color: $color__yellow;
+  padding: 31.5px 0 63px;
+  margin: 2px 0 0;
+
+  &__inner {
+
+      &__title {
+          font-family: Roboto, sans-serif;
+          font-size: 24px;
+          font-weight: 700;
+          font-style: normal;
+
+          color: $color__black;
+          margin-bottom: 21px;
+          margin-left: 28px;
+
+          letter-spacing: 0px;
+      }
+
+      &__all-accordions {
+
+          &__accordion {
+              background-color: $color__white;
+              border-radius: 15px;
+
+              &__header {
+                  padding: 19.8px 24px;
+
+                  display: flex;
+                  align-items: center;
+                  justify-content: space-between;
+
+                  position: relative;
+                  cursor: pointer;
+
+                  font-family: Inter, sans-serif;
+                  font-size: 18px;
+                  font-weight: 700;
+                  font-style: normal;
+
+                  color: $color__black;
+
+                  &::after {
+                      content: '˃';
+                      transition: 0.3s ease-in-out;
+                      font-weight: 400;
+                  }
+              }
+
+              .active-volunteering {
+
+                  &::after {
+                      transform: rotate(90deg);
+                  }
+              }
+
+              &__body {
+                  max-height: 0;
+                  overflow: hidden;
+                  transition: max-height 0.3s ease-in-out;
+
+                  &__description {
+                      font-family: Inter, sans-serif;
+                      font-size: 16px;
+                      font-weight: 400;
+                      font-style: normal;
+
+                      color: rgba(60, 60, 67, 0.85);
+                      padding: 0 47px 18px;
+                  }
+              }
+          }
+
+          &__accordion+&__accordion {
+              margin-top: 25px;
+          }
+      }
+  }
+}
+
+
+
 //according end
+
 
 //callToAction
 .call-to-action {
   position: relative;
   margin: 30px 0;
-}
-.vol-margin {
-  margin-top: 0px;
 
+  &__paint-element {
+    position: absolute;
+    top: 180px;
+    left: -10px;
+    transform: rotate(-20.82deg);
+  }
 }
+
+
+
+
+
+
