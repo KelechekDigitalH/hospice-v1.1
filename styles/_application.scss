@@ -14,7 +14,7 @@
   margin-bottom: 30px;
   &__menu {
     padding-top: -500px;
-    padding: 24px 0 40px 20px;
+    padding: 24px 0 40px 5px;
     display: flex;
     list-style: none;
     margin-top: -27px;
@@ -43,7 +43,7 @@
 
 .application {
   font-family: $ff-rubik;
-  width: 1240px;
+  // width: 1240px;
   margin: 0 auto;
   margin-top: -44px;
   &__inner {
