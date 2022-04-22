@@ -3,14 +3,22 @@
   font-family: $ff-raleway;
 }
 .documents {
-  margin-bottom: 267px;
+  margin-bottom: 90px;
 }
 .breadscrumbss-bg {
     margin-top: 24px;
     margin-bottom: 40px;
     font-family: $ff-rubik;
 }
-
+.offic-docs-title{
+  font-family: $ff-rubik;
+  font-style: normal;
+  font-weight: $fw-bold;
+  font-size: 40px;
+  color: #000000;
+  line-height: 41px;
+  margin-bottom: 32px;
+}
 .breadscrumb_link {
   font-family: $ff-rubik;
   font-style: normal;
@@ -43,39 +51,26 @@
 .document-cards {
   display: flex;
 }
-.document-cards-item {
-  max-width: 259px;
+.docs-card {
+  width: 250px;
+  height: 327px;
 }
 .document-cards-item + .document-cards-item {
-  margin-left: 20px;
-}
-
-.document-title {
-  font-family: $ff-rubik;
-  font-weight: $fw-medium;
-  text-align: center;
-  font-size: 24px;
-  line-height: 41px;
-  color: #000000;
-  margin-bottom: 12px;
-}
-.document-cards-item img {
-  max-height: 343px;
+  margin-left: 35px;
 }
 
 .sidebarbg {
-  margin-left: 24px;
+  margin-left: 20px;
   width: 400px;
   height: 282px;
   background: #D5C8FC;
   border-radius: 15px;
   min-height: 282px;
-  margin-top: 55px;
 }
 .side-menu {
   max-width: 303px;
-  margin-left: 59px;
-  margin-top: 50px;
+  margin-left: 48px;
+  margin-top: 57px;
 }
 
 .sidebars-link {
@@ -159,14 +154,14 @@ text-decoration: none;
   height: 335px;
   background-image: url(../assets/balloon_4-yellow.svg);
   background-size: 171px 330px;
-  margin-left: -19px;
-  margin-top: 52px
+  margin-left: -62px;
+  margin-top: 141px
 }
 .bg-img1 {
   position: absolute;
   width: 120px;
-  height: 132px;
+  height: 131.47px;
   background-image: url(../assets/finger_2.svg);
-  margin-left: 568px;
-  margin-top: 59px;
+  margin-top: -47px;
+  margin-left: 1117px;
 }
