@@ -105,6 +105,16 @@ $(document).ready(function () {
 	});
 });
 
+//slider-photo volunteering 
+$('.slider-photo').slick({
+	lazyLoad: 'ondemand',
+	slidesToShow: 3,
+	dots: true,
+	speed: 800,
+	slidesToScroll: 1
+});
+
+
 const accordionHeaderLegalEntities = document.querySelectorAll('.cooparation-accord__inner__all-accordions__accordion__header');
 
 accordionHeaderLegalEntities.forEach(accordionHeaderLgalEntities => {

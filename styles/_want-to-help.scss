@@ -205,13 +205,13 @@
     &__blc-bg2 {
       margin-top: 30px;
       background-image: url('/assets/want-to-help/юр-лица_img-768.png');
-      height: 357px;
+      height: 368px;
     }
 
     &__blc-bg3 {
       margin-top: 31px;
       background-image: url('/assets/want-to-help/volunteer_img-768.png');
-      height: 355px;
+      height: 368px;
     }
 
     &__title {
@@ -266,6 +266,7 @@
   .wantToHelp-blc {
     width: 450px;
     margin: 0 auto;
+    height: 224px;
 
     &__road {
       width: 450px;
@@ -275,19 +276,16 @@
     &__blc-bg1 {
       margin-top: 26px;
       background-image: url('/assets/want-to-help/физ-лица_img-480.png');
-      height: 223px;
     }
 
     &__blc-bg2 {
       margin-top: 20px;
       background-image: url('/assets/want-to-help/юр-лица_img-480.png');
-      height: 223px;
     }
 
     &__blc-bg3 {
       margin-top: 20px;
       background-image: url('/assets/want-to-help/volunteer_img-480.png');
-      height: 223px;
     }
 
     &__title {
@@ -297,7 +295,7 @@
     }
 
     &__text {
-      margin: 5px 0 24.5px 24.8px;
+      margin: 6.8px 0 26px 24.4px;
       width: 220px;
       font-family: $ff-rubik;
       font-weight: $fw-regular;
