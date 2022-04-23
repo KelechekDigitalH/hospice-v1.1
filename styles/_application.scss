@@ -250,17 +250,18 @@
 
 @media (max-width: 1000px) {
   .application {
+    // width: 958px;
+    margin: 0 auto;
+    margin-left: 1px;
     &__inner {
-      width: 958px;
-      margin-left: -80px;
-      top: -13px;
+      top: -45px;
       &__title {
-        font-size: 30px;
+        font-size: 40px;
       }
       &__page {
-        margin-top: -5px;
+        margin-top: -1px;
         margin-bottom: 1em;
-        font-size: 22px;
+        font-size: 20px;
         line-height: 28px;
         display: flex;
         align-items: center;
@@ -270,14 +271,14 @@
       &__bg-imgpink {
         margin-left: 615px;
         // width: 152px;
-        height: 290px;
-        // top: 10px;
+        // height: 290px;
+        bottom: -30px;
       }
       &__bg-imgyellow {
-        // width: 142px;
-        height: 325px;
+        width: 142px;
+        // height: 325px;
         margin-left: 817px;
-        // button: 10px;
+        button: 10px;
       }
       &__form {
         margin-left: -50px;
