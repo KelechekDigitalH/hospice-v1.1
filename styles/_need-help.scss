@@ -312,6 +312,8 @@ $color__white: #FFFFFF;
                 &__sub-title {
                     font-size: 20px;
                     margin: 30px 0 24px;
+
+                    text-align: justify;
                 }
 
                 &__link {
@@ -333,11 +335,6 @@ $color__white: #FFFFFF;
                 font-size: 20px;
                 text-align: justify;
                 margin-top: 30px;
-            }
-
-            &__sub-title2 {
-                font-size: 20px;
-                text-align: justify;
             }
         }
     }
@@ -403,8 +400,12 @@ $color__white: #FFFFFF;
 
             &__all-elements {
 
+                &__tile {
+                    font-size: 36px;
+                }
+
                 &__sub-title {
-                    font-size: 20px;
+                    font-size: 18px;
                     margin: 20px 0 52px;
                 }
 
@@ -424,14 +425,9 @@ $color__white: #FFFFFF;
             }
 
             &__sub-title1 {
-                font-size: 20px;
+                font-size: 18px;
                 text-align: justify;
                 margin-top: 30px;
-            }
-
-            &__sub-title2 {
-                font-size: 20px;
-                text-align: justify;
             }
         }
     }
@@ -486,6 +482,114 @@ $color__white: #FFFFFF;
 
             &__link-btn {
                 padding: 14px 43px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 480.98px) {
+
+    .breadcrumbs {
+        display: none;
+    }
+
+    .request-help {
+        margin-bottom: 30px;
+        margin-top: 20px;
+
+        &__inner {
+
+            &__all-elements {
+
+                 &__title {
+                     font-size: 26px;
+                 }
+
+                &__sub-title {
+                    font-size: 16px;
+                    margin: 20px 0 30px;
+                }
+
+                &__link {
+                    text-transform: none;
+                    font-weight: 800;
+                }
+            }
+        }
+    }
+
+    .programs-hospice {
+
+        &__inner {
+
+            &__title {
+                font-size: 26px;
+            }
+
+            &__sub-title1 {
+                font-size: 16px;
+                text-align: justify;
+                margin-top: 20px;
+                line-height: 22px;
+            }
+        }
+    }
+
+    .programs-first-kids-hospice {
+        margin-top: 30px;
+        padding-top: 20px;
+
+        &__inner {
+            padding: 0;
+
+            &__title {
+                margin-left: 0;
+                margin-bottom: 30px;
+                font-size: 18px;
+            }
+        }
+    }
+
+    .important-khow-need-help {
+
+        .bg-img-need-help {
+            height: 439px;
+            object-fit: cover;
+            object-position: 100% 0;
+        }
+
+        &__inner {
+            position: absolute;
+
+            transform: translate(30px, -410px);
+
+            max-width: 396px;
+            text-align: justify;
+
+            &__title {
+                font-size: 26px;
+            }
+
+            &__subtitle1 {
+                line-height: 20px;
+                font-weight: 400;
+                font-size: 18px;
+
+                margin-top: 20px;
+            }
+
+            &__subtitle2 {
+                line-height: 20px;
+                font-weight: 400;
+                font-size: 18px;
+
+                margin-top: 20px;
+                margin-bottom: 45px;
+            }
+
+            &__link-btn {
+                padding: 12px 38px;
+                font-size: 14px;
             }
         }
     }
