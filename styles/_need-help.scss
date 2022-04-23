@@ -287,6 +287,7 @@ $color__white: #FFFFFF;
     }
 }
 
+// MEDIA - 1000
 @media screen and (max-width: 1000.98px) {
 
     .arrow-need-help {
@@ -390,6 +391,50 @@ $color__white: #FFFFFF;
     }
 }
 
+@media screen and (max-width: 959.98px) {
+
+    .important-khow-need-help {
+
+        &__inner {
+            position: absolute;
+
+            transform: translate(490px, -420px);
+
+            max-width: 410px;
+        }
+    }
+}
+
+@media screen and (max-width: 898.98px) {
+
+    .important-khow-need-help {
+
+        &__inner {
+            position: absolute;
+
+            transform: translate(460px, -400px);
+
+            max-width: 410px;
+        }
+    }
+}
+
+@media screen and (max-width: 775.98px) {
+
+    .important-khow-need-help {
+
+        &__inner {
+            position: absolute;
+
+            transform: translate(330px, -380px);
+
+            max-width: 410px;
+        }
+    }
+}
+// END MEDIA - 1000
+
+// MEDIA - 768
 @media screen and (max-width: 768.98px) {
 
     .request-help {
@@ -487,6 +532,64 @@ $color__white: #FFFFFF;
     }
 }
 
+@media screen and (max-width: 714.98px) {
+
+    .important-khow-need-help {
+
+        &__inner {
+            position: absolute;
+
+            transform: translate(390px, -330px);
+
+            max-width: 306px;
+        }
+    }
+}
+
+@media screen and (max-width: 639.98px) {
+
+    .important-khow-need-help {
+
+        &__inner {
+            position: absolute;
+
+            transform: translate(310px, -315px);
+
+            max-width: 306px;
+        }
+    }
+}
+
+@media screen and (max-width: 580.98px) {
+
+    .important-khow-need-help {
+
+        &__inner {
+            position: absolute;
+
+            transform: translate(240px, -300px);
+
+            max-width: 306px;
+        }
+    }
+}
+
+@media screen and (max-width: 495.98px) {
+
+    .important-khow-need-help {
+
+        &__inner {
+            position: absolute;
+
+            transform: translate(140px, -270px);
+
+            max-width: 306px;
+        }
+    }
+}
+// END MEDIA - 768
+
+// MEDIA - 480
 @media screen and (max-width: 480.98px) {
 
     .breadcrumbs {
@@ -501,9 +604,9 @@ $color__white: #FFFFFF;
 
             &__all-elements {
 
-                 &__title {
-                     font-size: 26px;
-                 }
+                &__title {
+                    font-size: 26px;
+                }
 
                 &__sub-title {
                     font-size: 16px;
@@ -594,3 +697,34 @@ $color__white: #FFFFFF;
         }
     }
 }
+
+@media screen and (max-width: 414.98px) {
+
+    .important-khow-need-help {
+
+        &__inner {
+            position: absolute;
+
+            transform: translate(5px, -420px);
+
+            max-width: 370px;
+            text-align: justify;
+        }
+    }
+}
+
+@media screen and (max-width: 400.98px) {
+
+    .important-khow-need-help {
+
+        &__inner {
+            position: absolute;
+
+            transform: translate(5px, -420px);
+
+            max-width: 340px;
+            text-align: justify;
+        }
+    }
+}
+// END MEDIA - 480
