@@ -230,7 +230,7 @@ $color__white: #FFFFFF;
 
         transform: translate(726px, -590px);
 
-        max-width: 513px;
+        width: 513px;
 
         &__title {
             font-family: 'Rubik', sans-serif;
@@ -289,7 +289,7 @@ $color__white: #FFFFFF;
 
 @media screen and (max-width: 1000.98px) {
 
-    .finger-need-help {
+    .arrow-need-help {
         display: none;
     }
 
@@ -303,6 +303,7 @@ $color__white: #FFFFFF;
 
     .request-help {
         margin-bottom: 40px;
+        margin-top: 40px;
 
         &__inner {
 
@@ -331,6 +332,7 @@ $color__white: #FFFFFF;
             &__sub-title1 {
                 font-size: 20px;
                 text-align: justify;
+                margin-top: 30px;
             }
 
             &__sub-title2 {
@@ -363,7 +365,7 @@ $color__white: #FFFFFF;
         &__inner {
             position: absolute;
 
-            transform: translate(575px, -450px);
+            transform: translate(560px, -450px);
 
             max-width: 410px;
 
@@ -374,11 +376,116 @@ $color__white: #FFFFFF;
             &__subtitle1 {
                 line-height: 26px;
                 font-weight: 400;
+                font-size: 18px;
+
+                margin-top: 14px;
             }
 
             &__subtitle2 {
                 line-height: 26px;
                 font-weight: 400;
+                font-size: 18px;
+
+                margin-top: 10px;
+                margin-bottom: 30px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768.98px) {
+
+    .request-help {
+        margin-bottom: 30px;
+        margin-top: 40px;
+
+        &__inner {
+
+            &__all-elements {
+
+                &__sub-title {
+                    font-size: 20px;
+                    margin: 20px 0 52px;
+                }
+
+                &__link {
+                    text-transform: uppercase;
+                }
+            }
+        }
+    }
+
+    .programs-hospice {
+
+        &__inner {
+
+            &__title {
+                font-size: 30px;
+            }
+
+            &__sub-title1 {
+                font-size: 20px;
+                text-align: justify;
+                margin-top: 30px;
+            }
+
+            &__sub-title2 {
+                font-size: 20px;
+                text-align: justify;
+            }
+        }
+    }
+
+    .programs-first-kids-hospice {
+        margin-top: 30px;
+        padding-top: 20px;
+
+        &__inner {
+            padding: 0;
+
+            &__title {
+                margin-left: 0;
+                margin-bottom: 30px;
+            }
+        }
+    }
+
+    .important-khow-need-help {
+
+        .bg-img-need-help {
+            height: auto;
+        }
+
+        &__inner {
+            position: absolute;
+
+            transform: translate(425px, -350px);
+
+            max-width: 306px;
+
+            &__title {
+                font-size: 18px;
+            }
+
+            &__subtitle1 {
+                line-height: 20px;
+                font-weight: 400;
+                font-size: 14px;
+
+                margin-top: 5px;
+            }
+
+            &__subtitle2 {
+                line-height: 22px;
+                font-weight: 400;
+                font-size: 14px;
+
+                margin-top: 7px;
+                margin-bottom: 25px;
+            }
+
+            &__link-btn {
+                padding: 14px 43px;
             }
         }
     }
