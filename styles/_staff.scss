@@ -30,12 +30,11 @@
 
 .finger {
   position: absolute;
-  left: 34.72%;
-  right: 50.94%;
-  top: 0.1%;
-  bottom: 88.41%;
-  background-image: url(../assets/staff-img/staff-yellowfinger.svg);
   background-repeat: no-repeat;
+  transform: translate(400%, -970%);
+  img {
+    width: 120px;
+  }
 }
 .finger2 {
   position: absolute;
@@ -43,7 +42,6 @@
   right: 24.44%;
   top: 65.87%;
   bottom: 20.07%;
-  background-image: url(../assets/staff-img/staff-finger2.svg);
   background-repeat: no-repeat;
 }
 .finger3 {
@@ -61,7 +59,7 @@
   right: 10.5%;
   top: 42.2%;
   bottom: 35.18%;
-  background-image: url(../assets/staff-img/staff-balloon.svg);
+  // background-image: url(../assets/staff-img/staff-balloon.svg);
 }
 
 .our-staff {
@@ -193,7 +191,149 @@
 }
 
 // Responsive
-@media screen and (max-width: 768px) {
+
+@media screen and (max-width: 1000.98px) {
+  .bread-crumbs {
+    padding-bottom: 40px;
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  .finger {
+    position: absolute;
+    background-repeat: no-repeat;
+    transform: matrix(-1, 0, 0, 1, 600, -1070);
+    // z-index: -1;
+    img {
+      width: 72px;
+    }
+  }
+
+  .finger3 {
+    display: none;
+  }
+
+  .finger2 {
+    position: absolute;
+    left: 90.47%;
+    right: 10.15%;
+    top: 80.87%;
+    bottom: 38.17%;
+
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+    img {
+      width: 106.74px;
+    }
+  }
+
+  .balloon {
+    position: absolute;
+    left: 65.36%;
+    right: 20.33%;
+    top: 45.49%;
+    bottom: 42.1%;
+    transform: rotate(-32.92deg);
+    z-index: -1;
+    img {
+      width: 163.05px;
+    }
+  }
+
+  .our-staff {
+    margin: 0 30px 60px 0;
+
+    &__elements {
+      margin-bottom: 40px;
+
+      &__title {
+        padding-bottom: 30px;
+        font-size: 40px;
+        line-height: 41px;
+      }
+
+      &__descr {
+        max-width: 709px;
+        font-size: 20px;
+        line-height: 30px;
+      }
+    }
+
+    &__cards {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+
+      &__item1,
+      &__item2,
+      &__item3,
+      &__item4 {
+        width: 303px;
+        min-height: 257.36px;
+        border-radius: 20px;
+      }
+      &__item-img {
+        width: 228px;
+        height: 228px;
+        margin-top: -17%;
+        margin-bottom: 5.56px;
+        margin-right: 38px;
+        margin-left: 38px;
+        border-radius: 50%;
+      }
+
+      &__item1,
+      &__item2 {
+        margin-bottom: 80.64px;
+      }
+
+      &__item-title {
+        padding-bottom: 1px;
+        font-size: 22px;
+        line-height: 30px;
+      }
+
+      &__item-subtitle {
+        padding-bottom: 24.25px;
+        font-size: 16px;
+        line-height: 19px;
+      }
+    }
+  }
+
+  .sidebar {
+    margin-top: 90px;
+    background: $color__lilac;
+    border-radius: 15px;
+    max-width: 231px;
+    height: 229px;
+
+    &__inner {
+      padding: 37.37px 27px 61px 33.78px;
+
+      &__menu {
+        display: flex;
+        flex-direction: column;
+        // align-items: center;
+        justify-content: space-between;
+
+        margin: 0;
+        &__item {
+          // list-style: none;
+
+          &__link {
+            font-size: 16px;
+            line-height: 19px;
+          }
+        }
+        &__item {
+          padding-bottom: 20px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768.98px) {
   .bread-crumbs {
     padding-top: 20px;
     padding-bottom: 30px;
@@ -202,14 +342,13 @@
   }
 
   .finger {
-    width: 63px;
     position: absolute;
-    left: 75%;
-    right: 21.7%;
-    top: 1%;
-    bottom: 95.65%;
-    background-image: url(../assets/staff-img/finger1_team_768.svg);
-    transform: rotate(-1, 0, 0, 1, 0, 0);
+    background-repeat: no-repeat;
+    // transform: translateX(-250%) rotate(15deg) translateY(-130%);
+    z-index: -1;
+    img {
+      width: 63.38px;
+    }
   }
   .finger2 {
     display: none;
@@ -217,18 +356,14 @@
   .finger3 {
     display: none;
   }
+
   .balloon {
     position: absolute;
-    width: 185px;
-    height: 300px;
-    // left: 59.49%;
-    // right: 27.85%;
-    // top: 5.77%;
-    // bottom: 75.64%;
-    // transform: matrix(0.94, 0.33, -0.35, 0.94, 0, 0);
+    transform: translateX(-250%) rotate(15deg) translateY(-130%);
     z-index: -1;
-    transform: translate(-150%, -180%);
-    background-image: url(../assets/staff-img/staff-balloon.svg);
+    img {
+      width: 97px;
+    }
   }
 
   .our-staff {
@@ -289,6 +424,98 @@
         padding: 0 0 32.94px 0;
         font-size: 16px;
         line-height: 19px;
+      }
+    }
+  }
+  .sidebar {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 480.98px) {
+  .bread-crumbs {
+    display: none;
+  }
+
+  finger {
+    position: absolute;
+    background-repeat: no-repeat;
+    transform: translateX(-1%) rotate(15deg) translateY(-1%);
+    z-index: -1;
+    img {
+      width: 67.44px;
+    }
+  }
+  .finger2 {
+    display: none;
+  }
+  .finger3 {
+    display: none;
+  }
+
+  .balloon {
+    position: absolute;
+    transform: translateX(-295%) rotate(15deg) translateY(-153%);
+    z-index: -1;
+    img {
+      width: 67.44px;
+    }
+  }
+
+  .our-staff {
+    margin: 20px 0 40px 0;
+
+    &__elements {
+      margin-bottom: 40px;
+      &__title {
+        padding-bottom: 20px;
+        font-size: 26px;
+        line-height: 30px;
+      }
+      &__descr {
+        max-width: 450px;
+        font-size: 16px;
+        line-height: 22px;
+      }
+    }
+    &__cards {
+      display: flex;
+      flex-wrap: wrap;
+
+      &__item1,
+      &__item2,
+      &__item3,
+      &__item4 {
+        width: 450px;
+        min-height: 288px;
+        border-radius: 15px;
+      }
+      &__item-img {
+        width: 255px;
+        height: 255px;
+        margin-top: -17%;
+        margin-bottom: 16.38px;
+        margin-right: 97px;
+        margin-left: 97px;
+        border-radius: 50%;
+      }
+
+      &__item1,
+      &__item2,
+      &__item3 {
+        margin-bottom: 80px;
+      }
+
+      &__item-title {
+        padding-bottom: 1.98px;
+        font-size: 24px;
+        line-height: 34px;
+      }
+
+      &__item-subtitle {
+        padding: 0 0 20.93px 0;
+        font-size: 16px;
+        line-height: 18.96px;
       }
     }
   }

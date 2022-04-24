@@ -1,387 +1,372 @@
 @import "./vars";
 
-$color__blue: #E3ECFF;
-$color__light-blue: #CFFFFD;
-$color__yellow: #FFEFAB;
-$color__pink: #FFEBF9;
-$color__violet: #775CA6;
+$color__blue: #e3ecff;
+$color__light-blue: #cffffd;
+$color__yellow: #ffefab;
+$color__pink: #ffebf9;
+$color__violet: #775ca6;
 $color__black: #000000;
-$color__white: #FFFFFF;
-
+$color__white: #ffffff;
 
 // REQUESET HELP SECTION
 .request-help {
-    min-height: 0;
-    margin-bottom: 91px;
-    margin-top: 35px;
+  min-height: 0;
+  margin-bottom: 50px;
+  margin-top: 35px;
 
-    &__inner {
+  &__inner {
+    &__all-elements {
+      &__title {
+        font-family: Rubik, sans-serif;
+        font-size: 40px;
+        font-weight: 700;
+        font-style: normal;
 
-        &__all-elements {
+        color: $color__black;
+      }
 
-            &__title {
-                font-family: Rubik, sans-serif;
-                font-size: 40px;
-                font-weight: 700;
-                font-style: normal;
+      &__sub-title {
+        font-family: Rubik, sans-serif;
+        font-size: 24px;
+        font-weight: 400;
+        font-style: normal;
 
-                color: $color__black;
-            }
+        color: $color__black;
+        margin: 31px 0 50px;
+      }
 
-            &__sub-title {
-                font-family: Rubik, sans-serif;
-                font-size: 24px;
-                font-weight: 400;
-                font-style: normal;
+      &__link {
+        font-family: Rubik, sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        font-style: normal;
 
-                color: $color__black;
-                margin: 33px 0 45px;
-            }
+        background-color: $color__violet;
+        text-decoration: none;
+        color: $color__white;
 
-            &__link {
-                font-family: Rubik, sans-serif;
-                font-size: 16px;
-                font-weight: 400;
-                font-style: normal;
+        padding: 10px 22px;
+        border-radius: 5px;
 
-                background-color: $color__violet;
-                text-decoration: none;
-                color: $color__white;
-
-                padding: 10px 22px;
-                border-radius: 5px;
-
-                letter-spacing: 2px;
-            }
-        }
+        letter-spacing: 2px;
+      }
     }
+  }
 }
 
 //  SHAR HEED HELP
-.finger-need-help {
-    position: absolute;
+.arrow-need-help {
+  position: absolute;
 
-    transform: translate(882%, -488%);
+  transform: translate(893%, 177%);
 
-    img {
-        width: 90px;
-    }
+  img {
+    width: 106px;
+  }
 }
 
 .paint-need-help {
-    position: absolute;
+  position: absolute;
 
-    transform: translate(-78%, -23.5%);
+  transform: translate(-78%, -13%);
 
-    img {
-        width: 125px;
-    }
+  img {
+    width: 97px;
+  }
 }
 
 .ballon-need-help {
-    position: absolute;
+  position: absolute;
 
-    transform: translate(510.5%, -59.5%);
-    z-index: -1;
+  transform: translate(688%, -48%);
+  z-index: -1;
 
-    img {
-        width: 215px;
-    }
+  img {
+    width: 165px;
+  }
 }
 
 // HOW HELP SECTION
 .programs-hospice {
-    min-height: 0;
+  min-height: 0;
 
-    &__inner {
+  &__inner {
+    &__title {
+      font-family: Rubik, sans-serif;
+      font-size: 36px;
+      font-weight: 500;
+      font-style: normal;
 
-        &__title {
-            font-family: Rubik, sans-serif;
-            font-size: 36px;
-            font-weight: 500;
-            font-style: normal;
+      color: $color__black;
 
-            color: $color__black;
-
-            text-align: center;
-        }
-
-        &__sub-title1 {
-            font-family: Rubik, sans-serif;
-            font-size: 24px;
-            font-weight: 400;
-            font-style: normal;
-
-            color: $color__black;
-            margin: 38px 0 30px;
-
-            line-height: 27.5px;
-        }
-
-        &__sub-title2 {
-            font-family: Rubik, sans-serif;
-            font-size: 24px;
-            font-weight: 400;
-            font-style: normal;
-
-            max-width: 960px;
-
-            color: $color__black;
-
-            line-height: 27.5px;
-        }
+      text-align: center;
     }
+
+    &__sub-title1 {
+      font-family: Rubik, sans-serif;
+      font-size: 24px;
+      font-weight: 400;
+      font-style: normal;
+
+      color: $color__black;
+      margin: 32px 0 0;
+
+      line-height: 28px;
+    }
+
+    &__sub-title2 {
+      font-family: Rubik, sans-serif;
+      font-size: 24px;
+      font-weight: 400;
+      font-style: normal;
+
+      max-width: 960px;
+
+      color: $color__black;
+
+      line-height: 27.5px;
+    }
+  }
 }
 
 // MEDICAL PROGRAMS - SECTION
 .programs-first-kids-hospice {
-    background-color: $color__yellow;
-    padding: 31.5px 0 63px;
-    margin: 70px 0 0;
+  background-color: $color__yellow;
+  padding: 35px 0 63px;
+  margin: 48px 0 0;
 
-    &__inner {
+  &__inner {
+    &__title {
+      font-family: Roboto, sans-serif;
+      font-size: 24px;
+      font-weight: 700;
+      font-style: normal;
 
-        &__title {
-            font-family: Roboto, sans-serif;
-            font-size: 24px;
-            font-weight: 700;
+      color: $color__black;
+      margin-bottom: 21px;
+      margin-left: 25px;
+
+      letter-spacing: 0px;
+    }
+
+    &__all-accordions {
+      &__accordion {
+        background-color: $color__white;
+        border-radius: 15px;
+
+        &__header {
+          padding: 19.8px 24px;
+
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+
+          position: relative;
+          cursor: pointer;
+
+          font-family: Inter, sans-serif;
+          font-size: 18px;
+          font-weight: 700;
+          font-style: normal;
+
+          color: $color__black;
+
+          &::after {
+            content: "˃";
+            transition: 0.3s ease-in-out;
+            font-weight: 400;
+          }
+        }
+
+        .active {
+          &::after {
+            transform: rotate(90deg);
+          }
+        }
+
+        &__body {
+          max-height: 0;
+          overflow: hidden;
+          transition: max-height 0.3s ease-in-out;
+
+          &__description {
+            font-family: Inter, sans-serif;
+            font-size: 16px;
+            font-weight: 400;
             font-style: normal;
 
-            color: $color__black;
-            margin-bottom: 21px;
-            margin-left: 28px;
-
-            letter-spacing: 0px;
+            color: rgba(60, 60, 67, 0.85);
+            padding: 0 24px 18px;
+          }
         }
+      }
 
-        &__all-accordions {
-
-            &__accordion {
-                background-color: $color__white;
-                border-radius: 15px;
-
-                &__header {
-                    padding: 19.8px 24px;
-
-                    display: flex;
-                    align-items: center;
-                    justify-content: space-between;
-
-                    position: relative;
-                    cursor: pointer;
-
-                    font-family: Inter, sans-serif;
-                    font-size: 18px;
-                    font-weight: 700;
-                    font-style: normal;
-
-                    color: $color__black;
-
-                    &::after {
-                        content: '˃';
-                        transition: 0.3s ease-in-out;
-                        font-weight: 400;
-                    }
-                }
-
-                .active {
-
-                    &::after {
-                        transform: rotate(90deg);
-                    }
-                }
-
-                &__body {
-                    max-height: 0;
-                    overflow: hidden;
-                    transition: max-height 0.3s ease-in-out;
-
-                    &__description {
-                        font-family: Inter, sans-serif;
-                        font-size: 16px;
-                        font-weight: 400;
-                        font-style: normal;
-
-                        color: rgba(60, 60, 67, 0.85);
-                        padding: 0 24px 18px;
-                    }
-                }
-            }
-
-            &__accordion+&__accordion {
-                margin-top: 25px;
-            }
-        }
+      &__accordion + &__accordion {
+        margin-top: 20px;
+      }
     }
+  }
 }
 
 // IMPORTANT KNOW - SECTION
 .important-khow-need-help {
-    margin-top: 83.56px;
-    margin-bottom: 82px;
+  margin-top: 40px;
+  margin-bottom: 82px;
 
-    .bg-img-need-help {
-        width: 100%;
-        height: 664px;
+  .bg-img-need-help {
+    width: 100%;
+    height: 664px;
+  }
+
+  &__inner {
+    position: absolute;
+
+    transform: translate(726px, -590px);
+
+    max-width: 513px;
+
+    &__title {
+      font-family: "Rubik", sans-serif;
+      font-weight: $fw-medium;
+      font-style: normal;
+      font-size: 36px;
+
+      line-height: 34px;
+
+      color: $color-black;
     }
 
-    &__inner {
-        position: absolute;
+    &__subtitle1 {
+      font-family: "Rubik", sans-serif;
+      font-weight: $fw-medium;
+      font-style: normal;
+      font-size: 20px;
 
-        transform: translate(766px, -590px);
+      line-height: 33.4px;
+      color: $color-black;
 
-        &__title {
-            font-family: 'Rubik', sans-serif;
-            font-weight: $fw-medium;
-            font-style: normal;
-            font-size: 36px;
-
-            line-height: 34px;
-
-            color: $color-black;
-        }
-
-        &__subtitle1 {
-            font-family: 'Rubik', sans-serif;
-            font-weight: $fw-medium;
-            font-style: normal;
-            font-size: 18px;
-
-            line-height: 34px;
-
-            color: $color-black;
-
-            max-width: 503px;
-
-            margin-top: 24px;
-        }
-
-        &__subtitle2 {
-            font-family: 'Rubik', sans-serif;
-            font-weight: $fw-medium;
-            font-style: normal;
-            font-size: 18px;
-
-            line-height: 34px;
-
-            color: $color-black;
-
-            max-width: 503px;
-
-            margin-bottom: 45.5px;
-            margin-top: 16px;
-        }
-
-        &__link-btn {
-            font-family: 'Rubik', sans-serif;
-            font-weight: $fw-medium;
-            font-style: normal;
-            font-size: 26px;
-
-            line-height: 34px;
-
-            color: $color-black;
-
-            text-decoration: none;
-
-            letter-spacing: 2.5px;
-        }
+      margin-top: 24px;
     }
+
+    &__subtitle2 {
+      font-family: "Rubik", sans-serif;
+      font-weight: $fw-medium;
+      font-style: normal;
+      font-size: 20px;
+
+      line-height: 32.5px;
+      color: $color-black;
+
+      margin-bottom: 62px;
+      margin-top: 23px;
+    }
+
+    &__link-btn {
+      font-family: "Rubik", sans-serif;
+      font-weight: $fw-medium;
+      font-style: normal;
+      font-size: 16px;
+
+      color: $color__white;
+      background-color: $color__violet;
+
+      text-decoration: none;
+      letter-spacing: 2.7px;
+      border-radius: 5px;
+      text-transform: uppercase;
+
+      padding: 10px 47px;
+    }
+  }
 }
 
 @media screen and (max-width: 1000.98px) {
+  .finger-need-help {
+    display: none;
+  }
 
-    .finger-need-help {
-        display: none;
-    }
+  .paint-need-help {
+    display: none;
+  }
 
-    .paint-need-help {
-        display: none;
-    }
+  .ballon-need-help {
+    display: none;
+  }
 
-    .ballon-need-help {
-        display: none;
-    }
+  .request-help {
+    margin-bottom: 40px;
 
-    .request-help {
-        margin-bottom: 40px;
-
-        &__inner {
-
-            &__all-elements {
-
-                &__sub-title {
-                    font-size: 20px;
-                    margin: 30px 0 24px;
-                }
-
-                &__link {
-                    text-transform: uppercase;
-                }
-            }
-        }
-    }
-
-    .programs-hospice {
-
-        &__inner {
-
-            &__title {
-                font-size: 30px;
-            }
-
-            &__sub-title1 {
-                font-size: 20px;
-                text-align: justify;
-            }
-
-            &__sub-title2 {
-                font-size: 20px;
-                text-align: justify;
-            }
-        }
-    }
-
-    .programs-first-kids-hospice {
-        margin-top: 30px;
-        padding-top: 20px;
-
-        &__inner {
-            padding: 0 55px;
-
-            &__title {
-                margin-left: 0;
-                margin-bottom: 30px;
-            }
-        }
-    }
-
-    .important-khow-need-help {
-
-        .bg-img-need-help {
-            height: auto;
+    &__inner {
+      &__all-elements {
+        &__sub-title {
+          font-size: 20px;
+          margin: 30px 0 24px;
         }
 
-        &__inner {
-            position: absolute;
-
-            transform: translate(575px, -450px);
-
-            max-width: 410px;
-
-            &__title {
-                font-size: 26px;
-            }
-
-            &__subtitle1 {
-                line-height: 26px;
-                font-weight: 400;
-            }
-
-            &__subtitle2 {
-                line-height: 26px;
-                font-weight: 400;
-            }
+        &__link {
+          text-transform: uppercase;
         }
+      }
     }
+  }
+
+  .programs-hospice {
+    &__inner {
+      &__title {
+        font-size: 30px;
+      }
+
+      &__sub-title1 {
+        font-size: 20px;
+        text-align: justify;
+      }
+
+      &__sub-title2 {
+        font-size: 20px;
+        text-align: justify;
+      }
+    }
+  }
+
+  .programs-first-kids-hospice {
+    margin-top: 30px;
+    padding-top: 20px;
+
+    &__inner {
+      padding: 0 55px;
+
+      &__title {
+        margin-left: 0;
+        margin-bottom: 30px;
+      }
+    }
+  }
+
+  .important-khow-need-help {
+    .bg-img-need-help {
+      height: auto;
+    }
+
+    &__inner {
+      position: absolute;
+
+      transform: translate(575px, -450px);
+
+      max-width: 410px;
+
+      &__title {
+        font-size: 26px;
+      }
+
+      &__subtitle1 {
+        line-height: 26px;
+        font-weight: 400;
+      }
+
+      &__subtitle2 {
+        line-height: 26px;
+        font-weight: 400;
+      }
+    }
+  }
 }
