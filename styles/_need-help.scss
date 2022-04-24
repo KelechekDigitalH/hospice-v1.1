@@ -230,7 +230,7 @@ $color__white: #FFFFFF;
 
         transform: translate(726px, -590px);
 
-        max-width: 513px;
+        width: 513px;
 
         &__title {
             font-family: 'Rubik', sans-serif;
@@ -287,9 +287,10 @@ $color__white: #FFFFFF;
     }
 }
 
+// MEDIA - 1000
 @media screen and (max-width: 1000.98px) {
 
-    .finger-need-help {
+    .arrow-need-help {
         display: none;
     }
 
@@ -303,6 +304,7 @@ $color__white: #FFFFFF;
 
     .request-help {
         margin-bottom: 40px;
+        margin-top: 40px;
 
         &__inner {
 
@@ -311,6 +313,8 @@ $color__white: #FFFFFF;
                 &__sub-title {
                     font-size: 20px;
                     margin: 30px 0 24px;
+
+                    text-align: justify;
                 }
 
                 &__link {
@@ -331,11 +335,7 @@ $color__white: #FFFFFF;
             &__sub-title1 {
                 font-size: 20px;
                 text-align: justify;
-            }
-
-            &__sub-title2 {
-                font-size: 20px;
-                text-align: justify;
+                margin-top: 30px;
             }
         }
     }
@@ -363,7 +363,7 @@ $color__white: #FFFFFF;
         &__inner {
             position: absolute;
 
-            transform: translate(575px, -450px);
+            transform: translate(560px, -450px);
 
             max-width: 410px;
 
@@ -374,12 +374,357 @@ $color__white: #FFFFFF;
             &__subtitle1 {
                 line-height: 26px;
                 font-weight: 400;
+                font-size: 18px;
+
+                margin-top: 14px;
             }
 
             &__subtitle2 {
                 line-height: 26px;
                 font-weight: 400;
+                font-size: 18px;
+
+                margin-top: 10px;
+                margin-bottom: 30px;
             }
         }
     }
 }
+
+@media screen and (max-width: 959.98px) {
+
+    .important-khow-need-help {
+
+        &__inner {
+            position: absolute;
+
+            transform: translate(490px, -420px);
+
+            max-width: 410px;
+        }
+    }
+}
+
+@media screen and (max-width: 898.98px) {
+
+    .important-khow-need-help {
+
+        &__inner {
+            position: absolute;
+
+            transform: translate(460px, -400px);
+
+            max-width: 410px;
+        }
+    }
+}
+
+@media screen and (max-width: 775.98px) {
+
+    .important-khow-need-help {
+
+        &__inner {
+            position: absolute;
+
+            transform: translate(330px, -380px);
+
+            max-width: 410px;
+        }
+    }
+}
+// END MEDIA - 1000
+
+// MEDIA - 768
+@media screen and (max-width: 768.98px) {
+
+    .request-help {
+        margin-bottom: 30px;
+        margin-top: 40px;
+
+        &__inner {
+
+            &__all-elements {
+
+                &__tile {
+                    font-size: 36px;
+                }
+
+                &__sub-title {
+                    font-size: 18px;
+                    margin: 20px 0 52px;
+                }
+
+                &__link {
+                    text-transform: uppercase;
+                }
+            }
+        }
+    }
+
+    .programs-hospice {
+
+        &__inner {
+
+            &__title {
+                font-size: 30px;
+            }
+
+            &__sub-title1 {
+                font-size: 18px;
+                text-align: justify;
+                margin-top: 30px;
+            }
+        }
+    }
+
+    .programs-first-kids-hospice {
+        margin-top: 30px;
+        padding-top: 20px;
+
+        &__inner {
+            padding: 0;
+
+            &__title {
+                margin-left: 0;
+                margin-bottom: 30px;
+            }
+        }
+    }
+
+    .important-khow-need-help {
+
+        .bg-img-need-help {
+            height: auto;
+        }
+
+        &__inner {
+            position: absolute;
+
+            transform: translate(425px, -350px);
+
+            max-width: 306px;
+
+            &__title {
+                font-size: 18px;
+            }
+
+            &__subtitle1 {
+                line-height: 20px;
+                font-weight: 400;
+                font-size: 14px;
+
+                margin-top: 5px;
+            }
+
+            &__subtitle2 {
+                line-height: 22px;
+                font-weight: 400;
+                font-size: 14px;
+
+                margin-top: 7px;
+                margin-bottom: 25px;
+            }
+
+            &__link-btn {
+                padding: 14px 43px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 714.98px) {
+
+    .important-khow-need-help {
+
+        &__inner {
+            position: absolute;
+
+            transform: translate(390px, -330px);
+
+            max-width: 306px;
+        }
+    }
+}
+
+@media screen and (max-width: 639.98px) {
+
+    .important-khow-need-help {
+
+        &__inner {
+            position: absolute;
+
+            transform: translate(310px, -315px);
+
+            max-width: 306px;
+        }
+    }
+}
+
+@media screen and (max-width: 580.98px) {
+
+    .important-khow-need-help {
+
+        &__inner {
+            position: absolute;
+
+            transform: translate(240px, -300px);
+
+            max-width: 306px;
+        }
+    }
+}
+
+@media screen and (max-width: 495.98px) {
+
+    .important-khow-need-help {
+
+        &__inner {
+            position: absolute;
+
+            transform: translate(140px, -270px);
+
+            max-width: 306px;
+        }
+    }
+}
+// END MEDIA - 768
+
+// MEDIA - 480
+@media screen and (max-width: 480.98px) {
+
+    .breadcrumbs {
+        display: none;
+    }
+
+    .request-help {
+        margin-bottom: 30px;
+        margin-top: 20px;
+
+        &__inner {
+
+            &__all-elements {
+
+                &__title {
+                    font-size: 26px;
+                }
+
+                &__sub-title {
+                    font-size: 16px;
+                    margin: 20px 0 30px;
+                }
+
+                &__link {
+                    text-transform: none;
+                    font-weight: 800;
+                }
+            }
+        }
+    }
+
+    .programs-hospice {
+
+        &__inner {
+
+            &__title {
+                font-size: 26px;
+            }
+
+            &__sub-title1 {
+                font-size: 16px;
+                text-align: justify;
+                margin-top: 20px;
+                line-height: 22px;
+            }
+        }
+    }
+
+    .programs-first-kids-hospice {
+        margin-top: 30px;
+        padding-top: 20px;
+
+        &__inner {
+            padding: 0;
+
+            &__title {
+                margin-left: 0;
+                margin-bottom: 30px;
+                font-size: 18px;
+            }
+        }
+    }
+
+    .important-khow-need-help {
+
+        .bg-img-need-help {
+            height: 439px;
+            object-fit: cover;
+            object-position: 100% 0;
+        }
+
+        &__inner {
+            position: absolute;
+
+            transform: translate(30px, -410px);
+
+            max-width: 396px;
+            text-align: justify;
+
+            &__title {
+                font-size: 26px;
+            }
+
+            &__subtitle1 {
+                line-height: 20px;
+                font-weight: 400;
+                font-size: 18px;
+
+                margin-top: 20px;
+            }
+
+            &__subtitle2 {
+                line-height: 20px;
+                font-weight: 400;
+                font-size: 18px;
+
+                margin-top: 20px;
+                margin-bottom: 45px;
+            }
+
+            &__link-btn {
+                padding: 12px 38px;
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 414.98px) {
+
+    .important-khow-need-help {
+
+        &__inner {
+            position: absolute;
+
+            transform: translate(5px, -420px);
+
+            max-width: 370px;
+            text-align: justify;
+        }
+    }
+}
+
+@media screen and (max-width: 400.98px) {
+
+    .important-khow-need-help {
+
+        &__inner {
+            position: absolute;
+
+            transform: translate(5px, -420px);
+
+            max-width: 340px;
+            text-align: justify;
+        }
+    }
+}
+// END MEDIA - 480
