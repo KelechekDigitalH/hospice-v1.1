@@ -344,7 +344,7 @@
   .finger {
     position: absolute;
     background-repeat: no-repeat;
-    // transform: translateX(-250%) rotate(15deg) translateY(-130%);
+    transform: matrix(-1, 0, 0, 1, 470, -1118);
     z-index: -1;
     img {
       width: 63.38px;
@@ -359,7 +359,7 @@
 
   .balloon {
     position: absolute;
-    transform: translateX(-250%) rotate(15deg) translateY(-130%);
+    transform: translateX(-160%) rotate(15deg) translateY(-280%);
     z-index: -1;
     img {
       width: 97px;
@@ -437,13 +437,13 @@
     display: none;
   }
 
-  finger {
+  .finger {
     position: absolute;
     background-repeat: no-repeat;
-    transform: translateX(-1%) rotate(15deg) translateY(-1%);
+    transform: matrix(-1, 0, 0, 1, 270, -1820);
     z-index: -1;
     img {
-      width: 67.44px;
+      width: 53px;
     }
   }
   .finger2 {
@@ -455,8 +455,8 @@
 
   .balloon {
     position: absolute;
-    transform: translateX(-295%) rotate(15deg) translateY(-153%);
-    z-index: -1;
+    transform: translateX(-180%) rotate(15deg) translateY(-300%);
+    z-index: 1;
     img {
       width: 67.44px;
     }
