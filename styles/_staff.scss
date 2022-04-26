@@ -457,6 +457,7 @@
     position: absolute;
     transform: translateX(-180%) rotate(15deg) translateY(-300%);
     z-index: 1;
+    background-repeat: no-repeat;
     img {
       width: 67.44px;
     }
@@ -521,5 +522,17 @@
   }
   .sidebar {
     display: none;
+  }
+}
+
+@media screen and (max-width: 320.98px) {
+  .balloon {
+    position: absolute;
+    transform: translateX(-90%) rotate(15deg) translateY(-300%);
+    z-index: 1;
+    background-repeat: no-repeat;
+    img {
+      width: 67.44px;
+    }
   }
 }
