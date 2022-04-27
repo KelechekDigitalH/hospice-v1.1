@@ -280,6 +280,8 @@
 
 
 @media (max-width: 1000px) {
+  .elements-img {
+    display: none;}
   .breadcrumbs {
     margin: 16px 0 !important;
 }
@@ -491,6 +493,8 @@
 
 
 @media (max-width: 768px) {
+  .elements-img {
+    display: none;}
   .breadcrumbs {
     margin: 16px 0 !important;
 }
@@ -717,6 +721,9 @@
 
 
 @media (max-width: 480px) {
+  .elements-img {
+    display: none;
+  }
   .titleone {
     display: block;
     font-family: 'Rubik';
