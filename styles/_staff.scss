@@ -46,12 +46,14 @@
 }
 .finger3 {
   position: absolute;
-  left: 85.76%;
+  left: 89.76%;
   right: -4.1%;
-  top: 90.32%;
-  bottom: 2%;
-  background-image: url(../assets/staff-img/pink-finger_1.svg);
+  top: 78.9%;
+  bottom: 31.62%;
   background-repeat: no-repeat;
+  img {
+    width: 120px;
+  }
 }
 .balloon {
   position: absolute;
@@ -188,6 +190,49 @@
 
 .wrap {
   display: flex;
+}
+.call-to-action {
+  max-width: 1240px;
+  min-height: 188px;
+  background: #e3ecff;
+  border-radius: 15px;
+
+  &__inner__money__item {
+    padding-right: 40px;
+    font-family: $ff-rubik;
+    font-style: normal;
+    font-weight: $fw-regular;
+    font-size: 36px;
+    line-height: 43px;
+    display: flex;
+    align-items: center;
+    color: $color__black;
+  }
+  &__inner__other-money__item {
+    padding-right: 125px;
+    font-family: $ff-rubik;
+    font-style: normal;
+    font-weight: $fw-regular;
+    font-size: 30px;
+    line-height: 36px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: rgba(97, 97, 97, 0.59);
+  }
+  &__inner__btn {
+    padding: 24px 40px;
+    font-family: $ff-rubik;
+    font-style: normal;
+    font-weight: $fw-bold;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $color__white;
+    background: $color__coral;
+    border-radius: 5px;
+  }
 }
 
 // Responsive
@@ -331,6 +376,29 @@
       }
     }
   }
+
+  .call-to-action {
+    max-width: 970px;
+    min-height: 150px;
+    background: #e3ecff;
+    border-radius: 15px;
+
+    &__inner__money__item {
+      padding-right: 34px;
+      font-size: 25px;
+      line-height: 30px;
+    }
+    &__inner__other-money__item {
+      padding-right: 99px;
+      font-size: 20px;
+      line-height: 24px;
+    }
+    &__inner__btn {
+      padding: 12px 26px;
+      font-size: 16px;
+      line-height: 19px;
+    }
+  }
 }
 
 @media screen and (max-width: 768.98px) {
@@ -430,6 +498,29 @@
   .sidebar {
     display: none;
   }
+
+  .call-to-action {
+    max-width: 732px;
+    min-height: 110px;
+    background: #e3ecff;
+    border-radius: 15px;
+
+    &__inner__money__item {
+      padding-right: 35px;
+      font-size: 25px;
+      line-height: 30px;
+    }
+    &__inner__other-money__item {
+      padding-right: 40px;
+      font-size: 20px;
+      line-height: 24px;
+    }
+    &__inner__btn {
+      padding: 14px 25px;
+      font-size: 16px;
+      line-height: 19px;
+    }
+  }
 }
 
 @media screen and (max-width: 480.98px) {
@@ -522,6 +613,28 @@
   }
   .sidebar {
     display: none;
+  }
+  .call-to-action {
+    max-width: 450px;
+    min-height: 170px;
+    background: #e3ecff;
+    border-radius: 15px;
+
+    &__inner__money__item {
+      padding-right: 35px;
+      font-size: 25px;
+      line-height: 30px;
+    }
+    &__inner__other-money__item {
+      padding-right: 40px;
+      font-size: 20px;
+      line-height: 24px;
+    }
+    &__inner__btn {
+      padding: 14px 25px;
+      font-size: 16px;
+      line-height: 19px;
+    }
   }
 }
 
