@@ -24,6 +24,10 @@
 @import "./styles/header";
 @import "./styles/footer";
 
+.body{
+  overflow-x: hidden;
+  min-height: 100%;
+}
 .container {
   max-width: 1240px;
   margin: 0 auto;
