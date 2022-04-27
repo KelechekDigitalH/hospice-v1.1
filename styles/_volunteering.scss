@@ -16,7 +16,7 @@
 }
 
 .blc__title-volunteering {
-  margin-top:18px;
+  margin-top: 18px;
   position: relative;
   &__inner {
     position: relative;
@@ -63,35 +63,35 @@
 }
 
 
-.slider-photo {
-  .slick-dots li button:before {
-    font-size: 40px;
-    margin-top: 10px;
-    // display: none;
-  }
+// .slider-photo {
+//   .slick-dots li button:before {
+//     font-size: 40px;
+//     margin-top: 10px;
+//     // display: none;
+//   }
 
-  .slick-next {
-    font-size: 30px;
-    background-image: url(../assets/main/after.svg);
-    position: absolute;
-    transform: translate(-20%, 0);
-    height: 7%;
-    background-repeat: no-repeat;
-    right: -50px;
-    top: 375px;
-  }
+//   .slick-next {
+//     font-size: 30px;
+//     background-image: url(./assets/main/after.svg);
+//     position: absolute;
+//     transform: translate(-20%, 0);
+//     height: 7%;
+//     background-repeat: no-repeat;
+//     right: -50px;
+//     top: 375px;
+//   }
 
-  .slick-prev {
-    font-size: 30px;
-    background-image: url(../assets/main/before.svg);
-    position: absolute;
-    transform: translate(-80%, 0);
-    height: 7%;
-    background-repeat: no-repeat;
-    left: -16px;
-    top: 371px;
-  }
-}
+//   .slick-prev {
+//     font-size: 30px;
+//     background-image: url(../assets/main/before.svg);
+//     position: absolute;
+//     transform: translate(-80%, 0);
+//     height: 7%;
+//     background-repeat: no-repeat;
+//     left: -16px;
+//     top: 371px;
+//   }
+// }
 //according
 .volunteering__according {
   padding-left: 40px;
@@ -103,7 +103,6 @@
     }
   }
 }
-
 
 .blc__volunteering-accordion {
   background-color: $color__yellow;
@@ -152,86 +151,81 @@
   }
 }
 
-
-
 .blc__volunteering-accordion {
   background-color: $color__yellow;
   padding: 31.5px 0 63px;
   margin: 2px 0 0;
 
   &__inner {
+    &__title {
+      font-family: Roboto, sans-serif;
+      font-size: 24px;
+      font-weight: 700;
+      font-style: normal;
 
-      &__title {
-          font-family: Roboto, sans-serif;
-          font-size: 24px;
+      color: $color__black;
+      margin-bottom: 21px;
+      margin-left: 28px;
+
+      letter-spacing: 0px;
+    }
+
+    &__all-accordions {
+      &__accordion {
+        background-color: $color__white;
+        border-radius: 15px;
+
+        &__header {
+          padding: 19.8px 24px;
+
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+
+          position: relative;
+          cursor: pointer;
+
+          font-family: Inter, sans-serif;
+          font-size: 18px;
           font-weight: 700;
           font-style: normal;
 
           color: $color__black;
-          margin-bottom: 21px;
-          margin-left: 28px;
 
-          letter-spacing: 0px;
+          &::after {
+            content: "˃";
+            transition: 0.3s ease-in-out;
+            font-weight: 400;
+          }
+        }
+
+        .active-volunteering {
+          &::after {
+            transform: rotate(90deg);
+          }
+        }
+
+        &__body {
+          max-height: 0;
+          overflow: hidden;
+          transition: max-height 0.3s ease-in-out;
+
+          &__description {
+            font-family: Inter, sans-serif;
+            font-size: 16px;
+            font-weight: 400;
+            font-style: normal;
+
+            color: rgba(60, 60, 67, 0.85);
+            padding: 0 47px 18px;
+          }
+        }
       }
 
-      &__all-accordions {
-
-          &__accordion {
-              background-color: $color__white;
-              border-radius: 15px;
-
-              &__header {
-                  padding: 19.8px 24px;
-
-                  display: flex;
-                  align-items: center;
-                  justify-content: space-between;
-
-                  position: relative;
-                  cursor: pointer;
-
-                  font-family: Inter, sans-serif;
-                  font-size: 18px;
-                  font-weight: 700;
-                  font-style: normal;
-
-                  color: $color__black;
-
-                  &::after {
-                      content: '˃';
-                      transition: 0.3s ease-in-out;
-                      font-weight: 400;
-                  }
-              }
-
-              .active-volunteering {
-
-                  &::after {
-                      transform: rotate(90deg);
-                  }
-              }
-
-              &__body {
-                  max-height: 0;
-                  overflow: hidden;
-                  transition: max-height 0.3s ease-in-out;
-
-                  &__description {
-                      font-family: Inter, sans-serif;
-                      font-size: 16px;
-                      font-weight: 400;
-                      font-style: normal;
-
-                      color: rgba(60, 60, 67, 0.85);
-                      padding: 0 47px 18px;
-                  }
-              }
-          }
-
-          &__accordion+&__accordion {
-              margin-top: 25px;
-          }
+      &__accordion + &__accordion {
+        margin-top: 25px;
       }
+    }
   }
 }
 
@@ -248,8 +242,67 @@
   }
 }
 
+@media screen and (max-width: 1000.98px) {
+  .blc__title-volunteering {
+    &__inner {
+      &__aroow-img {
+        .img {
+          display: none;
+        }
+      }
+      &__finger-img {
+        display: none;
+    }
+    }
+    .blc__volunteering-accordion {
+      padding: 20px 0 63px;
 
+     
+    }
+ 
+  }
+  .photo-item {
+    padding:0 25px;
+    .blc__volunteering-accordion__inner__accord3__slider__img {
+      width: 100%;
+    }
+  }
+  .call-to-action {
+    &__paint-element {
+      display: none;
+    }
+  }
+}
 
+@media screen and (max-width: 768px) {
+  .blc__title-volunteering {
+    &__inner {
+      &__title {
+        &__main-txt {
+          font-size: 36px;
+        }
+      }
+    }
+  }
+  .photo-item {
+    padding:0 25px;
+    .blc__volunteering-accordion__inner__accord3__slider__img {
+      width: 363px;
+    }
+  }
+}
 
-
-
+@media screen and (max-width: 480px) {
+  .breadcrumbs{
+    display: none;
+  }
+  .blc__title-volunteering {
+    &__inner {
+      &__title {
+        &__main-txt {
+          font-size: 28px;
+        }
+      }
+    }
+  }
+}
