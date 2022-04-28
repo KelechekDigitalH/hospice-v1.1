@@ -8,7 +8,7 @@
 }
 
 .bread-crumbs {
-  padding: 22px 0px 40px 0;
+  padding: 20px 0px 40px 0px;
 
   & li {
     display: inline;
@@ -31,7 +31,7 @@
 .finger {
   position: absolute;
   background-repeat: no-repeat;
-  transform: translate(400%, -970%);
+  transform: translate(373%, -975%);
   img {
     width: 120px;
   }
@@ -65,11 +65,14 @@
 }
 
 .our-staff {
-  margin-right: 22px;
   margin-bottom: 90px;
 
   &__elements {
+    width: 822px;
     &__title {
+      width: 812px;
+      padding-bottom: 24px;
+
       font-family: "Rubik";
       font-style: normal;
       font-weight: 700;
@@ -80,6 +83,7 @@
 
     &__descr {
       max-width: 812px;
+      padding-right: 22px;
       padding-bottom: 53px;
       font-family: $ff-rubik;
       font-style: normal;
@@ -147,25 +151,20 @@
 }
 
 .sidebar {
-  // position: sticky;
-  // margin-left: 843px;
-  z-index: 1;
-  // padding: 52px;
   background: $color__lilac;
   border-radius: 15px;
-  max-width: 401px;
+  max-width: 400px;
   height: 282px;
-  margin-top: 17px;
+  margin-top: 70px;
 
   &__inner {
-    padding: 50px 50px 50px 68px;
+    padding: 57px 48px 57px 48px;
 
     &__menu {
       display: flex;
       flex-direction: column;
       // align-items: center;
       justify-content: space-between;
-
       margin: 0;
       &__item {
         // list-style: none;
@@ -197,41 +196,49 @@
   background: #e3ecff;
   border-radius: 15px;
 
-  &__inner__money__item {
-    padding-right: 40px;
-    font-family: $ff-rubik;
-    font-style: normal;
-    font-weight: $fw-regular;
-    font-size: 36px;
-    line-height: 43px;
-    display: flex;
-    align-items: center;
-    color: $color__black;
-  }
-  &__inner__other-money__item {
-    padding-right: 125px;
-    font-family: $ff-rubik;
-    font-style: normal;
-    font-weight: $fw-regular;
-    font-size: 30px;
-    line-height: 36px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    color: rgba(97, 97, 97, 0.59);
-  }
-  &__inner__btn {
-    padding: 24px 40px;
-    font-family: $ff-rubik;
-    font-style: normal;
-    font-weight: $fw-bold;
-    font-size: 20px;
-    line-height: 24px;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: $color__white;
-    background: $color__coral;
-    border-radius: 5px;
+  &__inner {
+    padding: 58px 100px;
+
+    &__money__item1,
+    &__money__item2,
+    &__money__item3,
+    &__money__item4 {
+      padding-right: 40px;
+      font-family: $ff-rubik;
+      font-style: normal;
+      font-weight: $fw-regular;
+      font-size: 36px;
+      line-height: 42.66px;
+      text-decoration: none;
+      color: $color__black;
+    }
+    &__money__item5 {
+      display: none;
+    }
+    &__other-money {
+      &__item {
+        padding-right: 77px;
+        font-family: $ff-rubik;
+        font-style: normal;
+        font-weight: $fw-regular;
+        font-size: 30px;
+        line-height: 36px;
+        color: rgba(97, 97, 97, 0.59);
+      }
+    }
+    &__btn {
+      padding: 24px 40px;
+      font-family: $ff-rubik;
+      font-style: normal;
+      font-weight: $fw-bold;
+      font-size: 20px;
+      line-height: 24px;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+      color: $color__white;
+      background: $color__coral;
+      border-radius: 5px;
+    }
   }
 }
 
@@ -261,10 +268,10 @@
   .finger2 {
     position: absolute;
     left: 90.47%;
-    right: 10.15%;
-    top: 80.87%;
+    right: 25.15%;
+    top: 68.87%;
     bottom: 38.17%;
-
+    z-index: 1;
     transform: matrix(-1, 0, 0, 1, 0, 0);
     img {
       width: 106.74px;
@@ -273,9 +280,9 @@
 
   .balloon {
     position: absolute;
-    left: 65.36%;
-    right: 20.33%;
-    top: 45.49%;
+    left: 68.36%;
+    right: 17.33%;
+    top: 40.49%;
     bottom: 42.1%;
     transform: rotate(-32.92deg);
     z-index: -1;
@@ -285,7 +292,7 @@
   }
 
   .our-staff {
-    margin: 0 30px 60px 0;
+    margin: 0 0px 60px 0;
 
     &__elements {
       margin-bottom: 40px;
@@ -297,6 +304,7 @@
       }
 
       &__descr {
+        // padding-right: 30px;
         max-width: 709px;
         font-size: 20px;
         line-height: 30px;
@@ -382,21 +390,32 @@
     min-height: 150px;
     background: #e3ecff;
     border-radius: 15px;
+    &__inner {
+      padding: 54px 80px 53px 80px;
 
-    &__inner__money__item {
-      padding-right: 34px;
-      font-size: 25px;
-      line-height: 30px;
-    }
-    &__inner__other-money__item {
-      padding-right: 99px;
-      font-size: 20px;
-      line-height: 24px;
-    }
-    &__inner__btn {
-      padding: 12px 26px;
-      font-size: 16px;
-      line-height: 19px;
+      &__money__item1,
+      &__money__item2,
+      &__money__item3,
+      &__money__item4 {
+        padding-right: 34px;
+        font-size: 25px;
+        line-height: 30px;
+      }
+      &__money__item5 {
+        display: none;
+      }
+
+      &__other-money__item {
+        padding-left: 0;
+        padding-right: 99px;
+        font-size: 20px;
+        line-height: 24px;
+      }
+      &__btn {
+        padding: 12px 26px;
+        font-size: 16px;
+        line-height: 18.96px;
+      }
     }
   }
 }
@@ -427,7 +446,7 @@
 
   .balloon {
     position: absolute;
-    transform: translateX(-160%) rotate(15deg) translateY(-280%);
+    transform: translateX(-190%) rotate(15deg) translateY(-160%);
     z-index: -1;
     img {
       width: 97px;
@@ -504,21 +523,30 @@
     min-height: 110px;
     background: #e3ecff;
     border-radius: 15px;
+    &__inner {
+      padding: 31px 26px 31px 30px;
 
-    &__inner__money__item {
-      padding-right: 35px;
-      font-size: 25px;
-      line-height: 30px;
-    }
-    &__inner__other-money__item {
-      padding-right: 40px;
-      font-size: 20px;
-      line-height: 24px;
-    }
-    &__inner__btn {
-      padding: 14px 25px;
-      font-size: 16px;
-      line-height: 19px;
+      &__money__item2,
+      &__money__item3,
+      &__money__item4 {
+        padding-right: 35px;
+        font-size: 25px;
+        line-height: 30px;
+      }
+      &__money__item5,
+      &__money__item1 {
+        display: none;
+      }
+      &__other-money__item {
+        padding-right: 40px;
+        font-size: 20px;
+        line-height: 24px;
+      }
+      &__btn {
+        padding: 14px 25px;
+        font-size: 16px;
+        line-height: 19px;
+      }
     }
   }
 }
@@ -546,7 +574,7 @@
 
   .balloon {
     position: absolute;
-    transform: translateX(-180%) rotate(15deg) translateY(-300%);
+    transform: translateX(-250%) rotate(15deg) translateY(-190%);
     z-index: 1;
     background-repeat: no-repeat;
     img {
@@ -619,21 +647,37 @@
     min-height: 170px;
     background: #e3ecff;
     border-radius: 15px;
+    &__inner {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 39px 63px 0 63px;
 
-    &__inner__money__item {
-      padding-right: 35px;
-      font-size: 25px;
-      line-height: 30px;
-    }
-    &__inner__other-money__item {
-      padding-right: 40px;
-      font-size: 20px;
-      line-height: 24px;
-    }
-    &__inner__btn {
-      padding: 14px 25px;
-      font-size: 16px;
-      line-height: 19px;
+      &__money__item2,
+      &__money__item3,
+      &__money__item5 {
+        padding-right: 26px;
+        font-size: 25px;
+        line-height: 30px;
+      }
+      &__money__item1,
+      &__money__item4 {
+        display: none;
+      }
+      &__money__item5 {
+        display: inline-block;
+        text-decoration: none;
+      }
+      &__other-money__item {
+        padding: 0;
+        font-size: 20px;
+        line-height: 24px;
+      }
+      &__btn {
+        padding: 12px 25px;
+        font-size: 16px;
+        line-height: 19px;
+        margin: 41px auto 40px;
+      }
     }
   }
 }
