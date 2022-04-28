@@ -50,7 +50,8 @@ accordionHeaderLegal.forEach(accordionHeaderLegal => {
 
 
 //Volunteering accordion 
-const accordionHeaderVolunteering = document.querySelectorAll('.blc__volunteering-accordion__inner__all-accordions__accordion__header');
+const accordionHeaderVolunteering = document.querySelectorAll
+('.blc__volunteering-accordion__inner__all-accordions__accordion__header');
 
 accordionHeaderVolunteering.forEach(accordionHeaderVolunteering => {
 	accordionHeaderVolunteering.addEventListener('click', event => {
@@ -96,6 +97,9 @@ $(document).ready(function(){
 	});
 });
 
+ 
+
+
 //slider mainpage our-kins
 $('.slider-card').slick({
 	lazyLoad: 'ondemand',
@@ -130,14 +134,14 @@ $(document).ready(function () {
 	});
 });
 
-//slider-photo volunteering 
-$('.slider-photo').slick({
-	lazyLoad: 'ondemand',
-	slidesToShow: 3,
-	dots: true,
-	speed: 800,
-	slidesToScroll: 1
-});
+//slider-photo volunteering
+// $('.slider-photo').slick({
+// 	lazyLoad: 'ondemand',
+// 	slidesToShow: 3,
+// 	dots: true,
+// 	speed: 800,
+// 	slidesToScroll: 1
+// });
 
 
 const accordionHeaderLegalEntities = document.querySelectorAll('.cooparation-accord__inner__all-accordions__accordion__header');
