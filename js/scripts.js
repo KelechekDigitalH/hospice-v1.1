@@ -70,6 +70,31 @@ accordionHeaderVolunteering.forEach(accordionHeaderVolunteering => {
 		}
 	});
 });
+//volunteering slider
+$(document).ready(function(){
+	$('.slider').slick({
+		arrows:true,
+		dots:true,
+		slidesToShow:3,
+		autoplay:true,
+		speed:1800,
+		autoplaySpeed:900,
+		responsive:[
+			{
+				breakpoint: 768,
+				settings: {
+					slidesToShow:2
+				}
+			},
+			{
+				breakpoint: 550,
+				settings: {
+					slidesToShow:1
+				}
+			}
+		]
+	});
+});
 
 //slider mainpage our-kins
 $('.slider-card').slick({
