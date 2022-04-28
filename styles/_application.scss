@@ -285,6 +285,7 @@
           width: 90%;
           height: 120px;
           margin-top: 3px;
+          margin-left: 15px;
           &__inputs {
             width: 95%;
             height: 72px;
@@ -298,12 +299,15 @@
         &__item-hperson{
           width: 90%;
           margin-top: 35px;
+          margin-left: 15px;
         }
         &__item-text {
           width: 90%;
+          margin-left: 15px;
         }
         &__item-status {
           width: 90%;
+          margin-left: 15px;
         }
       }
     }
