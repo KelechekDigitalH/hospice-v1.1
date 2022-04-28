@@ -274,26 +274,33 @@
   }
 }
 
-@media screen and (max-width: 1000px) {
+
+
+@media screen and (max-width: 1000.98px) {
   .blc__title-volunteering {
     &__inner {
       &__aroow-img {
-        display: none;
+        .img {
+          display: none;
+        }
       }
       &__finger-img {
         display: none;
-      }
+    }
     }
     .blc__volunteering-accordion {
       padding: 20px 0 63px;
-    }
-  }
 
+     
+    }
+ 
+  }
   .call-to-action {
     &__paint-element {
       display: none;
     }
   }
+
 
   .slider .slick-arrow {
     position: absolute;
@@ -342,8 +349,9 @@
   }
 }
 
+
 @media screen and (max-width: 480px) {
-  .breadcrumbs {
+  .breadcrumbs{
     display: none;
   }
   .blc__title-volunteering {

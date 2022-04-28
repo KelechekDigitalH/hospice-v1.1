@@ -100,6 +100,7 @@ $(document).ready(function(){
  
 
 
+
 //slider mainpage our-kins
 $('.slider-card').slick({
 	lazyLoad: 'ondemand',
