@@ -155,7 +155,7 @@ body {
   
 // adaptive 1000px
 // @media (max-width: 999.98px)
- @media screen and (max-width: 1000.98px)  {
+ @media screen and (max-width: 999.98px)  {
 
   .about-finger {
     img {
@@ -215,7 +215,125 @@ body {
   &__img {
     width: 302px;
   }
+}
 
 
+// adaptive 768px
+@media screen and (max-width: 767.98px) {
+  // .breadcrumbs {
+  //   margin-top: 20px;
+  //   }
+
+    .about-finger {
+      img {
+        width: 104px;
+      }
+      transform: translate(260%, -43%);
+    }
+    .about-kaplya {
+      display: none;
+    }
+    .about-finger2 {
+      img {
+        width: 91px;
+      }
+      transform: translate(520%, 374%);
+    }
+
+    .about-fund {
+      max-width: 732px;
+  
+      &__inner {
+        &__title {
+          font-size: 36px;
+          font-weight: 600;
+          margin-bottom: 0px;
+          margin-top: 30px;
+        }
+    
+        &__descr, &__descr1 {      
+          font-size: 20px;       
+          line-height: 30px;
+          margin-bottom: 0;
+          margin-top: 15px;
+        }
+
+        &__img {
+          width: 280px;
+          height: 195px;
+          margin-top: 15px;
+        }
+        
+        .title-his {
+          font-size: 30px;
+          line-height: 40px;
+          margin-bottom: 0px; 
+          margin-top: 25px;
+        }
+      }
+    }
+
+    .about-sidebar-bg {
+      display: none;
+    }
+  
+    .about-side-menu {
+      display: none;
+    }
+  
+    .about-sidebar-link {
+      display: none;
+    }
+
+}
+
+// adaptive 480px
+@media screen and (max-width: 479.98px) {
+  .about-finger {
+      img {
+        width: 63px;
+      }
+      transform: translate(223%, -13%);
+    }
+    .about-kaplya {
+      display: none;
+    }
+    .about-finger2 {
+      display: none;
+    }
+
+    .about-fund {
+      max-width: 450px;
+  
+      &__inner {
+        &__title {
+          font-size: 26px;
+          font-weight: 700;
+          margin-bottom: 0px;
+          margin-top: 20px;
+        }
+    
+        &__descr, &__descr1 {      
+          font-size: 16px;       
+          line-height: 24px;
+          margin-bottom: 0;
+          margin-top: 20px;
+        }
+
+        &__img {
+          width: 450px;
+          height: 309px;
+          margin-top: 20px;
+        }
+        
+        .title-his {
+          font-size: 26px;
+          line-height: 30px;
+          font-weight: 600;
+          margin-bottom: 0px; 
+          margin-top: 40px;
+        }
+      }
+    }
 
 }
