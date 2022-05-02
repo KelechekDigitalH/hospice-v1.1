@@ -2,7 +2,6 @@
 <html lang="en">
   <head>
     <title>Пожертвование - Первый Детский Хоспис</title>
-    <link rel="icon" href="../assets/main/logoL.svg">
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -44,19 +43,13 @@
                    <path d="M0.158203 8.825L3.97487 5L0.158203 1.175L1.3332 0L6.3332 5L1.3332 10L0.158203 8.825Z" fill="#616161"/>
                  </svg>				
                 </span>
-                <a class="breadcrumb__item-link" href="#">О фонде</a>
-                <span>
-                  <svg width="7" height="10" viewBox="0 0 7 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M0.158203 8.825L3.97487 5L0.158203 1.175L1.3332 0L6.3332 5L1.3332 10L0.158203 8.825Z" fill="#616161"/>
-                    </svg>				
-                </span>
-                <span class="breadcrumb__item-currant">Наша миссия</span>
+                <a class="breadcrumb__item-link" href="#">Пожертвовать</a>
         </div> 
 
-        <img class="elements-img" src="../assets/donate/design_elements.png" alt="element">
+        <img class="elements-img" src="../assets/donate/design_elements.svg" alt="element">
 
         <div class="donate">
-          <h1 class="donate__title">Выберите удобный для Вас способ оплаты</h1>
+          <h1 id="title480" class="donate__title">Выберите удобный для Вас способ оплаты</h1>
         </div>
         
        
@@ -76,6 +69,12 @@
       <img src="../assets/donate/bank-kicb.png" alt="kicb" class="pay-card__pay-card-bankTwo__img-kicb">
       <p class="pay-card__pay-card-bankTwo__kicbmain">Кыргызский Инвестиционно-Кредитный Банк</p>
       <div class="pay-card__pay-card-bankTwo__titlekicb">
+        <p class="pay-card__pay-card-bankTwo__titlekicb__title480px">
+          <strong>Расчетный Счет KGS:</strong> 1280096037288596 <strong>  БИК</strong> 128009
+        </p>
+        <p class="pay-card__pay-card-bankTwo__titlekicb__title480pxtwo">
+          <strong>Расчетный Счет USD: </strong> 1280096037288495 <strong>  БИК</strong> 128009
+        </p>
           <p class="pay-card__pay-card-bankTwo__titlekicb__kicbone"><strong>Расчетный Счет KGS:</strong></p>
           <p class="pay-card__pay-card-bankTwo__titlekicb__kicbone" >1280096037288596 </p>
              <p class="pay-card__pay-card-bankTwo__titlekicb__kicbone"><strong>БИК</strong> 128009</p> 
@@ -110,22 +109,27 @@
       <div class="rectangle__purse">
           <div class="rectangle__purse__mbank">
               <img class="rectangle__purse__mbank__img" src="../assets/donate/M-bank-icon.png" alt="pay-card">
+              <p class="titleone">Баланс.кг</p>
               <p class="rectangle__purse__mbank__title">0559647457</p>
           </div>
           <div class="rectangle__purse__obank">
               <img class="rectangle__purse__obank__img" src="../assets/donate/O-dengi-icon.png" alt="pay-card">
+              <p class="titleone">М Банк</p>
               <p class="rectangle__purse__obank__title">0707040602</p>
           </div>
           <div class="rectangle__purse__bilainbank">
               <img class="rectangle__purse__bilainbank__img" src="../assets/donate/balcnceKG-icon.png" alt="pay-card">
+              <p class="titleone">О! Деньги</p>
               <p class="rectangle__purse__bilainbank__title">0559647457</p>
           </div>
           <div class="rectangle__purse__elsom">
               <img class="rectangle__purse__elsom__img" src="../assets/donate/elsom-icon.png" alt="pay-card">
+              <p class="titleone">М Банк</p>
               <p class="rectangle__purse__elsom__title">0559647457</p>
           </div>
           <div class="rectangle__purse__pay">
               <img class="rectangle__purse__pay__img" src="../assets/donate/megaPay-icon.png" alt="pay-card">
+              <p class="titleone">MegaPay</p>
               <p class="rectangle__purse__pay__title">0559647457</p>
           </div>
       </div>
@@ -259,6 +263,11 @@
       </div>
     </div>
   </footer>
-
+  <script>
+  const mediaQuery = window.matchMedia('(max-width: 480px)')
+  if (mediaQuery.matches) {
+   document.getElementById("title480").textContent = "Выберите способ оплаты";
+}
+    </script>
   </body>
 </html>

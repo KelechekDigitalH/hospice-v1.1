@@ -64,7 +64,6 @@
     &__maintitle {
       line-height: 41px;
       text-transform: capitalize;
-      font-feature-settings: "pnum" on, "lnum" on;
       margin-left: 183px;
       margin-top: -55px;
     }
@@ -98,8 +97,6 @@
       width: 200px;
       font-size: 16px;
       line-height: 16px;
-      -webkit-font-feature-settings: "pnum" on, "lnum" on;
-      font-feature-settings: "pnum" on, "lnum" on;
       margin-left: 179px;
       margin-top: -60px;
     }
@@ -107,6 +104,12 @@
       font-size: 18px;
       line-height: 28px;
       margin: 41px 0 0 18px;
+      &__title480px {
+        display: none;
+      }
+      &__title480pxtwo{
+        display: none;
+      }
     }
   }
 
@@ -126,7 +129,6 @@
     &__maintitle {
       font-size: 16px;
       line-height: 26px;
-      font-feature-settings: "pnum" on, "lnum" on;
       margin-left: 179px;
       margin-top: -38px;
     }
@@ -156,12 +158,9 @@
   width: 1240px;
   height: 381px;
   background: #ffefab;
-  -webkit-box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.25);
   box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.25);
   border-radius: 15px;
   margin-top: 90px;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
   margin-bottom: 90px;
 
@@ -175,19 +174,13 @@
       font-weight: $fw-bold;
       font-size: 24px;
       line-height: 26px;
-      font-feature-settings: "pnum" on, "lnum" on;
       color: $color__black;
       margin: -33px 0 44px 60px;
     }
   }
 
   &__purse {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: row;
     flex-direction: row;
     column-gap: 20px;
     font-family: "Rubik", sans-serif;
@@ -266,3 +259,752 @@
     }
   }
 }
+
+.titleone {
+  display: none;
+}
+
+
+
+@media (max-width: 1000px) {
+  .elements-img {
+    display: none;}
+  .breadcrumbs {
+    margin: 16px 0;
+}
+
+  .donate {
+    margin-bottom: 30px;
+    &__title {
+      font-size: 30px;
+      margin-top: 40px;
+      letter-spacing: 1.2px;
+      margin-left: -29px;
+  }
+    }
+  
+
+  .pay-card {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 30px;
+    width: 969px;
+    &__pay-card-bank {
+      width: 303px;
+      height: 327px;
+  
+      &__img-baitushum {
+        content: url(../assets/donate/bank_logotwo.png);
+        width: 198px;
+        height: 53px;
+        margin-top: 20px;
+        margin-left: 15px;
+      }
+      &__maintitle {
+        display: none;
+      }
+      &__title {
+        width: 278px;
+        height: 200px;
+        margin: 22px 0px 0 15px;
+        &__one {
+          margin-bottom: 28px;
+        }
+        &__two {
+          margin-left: 1px;
+        }
+      }
+    }
+
+    &__pay-card-bankTwo {
+      width: 303px;
+      height: 327px;
+  
+      &__img-kicb {
+        content: url(../assets/donate/bank_logotree.png);
+        width: 130px;
+        height: 53px;
+        margin-top: 20px;
+        margin-left: 15px;
+      }
+      &__kicbmain {
+        display: none;
+      }
+      &__titlekicb {
+        margin: 23px 0 0px 15px
+      }
+    }
+  
+    &__pay-card-bankThree {
+      width: 303px;
+      height: 327px;
+  
+      &__img-optima {
+        content: url(../assets/donate/bank_logofor.png);
+        width: 196px;
+        height: 37px;
+        margin-top: 20px;
+        margin-left: 15px;
+      }
+      &__maintitle {
+        display: none;
+      }
+  
+      &__titleoptima {
+        width: 278px;
+        height: 200px;
+        margin: 0px 0 0 15px;
+  
+        &__optimaone {
+          margin-bottom: 20px;
+          margin-top: 38px;
+        }
+      }
+  
+      }
+  }
+
+  .rectangle {
+    width: 1000px;
+    height: 300px;
+    width: 100%;
+    margin-left: -15px;
+    margin-top: 29px;
+  
+    &__mainTitle {
+      padding-top: 73px;
+      margin-bottom: -16px;
+    margin-left: 343px;
+
+      &__img {
+        display: none;
+      }
+      &__title {
+        margin: -33px 0 44px 0px;
+        font-size: 26px;
+        
+      }
+    }
+  
+    &__purse {
+      display: flex;
+    flex-direction: row;
+    column-gap: 30px;
+    margin-left: 75px;
+    font-size: 14px;
+      &__mbank {
+        width: 146px;
+        height: 136px;
+  
+        &__img {
+          width: 44.51px;
+          height: 37.83px;
+          margin: 25px 0 0 0px;
+        }
+        &__title {
+          margin-top: 10px;
+          letter-spacing: 0.6px;
+        }
+      }
+  
+      &__obank {
+        width: 146px;
+        height: 136px;
+        
+  
+        &__img {
+          width: 44.51px;
+          height: 37.83px;
+          margin: 25px 0 0 0px;
+        }
+        &__title {
+          margin-top: 10px;
+          letter-spacing: 0.6px;
+        }
+      }
+  
+      &__bilainbank {
+        width: 146px;
+        height: 136px;
+        
+  
+        &__img {
+          width: 44.51px;
+          height: 37.83px;
+          margin: 25px 0 0 0px;
+        }
+        &__title {
+          margin-top: 10px;
+          letter-spacing: 0.6px;
+        }
+      }
+  
+      &__elsom {
+        width: 146px;
+        height: 136px;
+  
+        &__img {
+          width: 47px;
+          height: 38px;
+          margin: 25px 0 0 0px;
+        }
+        &__title {
+          margin-top: 10px;
+          letter-spacing: 0.6px;
+        }
+      }
+  
+      &__pay {
+        width: 146px;
+        height: 136px;
+        
+  
+        &__img {
+          width: 36px;
+          height: 39px;
+          margin: 25px 0 0 0px;
+        }
+        &__title {
+          margin-top: 10px;
+          letter-spacing: 0.6px;
+        }
+      }
+    }
+  }
+
+  .blc-call-to-action {
+    display: none;
+  }
+  
+}
+
+
+@media (max-width: 768px) {
+  .elements-img {
+    display: none;}
+  .breadcrumbs {
+    margin: 16px 0;
+}
+
+  .donate {
+    margin-bottom: 19px;
+    &__title {
+      font-size: 30px;
+      margin-top: 31px;
+      letter-spacing: 1.2px;
+      width: 431px;
+      height: 64px;
+      text-align: left;
+      margin-left: 5px;
+      line-height: 32px;
+  }
+  }
+    
+  
+
+  .pay-card {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 15px;
+    width: 732px;
+    height: 327px;
+    &__pay-card-bank {
+      width: 234px;
+      height: 327px;
+  
+      &__img-baitushum {
+        content: url(../assets/donate/bank_logotwo.png);
+        width: 198px;
+        height: 53px;
+        margin-top: 20px;
+        margin-left: 15px;
+      }
+      &__maintitle {
+        display: none;
+      }
+      &__title {
+        width: 206px;
+        height: 200px;
+        margin: 22px 0px 0 15px;
+        &__one {
+          margin-bottom: 28px;
+        }
+        &__two {
+          margin-left: 1px;
+        }
+      }
+    }
+
+    &__pay-card-bankTwo {
+      width: 234px;
+      height: 327px;
+  
+      &__img-kicb {
+        content: url(../assets/donate/bank_logotree.png);
+        width: 130px;
+        height: 53px;
+        margin-top: 20px;
+        margin-left: 15px;
+      }
+      &__kicbmain {
+        display: none;
+      }
+      &__titlekicb {
+        width: 206px;
+        height: 200px;
+        margin: 23px 0 0px 15px
+      }
+    }
+  
+    &__pay-card-bankThree {
+      width: 234px;
+      height: 327px;
+  
+      &__img-optima {
+        content: url(../assets/donate/bank_logofor.png);
+        width: 196px;
+        height: 37px;
+        margin-top: 20px;
+        margin-left: 15px;
+      }
+      &__maintitle {
+        display: none;
+      }
+  
+      &__titleoptima {
+        width: 206px;
+        height: 200px;
+        margin: 0px 0 0 15px;
+  
+        &__optimaone {
+          margin-bottom: 20px;
+          margin-top: 38px;
+        }
+      }
+  
+      }
+  }
+
+  .rectangle {
+    width: 768px;
+    height: 216px;
+    width: 100%;
+    margin-left: -15px;
+    margin-top: 29px;
+  
+    &__mainTitle {
+      padding-top: 54px;
+      margin-bottom: -21px;
+      margin-left: 243px;
+
+      &__img {
+        display: none;
+      }
+      &__title {
+        margin: -33px 0 44px 0px;
+        font-size: 24px;
+        
+      }
+    }
+  
+    &__purse {
+      display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+    margin-left: 32px;
+    font-size: 14px;
+      &__mbank {
+        width: 134px;
+        height: 120px;
+  
+        &__img {
+          width: 44px;
+          height: 38px;
+          margin: 25px 0 0 0px;
+        }
+        &__title {
+          font-size: 11px;
+          margin-top: 10px;
+          letter-spacing: -0.4px;
+        }
+      }
+  
+      &__obank {
+        width: 134px;
+        height: 120px;
+        
+  
+        &__img {
+          width: 44px;
+          height: 38px;
+          margin: 25px 0 0 0px;
+        }
+        &__title {
+          font-size: 11px;
+          margin-top: 10px;
+          letter-spacing: -0.4px;
+        }
+      }
+  
+      &__bilainbank {
+        width: 134px;
+        height: 120px;
+        
+  
+        &__img {
+          width: 44px;
+          height: 38px;
+          margin: 25px 0 0 0px;
+        }
+        &__title {
+          font-size: 11px;
+          margin-top: 10px;
+          letter-spacing: -0.4px;
+        }
+      }
+  
+      &__elsom {
+        width: 134px;
+        height: 120px;
+  
+        &__img {
+          content: url(../assets/donate/balcnceKG-icon.png);
+          width: 44px;
+          height: 38px;
+          margin: 25px 0 0 0px;
+        }
+        &__title {
+          font-size: 11px;
+          margin-top: 10px;
+          letter-spacing: -0.4px;
+        }
+      }
+  
+      &__pay {
+        width: 134px;
+        height: 120px;
+        
+  
+        &__img {
+          content: url(../assets/donate/balcnceKG-icon.png);
+          width: 44px;
+          height: 38px;
+          margin: 25px 0 0 0px;
+        }
+        &__title {
+          font-size: 11px;
+          margin-top: 10px;
+          letter-spacing: -0.4px;
+        }
+      }
+    }
+  }
+
+  .blc-call-to-action {
+    display: none;
+  }
+  
+}
+
+
+@media (max-width: 480px) {
+  .elements-img {
+    display: none;
+  }
+  .titleone {
+    display: block;
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 15px;
+    align-items: center;
+    text-align: center;
+    margin-top: -9px;
+  }
+  .breadcrumbs {
+    display: none;
+}
+
+  .donate {
+    margin-bottom: 19px;
+    &__title::after  {
+      display: none;
+  }
+  
+  }
+    #title480 {
+      font-family: "Rubik";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 26px;
+      line-height: 30px;
+      margin-left: -2px;
+      margin-top: -26px;
+      letter-spacing: 0;
+    }
+    // .pay-card::before {
+    //   // position: absolute;
+    // content: "Выберите способ оплаты";
+    //   font-family: 'Rubik';
+    //   font-style: normal;
+    //   font-weight: 700;
+    //   font-size: 26px;
+    //   line-height: 30px;
+
+    // }
+
+  .pay-card {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 20px;
+    width: 450px;
+    height: 754px;
+    margin-top: -35px;
+    &__pay-card-bank {
+      width: 450px;
+      height: 238px;
+  
+      &__img-baitushum {
+        content: url(../assets/donate/bank_logotwo.png);
+        width: 170px;
+        height: 46px;
+        margin-top: 24px;
+        margin-left: 65px;
+      }
+      &__maintitle {
+        display: none;
+      }
+      &__title {
+        width: 369px;
+        height: 115px;
+        font-size: 16px;
+        line-height: 30px;
+        margin-left: 65px;
+        &__two {
+          margin-top: -20px;
+        }
+      }
+    }
+
+    &__pay-card-bankTwo {
+      width: 450px;
+      height: 238px;
+  
+      &__img-kicb {
+        content: url(../assets/donate/bank_logotree.png);
+        width: 154.81px;
+        height: 64px;
+        margin-top: 24px;
+        margin-left: 64.86px;
+      }
+      &__kicbmain {
+        display: none;
+      }
+      &__titlekicb {
+        width: 369px;
+        height: 115px;
+        font-size: 16px;
+        line-height: 30px;
+        margin-left: 65px;
+        margin-top: 11px;
+        &__title480px {
+          display: block;
+          width: 369px;
+          height: 115px;
+          line-height: 30px;
+        }
+         &__title480pxtwo {
+          display: block;
+          width: 369px;
+          height: 115px;
+          margin-top: -55px;
+          line-height: 30px;
+         }
+        &__kicbone {
+          display: none;
+        }
+        &__kicbtwo {
+          display: none;
+        }
+      }
+    }
+  
+    &__pay-card-bankThree {
+      width: 450px;
+      height: 238px;
+  
+      &__img-optima {
+        content: url(../assets/donate/bank_logofor.png);
+        width: 196px;
+        height: 37px;
+        margin-top: 26px;
+        margin-left: 64px;
+        
+      }
+      &__maintitle {
+        display: none;
+      }
+  
+      &__titleoptima {
+        width: 346px;
+        height: 110px;
+        margin-left: 64px;
+        font-size: 16px;
+        line-height: 30px;
+        margin-top: -17px;
+  
+        &__optimaone {
+          width: 346px;
+          height: 110px;
+        }
+        &__optimatwo {
+          margin-top: -73px;
+          width: 346px;
+          height: 110px;
+        }
+      }
+  
+      }
+  }
+
+  .rectangle {
+    width: 450px;
+    height: 321px;
+    background: #ffff;
+    box-shadow: none;
+    border-radius: 0px;
+  
+    &__mainTitle {
+      padding-top: 35px;
+      margin-bottom: -21px;
+      margin-left: 87.16px;
+
+      &__img {
+        display: none;
+      }
+      &__title {
+        font-size: 26px;
+        line-height: 30px;
+        
+      }
+    }
+  
+    &__purse {
+      display: flex;
+      flex-wrap: wrap;
+      column-gap: 24px;
+      row-gap: 22px;
+      justify-content: center;
+      width: 450px;
+      margin-left: 15px;
+      &__mbank {
+        width: 134px;
+        height: 121px;
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 5px;
+  
+        &__img {
+          content: url(../assets/donate/balcnceKG-icon.png);
+          width: 44.51px;
+          height: 37.83px;
+          margin: 25px 0 0 0px;
+        }
+        &__title {
+          font-size: 11px;
+          margin-top: 4px;
+          letter-spacing: -0.1px;
+        }
+      }
+  
+      &__obank {
+        width: 134px;
+        height: 121px;
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 5px;
+        
+  
+        &__img {
+          content: url(../assets/donate/M-bank-icon.png);
+          width: 44.51px;
+          height: 37.83px;
+          margin: 25px 0 0 0px;
+        }
+        &__title {
+          font-size: 11px;
+          margin-top: 4px;
+          letter-spacing: -0.1px;
+        }
+      }
+  
+      &__bilainbank {
+        width: 134px;
+        height: 121px;
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 5px;
+        
+  
+        &__img {
+          content: url(../assets/donate/O-dengi-icontwo.png);
+          width: 44.51px;
+          height: 37.83px;
+          margin: 25px 0 0 0px;
+        }
+        &__title {
+          font-size: 11px;
+          margin-top: 4px;
+          letter-spacing: -0.1px;
+        }
+      }
+
+      
+  
+      &__elsom {
+        width: 134px;
+        height: 121px;
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 5px;
+  
+        &__img {
+          content: url(../assets/donate/M-bank-icon.png);
+          width: 44.51px;
+          height: 37.83px;
+          margin: 25px 0 0 0px;
+        }
+        &__title {
+          font-size: 11px;
+          margin-top: 4px;
+          letter-spacing: -0.1px;
+        }
+      }
+  
+      &__pay {
+        width: 134px;
+        height: 121px;
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 5px;
+        
+  
+        &__img {
+          content: url(../assets/donate/O-dengi-icon480.png);
+          width: 44.51px;
+          height: 37.83px;
+          margin: 25px 0 0 0px;
+        }
+        &__title {
+          font-size: 11px;
+          margin-top: 4px;
+          letter-spacing: -0.1px;
+        }
+      }
+    }
+  }
+
+  .blc-call-to-action {
+    display: none;
+  }
+  
+}
+
+
+

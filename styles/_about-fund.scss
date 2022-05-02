@@ -4,29 +4,6 @@
 //   background-color: $color-black;
 //   color: $color-yellow;
 // }
-
-$color__violet: #775CA6;
-$color__black: #000000;
-$color__white: #FFFFFF;
-
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-}
-
-body {
-  margin: 0;
-  padding: 0;
-  font-size: 14px;
-}
-
-// .container {
-//   width: 1242px;
-//   margin: 0 auto;
-// }
-
-
 .breadcrumbs {
   margin-top: 40px;
 
@@ -48,13 +25,8 @@ body {
 
 .about-finger {
   position: absolute;
-  // right: 47.5%;
-  // top: 10.55%;
-  // bottom: 82.69%;
   height: 129px;
   width: 136px;
-  // left: 610px;
-  // top: 201px;
   z-index: -1;
   transform: translate(400%,-2%);
 }
@@ -63,8 +35,6 @@ body {
   position: absolute;
   height: 75px;
   width: 69px;
-  // left: 928px;
-  // top: 485px;
   z-index: -1;
   transform: translate(1100%,350%);
 }
@@ -73,15 +43,12 @@ body {
   position: absolute;
   height: 113px;
   width: 120px;
-  // left: 1297px;
-  // top: 871px;
   z-index: -1;
   transform: translate(890%,590%);
 
 }
 
 .about-wrapper {
-  display: flex;
   gap: 20px;
   margin-bottom: 90px;
 }
@@ -161,4 +128,258 @@ body {
     margin-bottom: 22px;
   }
 
+  
+// adaptive 1000px
+// @media (max-width: 999.98px)
+ @media screen and (max-width: 999.98px)  {
 
+  .about-finger {
+    img {
+      width: 108px;
+    }
+    transform: translate(300%,23%);
+  }
+  .about-kaplya {
+    display: none;
+  }
+  .about-finger2 {
+    img {
+      width: 96px;
+    }
+    transform: translate(650%,350%);
+  }
+
+  .about-fund {
+    max-width: 709px;
+
+    &__inner {
+      &__title {
+        margin-top: 40px;
+        margin-bottom: 30px;
+      }
+  
+      &__descr, &__descr1 {      
+        font-size: 20px;       
+        line-height: 30px;
+        margin-bottom: 30px;
+      }
+      
+      .title-his {
+        font-size: 30px;
+        line-height: 40px;
+        margin-bottom: 40px; 
+      }
+    }
+  }
+
+  .about-sidebar-bg {
+    margin-left: 754px;
+    width: 231px;
+    min-height: 229px;
+    transform: translate(-5%,-350%);
+  }
+
+  .about-side-menu {
+    max-width: 170px;
+    margin-top: 34px;
+  }
+
+  .about-sidebar-link {
+    font-size: 16px;
+    line-height: 19px;
+  }
+  // &__img {
+  //   width: 302px;
+  // }
+}
+
+
+// adaptive 768px
+@media screen and (max-width: 767.98px) {
+  // .breadcrumbs {
+  //   margin-top: 20px;
+  //   }
+
+    .about-finger {
+      img {
+        width: 104px;
+      }
+      transform: translate(260%, -43%);
+    }
+    .about-kaplya {
+      display: none;
+    }
+    .about-finger2 {
+      img {
+        width: 91px;
+      }
+      transform: translate(520%, 374%);
+    }
+
+    .about-fund {
+      max-width: 732px;
+  
+      &__inner {
+        &__title {
+          font-size: 36px;
+          font-weight: 600;
+          margin-bottom: 0px;
+          margin-top: 30px;
+        }
+    
+        &__descr, &__descr1 {      
+          font-size: 20px;       
+          line-height: 30px;
+          margin-bottom: 0;
+          margin-top: 15px;
+        }
+
+        &__img {
+          width: 280px;
+          height: 195px;
+          margin-top: 15px;
+        }
+        
+        .title-his {
+          font-size: 30px;
+          line-height: 40px;
+          margin-bottom: 0px; 
+          margin-top: 25px;
+        }
+      }
+    }
+
+    .about-sidebar-bg {
+      display: none;
+    }
+  
+    .about-side-menu {
+      display: none;
+    }
+  
+    .about-sidebar-link {
+      display: none;
+    }
+
+    .call-to-action {
+      max-width: 732px;
+      min-height: 110px;
+      background: #e3ecff;
+      border-radius: 15px;
+      &__inner {
+        padding: 31px 26px 31px 30px;
+  
+        &__money__item2,
+        &__money__item3,
+        &__money__item4 {
+          padding-right: 35px;
+          font-size: 25px;
+          line-height: 30px;
+        }
+        &__money__item5,
+        &__money__item1 {
+          display: none;
+        }
+        &__other-money__item {
+          padding-right: 40px;
+          font-size: 20px;
+          line-height: 24px;
+        }
+        &__btn {
+          padding: 14px 25px;
+          font-size: 16px;
+          line-height: 19px;
+        }
+      }
+    }
+
+}
+
+// adaptive 480px
+@media screen and (max-width: 479.98px) {
+  .about-finger {
+      img {
+        width: 63px;
+      }
+      transform: translate(223%, -13%);
+    }
+    .about-kaplya {
+      display: none;
+    }
+    .about-finger2 {
+      display: none;
+    }
+
+    .about-fund {
+      max-width: 450px;
+  
+      &__inner {
+        &__title {
+          font-size: 26px;
+          font-weight: 700;
+          margin-bottom: 0px;
+          margin-top: 20px;
+        }
+    
+        &__descr, &__descr1 {      
+          font-size: 16px;       
+          line-height: 24px;
+          margin-bottom: 0;
+          margin-top: 20px;
+        }
+
+        &__img {
+          width: 450px;
+          height: 309px;
+          margin-top: 20px;
+        }
+        
+        .title-his {
+          font-size: 26px;
+          line-height: 30px;
+          font-weight: 600;
+          margin-bottom: 0px; 
+          margin-top: 40px;
+        }
+
+      }
+    }  .call-to-action {
+    max-width: 450px;
+    min-height: 170px;
+    background: #e3ecff;
+    border-radius: 15px;
+    &__inner {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 39px 63px 0 63px;
+
+      &__money__item2,
+      &__money__item3,
+      &__money__item5 {
+        padding-right: 26px;
+        font-size: 25px;
+        line-height: 30px;
+      }
+      &__money__item1,
+      &__money__item4 {
+        display: none;
+      }
+      &__money__item5 {
+        display: inline-block;
+        text-decoration: none;
+      }
+      &__other-money__item {
+        padding: 0;
+        font-size: 20px;
+        line-height: 24px;
+      }
+      &__btn {
+        padding: 12px 25px;
+        font-size: 16px;
+        line-height: 19px;
+        margin: 41px auto 40px;
+      }
+    }
+  }
+
+}

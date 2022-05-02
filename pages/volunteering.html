@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
   <meta charset="UTF-8" />
@@ -7,8 +7,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Волонтерсвто - Первый Детский Хоспис</title>
   <link rel="icon" href="../assets/main/logoL.svg">
-  <link rel="stylesheet" href="libs/slick/slick.css">
-  <link rel="stylesheet" href="libs/slick/slick-theme.css">
+  <link rel="stylesheet" href="../libs/slick/slick.css">
+  <link rel="stylesheet" href="../libs/slick/slick-theme.css">
   <link rel="stylesheet" href="../css/all-styles.min.css" />
 </head>
 
@@ -39,7 +39,7 @@
 
   <main>
     <div class="container">
-      <ul class="breadcrumbs">
+      <ul class="breadcrumbs padding">
         <li class="breadcrumbs_item"><a class="breadcrumbs_link" href="main-page.html">Главная </a></li>
         <li class="breadcrumbs_item"><a class="breadcrumbs_link" href="want-to-help.html">Хочу помочь</a> </li>
         <li class="breadcrumbs_item"><a class="breadcrumbs_active" href="volunteering.html">Волонтерство</a> </li>
@@ -59,7 +59,7 @@
           </div>
 
           <div class="blc__title-volunteering__inner__aroow-img">
-            <img class="blc__title-volunteering__inner__aroow-img" src="../assets/volonteering/arrow_10.png"
+            <img class="blc__title-volunteering__inner__aroow-img img" src="../assets/volonteering/arrow_10.png"
               alt="aroow">
           </div>
 
@@ -182,39 +182,29 @@
               <div class="blc__volunteering-accordion__inner__all-accordions__accordion__body">
                 <p class="blc__volunteering-accordion__inner__all-accordions__accordion__body__description">
                   // Здесь можно загружать фотографии волонтеров, ФИО и позиции. В каком мероприятии
-                  участвовали//
-                  <div class="blc__volunteering-accordion__inner__accord3__slider slider-photo">
-                      <!-- <div class="photo"
-                      <img class="blc__volunteering-accordion__inner__accord3__slider__vektor"
-                        src="../assets/volonteering/slider_arrow(left) (1).svg" alt="vektor">
-                    </div> -->
-                      <div class="photo">
-                        <div class="photo-item">
-                          <img class="blc__volunteering-accordion__inner__accord3__slider__img"
-                            src="../assets/volonteering/volunter_2.jpg" alt="images">
-                        </div>
-                      </div>
-                      <div class="photo">
-                        <div class="photo-item">
-                          <img class="blc__volunteering-accordion__inner__accord3__slider__img"
-                            src="../assets/volonteering/volunter_3.jpg" alt="images">
-                        </div>
-                      </div>
-                      <div class="photo">
-                        <div class="photo-item">
-                          <img class="blc__volunteering-accordion__inner__accord3__slider__img"
-                            src="../assets/volonteering/volunter_1.jpg" alt="images">
-                        </div>
-                      </div>
-                      <!-- <div class="photo">
-                      <img class="blc__volunteering-accordion__inner__accord3__slider__vektor"
-                        src="../assets/volonteering/slider_arrow(right).svg" alt="images">
-                    </div> -->
+                  участвовали//</p>
+                <div class="wrapper">
+                  <div class="slider">
+                    <div class="slider__item ">
+                      <img src="../assets/volonteering/volunter_1.jpg" alt="">
+                    </div>
+                    <div class="slider__item">
+                      <img src="../assets/volonteering/volunter_2.jpg" alt="">
+                    </div>
+                    <div class="slider__item filter">
+                      <img src="../assets/volonteering/volunter_3.jpg" alt="">
+                    </div>
+                    <div class="slider__item">
+                      <img src="../assets/volonteering/volunter_2.jpg" alt="">
+                    </div>
                   </div>
+                </div>
               </div>
             </div>
     </section>
-    <section class="call-to-action">
+
+
+    <!-- <section class="call-to-action">
       <div class="call-to-action">
         <div class="container">
           <div class="call-to-action__inner">
@@ -238,7 +228,8 @@
         </div>
       </div>
       </div>
-    </section>
+    </section> -->
+
   </main>
 
   <footer class="footer">
@@ -344,11 +335,15 @@
       </div>
     </div>
   </footer>
-
- <!-- Подключаем слайдер Slick -->
-  <script src="js/slick.min.js"></script>
- <!-- Подключаем файл скриптов -->
+  <!-- Подключаем jQuery -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <!-- Подключаем слайдер Slick -->
+  <script src="../js/slick.min.js"></script>
+  <!-- Подключаем файл скриптов -->
   <script src="../js/scripts.js"></script>
+
+
+
 
 </body>
 
