@@ -261,6 +261,38 @@
       display: none;
     }
 
+    .call-to-action {
+      max-width: 732px;
+      min-height: 110px;
+      background: #e3ecff;
+      border-radius: 15px;
+      &__inner {
+        padding: 31px 26px 31px 30px;
+  
+        &__money__item2,
+        &__money__item3,
+        &__money__item4 {
+          padding-right: 35px;
+          font-size: 25px;
+          line-height: 30px;
+        }
+        &__money__item5,
+        &__money__item1 {
+          display: none;
+        }
+        &__other-money__item {
+          padding-right: 40px;
+          font-size: 20px;
+          line-height: 24px;
+        }
+        &__btn {
+          padding: 14px 25px;
+          font-size: 16px;
+          line-height: 19px;
+        }
+      }
+    }
+
 }
 
 // adaptive 480px
@@ -309,7 +341,45 @@
           margin-bottom: 0px; 
           margin-top: 40px;
         }
+
+      }
+    }  .call-to-action {
+    max-width: 450px;
+    min-height: 170px;
+    background: #e3ecff;
+    border-radius: 15px;
+    &__inner {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 39px 63px 0 63px;
+
+      &__money__item2,
+      &__money__item3,
+      &__money__item5 {
+        padding-right: 26px;
+        font-size: 25px;
+        line-height: 30px;
+      }
+      &__money__item1,
+      &__money__item4 {
+        display: none;
+      }
+      &__money__item5 {
+        display: inline-block;
+        text-decoration: none;
+      }
+      &__other-money__item {
+        padding: 0;
+        font-size: 20px;
+        line-height: 24px;
+      }
+      &__btn {
+        padding: 12px 25px;
+        font-size: 16px;
+        line-height: 19px;
+        margin: 41px auto 40px;
       }
     }
+  }
 
 }
