@@ -24,11 +24,11 @@ accordionHeader.forEach(accordionHeader => {
 
 
 // LEGAL ENTITIES PAGE SCRIPTS
-const accordionHeaderLegal = document.querySelectorAll('.legal-programs-first-kids-hospice__inner__all-accordions__accordion__header');
+const accordionHeaderLegal = document.querySelectorAll('.legal-programs__header');
 
 accordionHeaderLegal.forEach(accordionHeaderLegal => {
 	accordionHeaderLegal.addEventListener('click', event => {
-		const currentActiveHeaderLegal = document.querySelector('.legal-programs-first-kids-hospice__inner__all-accordions__accordion__header.active-legal');
+		const currentActiveHeaderLegal = document.querySelector('.legal-programs__header.active-legal');
 		if (currentActiveHeaderLegal && currentActiveHeaderLegal !== accordionHeaderLegal) {
 			currentActiveHeaderLegal.classList.toggle('active-legal');
 			currentActiveHeaderLegal.nextElementSibling.style.maxHeight = 0;
@@ -51,7 +51,7 @@ accordionHeaderLegal.forEach(accordionHeaderLegal => {
 
 //Volunteering accordion 
 const accordionHeaderVolunteering = document.querySelectorAll
-('.blc__volunteering-accordion__inner__all-accordions__accordion__header');
+	('.blc__volunteering-accordion__inner__all-accordions__accordion__header');
 
 accordionHeaderVolunteering.forEach(accordionHeaderVolunteering => {
 	accordionHeaderVolunteering.addEventListener('click', event => {
@@ -72,32 +72,32 @@ accordionHeaderVolunteering.forEach(accordionHeaderVolunteering => {
 	});
 });
 //volunteering slider
-$(document).ready(function(){
+$(document).ready(function () {
 	$('.slider').slick({
-		arrows:true,
-		dots:true,
-		slidesToShow:3,
-		autoplay:true,
-		speed:1800,
-		autoplaySpeed:900,
-		responsive:[
+		arrows: true,
+		dots: true,
+		slidesToShow: 3,
+		autoplay: true,
+		speed: 1800,
+		autoplaySpeed: 900,
+		responsive: [
 			{
 				breakpoint: 768,
 				settings: {
-					slidesToShow:2
+					slidesToShow: 2
 				}
 			},
 			{
 				breakpoint: 550,
 				settings: {
-					slidesToShow:1
+					slidesToShow: 1
 				}
 			}
 		]
 	});
 });
 
- 
+
 
 
 
@@ -145,23 +145,23 @@ $(document).ready(function () {
 // });
 
 
-const accordionHeaderLegalEntities = document.querySelectorAll('.cooparation-accord__inner__all-accordions__accordion__header');
+// const accordionHeaderLegalEntities = document.querySelectorAll('.cooparation-accord__inner__all-accordions__accordion__header');
 
-accordionHeaderLegalEntities.forEach(accordionHeaderLgalEntities => {
-	accordionHeaderLgalEntities.addEventListener('click', event => {
-		const currentActiveHeaderLegalEntities = document.querySelector('.cooparation-accord__inner__all-accordions__accordion__header.active');
-		if (currentActiveHeaderLegalEntities && currentActiveHeaderLegalEntities !== accordionHeaderLegalEntities) {
-			currentActiveHeaderLegalEntities.classList.toggle('active');
-			currentActiveHeaderLegalEntities.nextElementSibling.style.maxHeight = 0;
-		}
+// accordionHeaderLegalEntities.forEach(accordionHeaderLgalEntities => {
+// 	accordionHeaderLgalEntities.addEventListener('click', event => {
+// 		const currentActiveHeaderLegalEntities = document.querySelector('.cooparation-accord__inner__all-accordions__accordion__header.active');
+// 		if (currentActiveHeaderLegalEntities && currentActiveHeaderLegalEntities !== accordionHeaderLegalEntities) {
+// 			currentActiveHeaderLegalEntities.classList.toggle('active');
+// 			currentActiveHeaderLegalEntities.nextElementSibling.style.maxHeight = 0;
+// 		}
 
-		accordionHeaderLegalEntities.classList.toggle('active');
-		const accordionBodyLegalEntities = accordionHeaderLegalEntities.nextElementSibling;
+// 		accordionHeaderLegalEntities.classList.toggle('active');
+// 		const accordionBodyLegalEntities = accordionHeaderLegalEntities.nextElementSibling;
 
-		if (accordionHeaderLegalEntities.classList.contains('active')) {
-			accordionBodyLegalEntities.style.maxHeight = LegalEntities.scrollHeight + 'px';
-		} else {
-			accordionBodyLegalEntities.style.maxHeight = 0;
-		}
-	});
-});
+// 		if (accordionHeaderLegalEntities.classList.contains('active')) {
+// 			accordionBodyLegalEntities.style.maxHeight = LegalEntities.scrollHeight + 'px';
+// 		} else {
+// 			accordionBodyLegalEntities.style.maxHeight = 0;
+// 		}
+// 	});
+// });

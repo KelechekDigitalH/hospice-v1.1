@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <title>Юр.Лицо - Первый Детский Хоспис</title>
     <link rel="icon" href="../assets/main/logoL.svg" />
@@ -8,46 +8,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../css/all-styles.min.css" />
   </head>
-
   <body>
     <header>
-		<div class="container">
-			<div class="header-inner">
-				<a href="#">
-					<img src="../assets/main/logo.svg" alt="Logo" />
-				</a>
-				<nav class="nav">
-					<ul class="menu">
-						<li class="menu__item active">
-							<a class="menu__link" href="#">О ФОНДЕ</a>
-						</li>
-						<li class="menu__item">
-							<a class="menu__link" href="#">ХОЧУ ПОМОЧЬ</a>
-						</li>
-						<li class="menu__item">
-							<a class="menu__link" href="#">НУЖНА ПОМОЩЬ</a>
-						</li>
-					</ul>
-					<a class="menu__link menu__link__btn" href="#">ПОЖЕРТВОВАТЬ</a>
-				</nav>
-			</div>
-		</div>
-	</header>
+      <div class="container">
+        <div class="header-inner">
+          <a class="logo" href="../main-page.html">
+            <img
+              class="logo__img"
+              src="../assets/main/logo-hospice-header.svg"
+              alt="Logo"
+            />
+            <p class="logo__title">
+              Первый Детский <br />
+              Хоспис
+            </p>
+          </a>
+          <nav class="nav">
+            <ul class="menu">
+              <li class="menu__item active">
+                <a class="menu__link" href="about-fund.html">О ФОНДЕ</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="want-to-help.html">ХОЧУ ПОМОЧЬ</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="need-help.html">НУЖНА ПОМОЩЬ</a>
+              </li>
+            </ul>
+            <a class="menu__link menu__link__btn" href="donation.html"
+              >ПОЖЕРТВОВАТЬ</a
+            >
+            <div class="burger">
+              <span></span>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
 
     <main>
-      <div class="breadcrumb">
+      <div class="breadcrumbs-blc breadcrumbs">
         <div class="container">
-          <ul class="breadcrumb__menu">
-            <li class="breadcrumb__item">
-              <a href="/main-page.html" class="breadcrumb__link">Главная</a>
+          <ul class="breadcrumbs__menu">
+            <li class="breadcrumbs__item">
+              <a href="/main-page.html" class="breadcrumbs__link">Главная</a>
             </li>
-            <li class="breadcrumb__item">
-              <a href="want-to-help.html" class="breadcrumb__link"
+            <li class="breadcrumbs__item">
+              <a href="want-to-help.html" class="breadcrumbs__link"
                 >Хочу помочь</a
               >
             </li>
-            <li class="breadcrumb__item">
-              <a href="#" class="breadcrumb__link breadcrumb__link--active"
+            <li class="breadcrumbs__item">
+              <a href="#" class="breadcrumbs__link breadcrumbs__link--active"
                 >Юридические лица</a
               >
             </li>
@@ -55,11 +67,11 @@
         </div>
       </div>
 
-      <section class="legal-entities">
-        <div class="container">
-          <div class="legal-entities__inner">
-            <h1 class="legal-entities__inner__title">Юридические лица</h1>
-            <p class="legal-entities__inner__txt">
+      <div class="legal-blc">
+        <div class="legal-entities">
+          <div class="container">
+            <h1 class="legal-entities__title title">Юридические лица</h1>
+            <p class="legal-entities__txt">
               Возможно, вы давно задумывались над тем, чтобы помогать детям, но
               не знали, как это сделать. Первый Детский Хоспис с радостью
               поддержит любую вашу благотворительную инициативу и поможет в
@@ -67,32 +79,20 @@
             </p>
           </div>
         </div>
-      </section>
 
-      <section class="legal-programs-first-kids-hospice">
-        <div class="container">
-          <div class="legal-programs-first-kids-hospice__inner">
-            <h4 class="legal-programs-first-kids-hospice__inner__title">
+        <div class="legal-programs">
+          <div class="container">
+            <h4 class="legal-programs__title">
               Вот некоторые варианты сотрудничества:
             </h4>
 
-            <div
-              class="legal-programs-first-kids-hospice__inner__all-accordions"
-            >
-              <div
-                class="legal-programs-first-kids-hospice__inner__all-accordions__accordion"
-              >
-                <div
-                  class="legal-programs-first-kids-hospice__inner__all-accordions__accordion__header"
-                >
+            <div class="legal-programs__accordions">
+              <div class="legal-programs__accordion">
+                <div class="legal-programs__header">
                   Разовое или регулярное перечисление денежных средств
                 </div>
-                <div
-                  class="legal-programs-first-kids-hospice__inner__all-accordions__accordion__body"
-                >
-                  <p
-                    class="legal-programs-first-kids-hospice__inner__all-accordions__accordion__body__description"
-                  >
+                <div class="legal-programs__body">
+                  <p class="legal-programs__desc">
                     Возможно, вы давно задумывались над тем, чтобы помогать
                     детям, но не знали, как это сделать. Первый Детский Хоспис с
                     радостью поддержит любую вашу благотворительную инициативу и
@@ -101,82 +101,52 @@
                 </div>
               </div>
 
-              <div
-                class="legal-programs-first-kids-hospice__inner__all-accordions__accordion"
-              >
-                <div
-                  class="legal-programs-first-kids-hospice__inner__all-accordions__accordion__header"
-                >
+              <div class="legal-programs__accordion">
+                <div class="legal-programs__header">
                   Совместные благотворительные акции
                 </div>
-                <div
-                  class="legal-programs-first-kids-hospice__inner__all-accordions__accordion__body"
-                >
-                  <p
-                    class="legal-programs-first-kids-hospice__inner__all-accordions__accordion__body__description"
-                  >
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Suscipit, consequatur nisi.
+                <div class="legal-programs__body">
+                  <p class="legal-programs__desc">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id
+                    nesciunt quisquam quia pariatur mollitia, accusamus
+                    voluptatibus quidem debitis vitae soluta molestiae atque
+                    quis, iste nam ullam fugit. Quos, officiis fuga?
                   </p>
                 </div>
               </div>
 
-              <div
-                class="legal-programs-first-kids-hospice__inner__all-accordions__accordion"
-              >
-                <div
-                  class="legal-programs-first-kids-hospice__inner__all-accordions__accordion__header"
-                >
+              <div class="legal-programs__accordion">
+                <div class="legal-programs__header">
                   Сбор пожертвований среди сотрудников
                 </div>
-                <div
-                  class="legal-programs-first-kids-hospice__inner__all-accordions__accordion__body"
-                >
-                  <p
-                    class="legal-programs-first-kids-hospice__inner__all-accordions__accordion__body__description"
-                  >
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Suscipit, consequatur nisi.
+                <div class="legal-programs__body">
+                  <p class="legal-programs__desc">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Atque, dicta, maxime ab quam culpa laborum sit labore ut
+                    veritatis similique voluptatibus numquam fugit repudiandae
+                    corporis impedit necessitatibus, voluptates odio dolores.
                   </p>
                 </div>
               </div>
 
-              <div
-                class="legal-programs-first-kids-hospice__inner__all-accordions__accordion"
-              >
-                <div
-                  class="legal-programs-first-kids-hospice__inner__all-accordions__accordion__header"
-                >
-                  Отчисления от продаж
-                </div>
-                <div
-                  class="legal-programs-first-kids-hospice__inner__all-accordions__accordion__body"
-                >
-                  <p
-                    class="legal-programs-first-kids-hospice__inner__all-accordions__accordion__body__description"
-                  >
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Illo, cum aliquam ut, sequi atque pariatur, error totam sed
-                    reprehenderit inventore placeat vitae accusantium autem
-                    necessitatibus possimus incidunt quisquam hic quasi.
+              <div class="legal-programs__accordion">
+                <div class="legal-programs__header">Отчисления от продаж</div>
+                <div class="legal-programs__body">
+                  <p class="legal-programs__desc">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Cum animi velit aperiam deserunt vel quos voluptatum
+                    corporis blanditiis sed similique optio, non, quibusdam
+                    maiores iusto rerum officia, accusantium beatae dolores?
                   </p>
                 </div>
               </div>
 
-              <div
-                class="legal-programs-first-kids-hospice__inner__all-accordions__accordion"
-              >
-                <div
-                  class="legal-programs-first-kids-hospice__inner__all-accordions__accordion__header"
-                >
+              <div class="legal-programs__accordion">
+                <div class="legal-programs__header">
                   Благотворительность вместо сувениров
                 </div>
-                <div
-                  class="legal-programs-first-kids-hospice__inner__all-accordions__accordion__body"
-                >
-                  <p
-                    class="legal-programs-first-kids-hospice__inner__all-accordions__accordion__body__description"
-                  >
+                <div class="legal-programs__body">
+                  <p class="legal-programs__desc">
                     Это финансовая помощь, которая складывается за счет
                     отчисления % от продаж определенного товара или услуги,
                     который вы можете придумать (изготовить, брендировать)
@@ -188,198 +158,200 @@
             </div>
           </div>
         </div>
-      </section>
 
-      <section class="cooparation-info">
-        <div class="container">
-          <div class="cooparation-info__inner">
-            <div class="cooparation-info__inner__content">
-              <p class="cooparation-info__inner__txt">
-                Это далеко не полный список вариантов сотрудничества с Первым
-                Детским Хосписом. Мы открыты к любым предложениям, которые могли
-                бы оказаться полезными для наших подопечных.
-              </p>
-              <p
-                class="cooparation-info__inner__txt cooparation-info__inner__txt--bold"
-              >
-                По вопросам сотрудничества вы можете связаться с нами любым
-                удобным способом:
-              </p>
+        <div class="cooparation-info">
+          <div class="container">
+            <div class="cooparation-info__inner">
+              <div class="cooparation-info__content">
+                <p class="cooparation-info__txt">
+                  Это далеко не полный список вариантов сотрудничества с Первым
+                  Детским Хосписом. Мы открыты к любым предложениям, которые
+                  могли бы оказаться полезными для наших подопечных.
+                </p>
+                <p class="cooparation-info__txt cooparation-info__txt--bold">
+                  По вопросам сотрудничества вы можете связаться с нами любым
+                  удобным способом:
+                </p>
 
-              <p class="cooparation-info__inner__txt">
-                тел.:
-                <a
-                  class="cooparation-info__inner__link"
-                  href="tel:+996550050440"
-                  >+996 550 050 440</a
-                >
-              </p>
+                <p class="cooparation-info__txt">
+                  тел.:
+                  <a class="cooparation-info__link" href="tel:+996550050440"
+                    >+996 550 050 440</a
+                  >
+                </p>
 
-              <p class="cooparation-info__inner__txt">
-                e-mail:
-                <a
-                  class="cooparation-info__inner__link"
-                  href="mailto:childrenshospice.kg@gmail.com"
-                  >childrenshospice.kg@gmail.com</a
-                >
-              </p>
+                <p class="cooparation-info__txt">
+                  e-mail:
+                  <a
+                    class="cooparation-info__link"
+                    href="mailto:childrenshospice.kg@gmail.com"
+                    >childrenshospice.kg@gmail.com</a
+                  >
+                </p>
 
-              <p class="cooparation-info__inner__txt">
-                Бишкек, ул.Молодая Гвардия, 71а
-              </p>
-            </div>
+                <address class="cooparation-info__txt">
+                  Бишкек, ул.Молодая Гвардия, 71а
+                </address>
+              </div>
 
-            <div class="cooparation-info__inner__img">
-              <img
-                class="cooparation-info__inner__photo"
-                src="../assets/legal_entities-img.png"
-                alt="photo"
-              />
-            </div>
+              <div class="cooparation-info__img">
+                <img
+                  class="cooparation-info__photo"
+                  src="../assets/legal-entities/legal_entities-img.png"
+                  alt="photo"
+                />
+              </div>
 
-            <div class="cooparation-info__inner__balloon-pink">
-              <img src="../assets/balloon_pink-legal.svg" alt="balloon-pink" />
-            </div>
-            <div class="cooparation-info__inner__balloon-yellow">
-              <img
-                src="../assets/balloon_yellow-legal.svg"
-                alt="balloon-yellow"
-              />
-            </div>
-            <div class="cooparation-info__inner__finger">
-              <img src="../assets/finger_legal-entities1.svg" alt="finger" />
+              <div class="cooparation-info__balloon-pink">
+                <img
+                  class="cooparation-info__balloon-pink-svg"
+                  src="../assets/legal-entities/legal-balloon_pink.svg"
+                  alt="balloon-pink"
+                />
+              </div>
+              <div class="cooparation-info__balloon-yellow">
+                <img
+                  class="cooparation-info__balloon-yellow-svg"
+                  src="../assets/legal-entities/legal-balloon_yellow.svg"
+                  alt="balloon-yellow"
+                />
+              </div>
+              <div class="cooparation-info__finger">
+                <img
+                  class="cooparation-info__finger-svg"
+                  src="../assets/legal-entities/legal-finger.svg"
+                  alt="finger"
+                />
+              </div>
             </div>
           </div>
         </div>
-      </section>
+      </div>
     </main>
 
     <div class="container">
-		<div class="blc-call-to-action">
-			<div class="call-to-action-inner">
-				<p class="call-to-action-inner__text">Хочу пожертвовать</p>
-				<div class="call-to-action-inner__money">
-					<span class="call-to-action-inner__money__item">100</span>
-					<span class="call-to-action-inner__money__item">200</span>
-					<span class="call-to-action-inner__money__item">500</span>
-					<span class="call-to-action-inner__money__item">1000</span>
-				</div>
-				<div class="call-to-action-inner__other-money">
-					<span class="call-to-action-inner__other-money__item">Другая сумма</span>
-				</div>
-				<a class="call-to-action-inner__btn" href="#">
-					Помочь
-				</a>
-			</div>
-		</div>
-	</div>
+      <div class="blc-call-to-action">
+        <div class="call-to-action-inner">
+          <div class="call-to-action-inner__money">
+            <span class="call-to-action-inner__money__item">100</span>
+            <span class="call-to-action-inner__money__item">200</span>
+            <span class="call-to-action-inner__money__item">500</span>
+            <span class="call-to-action-inner__money__item">1000</span>
+            <span
+              class="call-to-action-inner__money__item call-to-action-inner__other-money__item"
+              >Другая сумма</span
+            >
+          </div>
+          <a class="call-to-action-inner__btn" href="#"> Хочу пожертвовать </a>
+        </div>
+      </div>
+    </div>
 
-    <footer class="footer">
+	 <footer class="footer">
 		<div class="container">
-			<div class="footer-inner">
-				<div class="footer-inner__leftside">
-					<a class="footer__logo" href="#">
-						<img src="../assets/main/logo-footer.svg" alt="logo">
-					</a>
-					<p class="footer__text">Общественный Благотворительный
-						<br> Фонд «Первый детский хоспис» </h3>
-						<p class="footer__social-title">Мы в социальных сетях:</p>
-						<ul class="footer__social">
-							<li class="footer__item">
-								<a class="footer__link" href="#">
-									<img src="../assets/main/Solid/Brands/Telegram.svg" class="footer__social_img1">
-								</a>
-							</li>
-							<li class="footer__item">
-								<a class="footer__link" href="#">
-									<img src="../assets/main/Solid/Brands/Whatsapp.svg" class="footer__social_img2">
-								</a>
-							</li>
-							<li class="footer__item"><a class="footer__link" href="#">
-									<img src="../assets/main/ins.svg" class="footer__social_img3">
-								</a>
-							</li>
-							<li class="footer__item">
-								<a class="footer__link" href="#">
-									<img src="../assets/main/Solid/Brands/Youtube.svg" class="footer__social_img4">
-								</a>
-							</li>
-							<li class="footer__item footer__item-facebook">
-								<a class="footer__link" href="#">
-									<img src="../assets/main/Solid/Brands/Facebook.svg" class="footer__social_img5">
-								</a>
-							</li>
-						</ul>
+		  <div class="footer-inner">
+			 <div class="footer-inner__leftside">
+				<a class="footer__logo" href="#">
+				  <img src="../assets/main/logo-footer.svg" alt="logo">
+				</a>
+				<h3 class="footer__text">Общественный Благотворительный
+				  <br> Фонд «Первый детский хоспис» </h3>
+				  <p class="footer__social-title">Мы в социальных сетях:</p>
+				  <ul class="footer__social">
+					 <li class="footer__item">
+						<a class="footer__link" href="#">
+						  <img src="../assets/main/Solid/Brands/Telegram.svg" class="footer__social_img1">
+						</a>
+					 </li>
+					 <li class="footer__item">
+						<a class="footer__link" href="#">
+						  <img src="../assets/main/Solid/Brands/Whatsapp.svg" class="footer__social_img2">
+						</a>
+					 </li>
+					 <li class="footer__item"><a class="footer__link" href="#">
+						  <img src="../assets/main/ins.svg" class="footer__social_img3">
+						</a>
+					 </li>
+					 <li class="footer__item">
+						<a class="footer__link" href="#">
+						  <img src="../assets/main/Solid/Brands/Youtube.svg" class="footer__social_img4">
+						</a>
+					 </li>
+					 <li class="footer__item footer__item-facebook">
+						<a class="footer__link" href="#">
+						  <img src="../assets/main/Solid/Brands/Facebook.svg" class="footer__social_img5">
+						</a>
+					 </li>
+				  </ul>
+			 </div>
+  
+			 <div class="footer-inner__rightside footer-rightside">
+				<div class="requisites">
+				  <h1 class="footer-rightside__title requisites__title">РЕКВИЗИТЫ</h1>
+				  <ul class="footer-rightside__list requisites__list">
+					 <li class="footer-rightside__item requisites__item">ОБФ "Первый детский хоспис"</li>
+					 <li class="footer-rightside__item requisites__item">ИНН 01502201610205 </li>
+					 <li class="footer-rightside__item requisites__item">ОКПО 29400184</li>
+					 <li class="footer-rightside__item requisites__item">ОАО Банк « Бай Тушум»</li>
+					 <li class="footer-rightside__item requisites__item">KGS 1371040001440439</li>
+					 <li class="footer-rightside__item requisites__item">БИК 137001</li>
+					 <li class="footer-rightside__item requisites__item">Optima 4169615189595451</li>
+					 <li class="footer-rightside__item requisites__item">ЗАО "КИКБ"</li>
+					 <li class="footer-rightside__item requisites__item">Расчетный Счет KGS: 1280096037288596</li>
+					 <li class="footer-rightside__item requisites__item">БИК 128009</li>
+					 <li class="footer-rightside__item requisites__item">Элсом 0559647457</li>
+					 <li class="footer-rightside__item requisites__item">О деньги 0707040602</li>
+					 <li class="footer-rightside__item requisites__item"> MegaPay 0559647457</li>
+					 <li class="footer-rightside__item">
+						<a class="footer-rightside__link" href="https://paypal.me/hospicekgz">PayPal
+						  https://paypal.me/hospicekgz</a>
+					 </li>
+  
+				  </ul>
 				</div>
-
-				<div class="footer-inner__rightside footer-rightside">
-					<div class="requisites">
-						<h1 class="footer-rightside__title">РЕКВИЗИТЫ</h1>
-						<ul class="footer-rightside__list">
-							<li class="footer-rightside__item requisites__item">ОБФ "Первый детский хоспис"</li>
-							<li class="footer-rightside__item requisites__item">ИНН 01502201610205 </li>
-							<li class="footer-rightside__item requisites__item">ОКПО 29400184</li>
-							<li class="footer-rightside__item requisites__item">ОАО Банк « Бай Тушум»</li>
-							<li class="footer-rightside__item requisites__item">KGS 1371040001440439</li>
-							<li class="footer-rightside__item requisites__item">БИК 137001</li>
-							<li class="footer-rightside__item requisites__item">Optima 4169615189595451</li>
-							<li class="footer-rightside__item requisites__item">ЗАО "КИКБ"</li>
-							<li class="footer-rightside__item requisites__item">Расчетный Счет KGS: 1280096037288596
-							</li>
-							<li class="footer-rightside__item requisites__item">БИК 128009</li>
-							<li class="footer-rightside__item requisites__item">Элсом 0559647457</li>
-							<li class="footer-rightside__item requisites__item">О деньги 0707040602</li>
-							<li class="footer-rightside__item requisites__item"> MegaPay 0559647457</li>
-							<li class="footer-rightside__item">
-								<a class="footer-rightside__link" href="https://paypal.me/hospicekgz">PayPal
-									https://paypal.me/hospicekgz</a>
-							</li>
-
-						</ul>
-					</div>
-					<div class="info">
-						<h1 class="footer-rightside__title">ИНФОРМАЦИЯ</h1>
-						<ul class="footer-rightside__list">
-							<li class="footer-rightside__item info-item">
-								<a class="footer-rightside__link" href="#">Главная</a>
-							</li>
-							<li class="footer-rightside__item info-item">
-								<a class="footer-rightside__link" href="#">О фонде</a>
-							</li>
-							<li class="footer-rightside__item info-item">
-								<a class="footer-rightside__link " href="#">Хочу помочь</a>
-							</li>
-							<li class="footer-rightside__item"><a class="footer-rightside__link" href="#">Нужна
-									помощь</a></li>
-						</ul>
-					</div>
-					<div class="contacts">
-						<h1 class="footer-rightside__title">КОНТАКТЫ</h1>
-						<ul class="footer-rightside__list">
-							<li class="footer-rightside__item contact-info contact-pin">
-
-								<img src="../assets/main/geo.svg" class="footer-geo">
-								г. Бишкек, бул. Молодой Гвардии 71а
-							</li>
-							<li class="footer-rightside__item contact-info contact-mail"><a
-									class="footer-rightside__link" href="mailto:childrenshospice.kg@gmail.com">
-									<img src="../assets/main/gmail.svg" class="footer-gmail">
-									childrenshospice.kg@gmail.com
-								</a></li>
-							<li class="footer-rightside__item contact-info contact-phone"><a
-									class="footer-rightside__link" href="tel:+996550050440">
-									<img src="../assets/main/phone.svg" class="footer-phone">
-									<p class="phone-number">+996 (550) 050440</br>
-										+996 (559) 647457</p>
-								</a>
-							</li>
-						</ul>
-					</div>
+				<div class="info">
+				  <h1 class="footer-rightside__title">ИНФОРМАЦИЯ</h1>
+				  <ul class="footer-rightside__list">
+					 <li class="footer-rightside__item info-item">
+						<a class="footer-rightside__link" href="#">Главная</a>
+					 </li>
+					 <li class="footer-rightside__item info-item">
+						<a class="footer-rightside__link" href="#">О фонде</a>
+					 </li>
+					 <li class="footer-rightside__item info-item">
+						<a class="footer-rightside__link " href="#">Хочу помочь</a>
+					 </li>
+					 <li class="footer-rightside__item"><a class="footer-rightside__link" href="#">Нужна помощь</a></li>
+				  </ul>
 				</div>
-			</div>
+				<div class="contacts">
+				  <h1 class="footer-rightside__title">КОНТАКТЫ</h1>
+				  <ul class="footer-rightside__list">
+					 <li class="footer-rightside__item contact-info contact-pin">
+  
+						<img src="../assets/main/geo.svg" class="footer-geo">
+						г. Бишкек, бул. Молодой Гвардии 71а
+					 </li>
+					 <li class="footer-rightside__item contact-info contact-mail"><a class="footer-rightside__link"
+						  href="mailto:childrenshospice.kg@gmail.com">
+						  <img src="../assets/main/gmail.svg" class="footer-gmail">
+						  childrenshospice.kg@gmail.com
+						</a></li>
+					 <li class="footer-rightside__item contact-info contact-phone"><a class="footer-rightside__link"
+						  href="tel:+996550050440">
+						  <img src="../assets/main/phone.svg" class="footer-phone">
+						  <p class="phone-number">+996 (550) 050440</br>
+							 +996 (559) 647457</p>
+						</a>
+					 </li>
+				  </ul>
+				</div>
+			 </div>
+		  </div>
 		</div>
-	</footer>
+	 </footer>
 
+    <script src="../js/header.js"></script>
     <script src="../js/scripts.js"></script>
   </body>
 </html>

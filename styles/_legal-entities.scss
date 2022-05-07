@@ -7,26 +7,26 @@ $color__dark-grey: #616161;
 
 // Breadcrumb---------------------------------
 
-.breadcrumb {
-  margin-top: 0;
-  margin-left: 0;
+.breadcrumbs {
+  //   margin-top: 0;
+  //   margin-left: 0;
 
   &__menu {
-    padding: 24px 0 40px;
+    padding: 21px 0 40px;
     display: flex;
     list-style: none;
   }
 
   &__item:not(:last-of-type)::after {
     content: ">";
-    margin: 0 5px;
+    margin: 0 3px;
     color: $color__dark-grey;
   }
 
   &__link {
     font-family: $ff-rubik;
     font-style: normal;
-    font-weight: 400;
+    font-weight: $fw-regular;
     font-size: 14px;
     line-height: 17px;
     color: $color__dark-grey;
@@ -34,358 +34,358 @@ $color__dark-grey: #616161;
   }
 
   &__link--active {
-    font-weight: 500;
+    font-weight: $fw-medium;
   }
 }
 
-// legal-entities-section-----------
-
+// LEGAL-blc
 .legal-entities {
-  &__inner {
-    &__title {
-      font-family: $ff-rubik;
-      font-weight: 700;
-      font-size: 40px;
-      line-height: 41px;
+  &__title {
+    font-family: $ff-rubik;
+    font-style: normal;
+    font-weight: $fw-bold;
+    font-size: 40px;
+    line-height: 41px;
 
-      color: $color__black;
-    }
+    color: $color__black;
+  }
 
-    &__txt {
-      padding: 38px 0 40px;
-      font-family: $ff-rubik;
-      font-style: normal;
-      font-weight: 400;
-      font-size: 18px;
-      line-height: 28px;
-      color: $color__black;
-    }
+  &__txt {
+    padding: 38px 0 40px;
+    font-family: $ff-rubik;
+    font-style: normal;
+    font-weight: $fw-regular;
+    font-size: 18px;
+    line-height: 28px;
+
+    color: $color__black;
   }
 }
 
-// Cooparation-accord section-----------------
-
-.legal-programs-first-kids-hospice {
+.legal-programs {
+  padding: 29px 0 58px;
   background-color: $color__blue;
-  padding: 31.5px 0 63px;
 
-  &__inner {
-    &__title {
-      font-family: Roboto, sans-serif;
-      font-size: 24px;
-      font-weight: 700;
-      font-style: normal;
+  &__title {
+    padding-left: 28px;
+    margin-bottom: 24px;
+    font-family: $ff-roboto;
+    font-style: normal;
+    font-weight: $fw-bold;
+    font-size: 24px;
+    line-height: 41px;
+  }
 
-      color: $color__black;
-      margin-bottom: 21px;
-      margin-left: 28px;
+  &__accordion {
+    padding: 18px 25px;
+    background-color: $color__white;
+    border-radius: 15px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
 
-      letter-spacing: 0px;
+  &__accordion + &__accordion {
+    margin-top: 24px;
+  }
+
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    position: relative;
+    cursor: pointer;
+
+    font-family: $ff-inter;
+    font-style: normal;
+    font-weight: $fw-bold;
+    font-size: 18px;
+    line-height: 120%;
+
+    color: $color__black;
+
+    &::after {
+      content: "";
+      display: block;
+
+      width: 9px;
+      height: 9px;
+      border-top: 2px solid $color__dark-grey;
+      border-right: 2px solid $color__dark-grey;
+
+      position: absolute;
+      top: 40%;
+      right: 5px;
+      transform: rotate(45deg);
+
+      transition: 0.3s ease-in-out;
     }
+  }
 
-    &__all-accordions {
-      &__accordion {
-        background-color: $color__white;
-        border-radius: 15px;
-
-        &__header {
-          padding: 19.8px 24px;
-
-          display: flex;
-          align-items: center;
-          justify-content: space-between;
-
-          position: relative;
-          cursor: pointer;
-
-          font-family: Inter, sans-serif;
-          font-size: 18px;
-          font-weight: 700;
-          font-style: normal;
-
-          color: $color__black;
-
-          &::after {
-            content: "˃";
-            transition: 0.3s ease-in-out;
-            font-weight: 400;
-          }
-        }
-
-        .active-legal {
-          &::after {
-            transform: rotate(90deg);
-          }
-        }
-
-        &__body {
-          max-height: 0;
-          overflow: hidden;
-          transition: max-height 0.3s ease-in-out;
-
-          &__description {
-            font-family: Inter, sans-serif;
-            font-size: 16px;
-            font-weight: 400;
-            font-style: normal;
-
-            color: rgba(60, 60, 67, 0.85);
-            padding: 0 24px 18px;
-          }
-        }
-      }
-
-      &__accordion + &__accordion {
-        margin-top: 25px;
-      }
+  .active-legal {
+    &::after {
+      transform: rotate(134deg);
     }
+  }
+
+  &__body {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+  }
+
+  &__desc {
+    padding-top: 18px;
+    padding-right: 30px;
+
+    font-family: $ff-inter;
+    font-style: normal;
+    font-weight: $fw-regular;
+    font-size: 18px;
+    line-height: 140%;
+    text-align: justify;
+
+    color: $color-text-vol;
   }
 }
 
-// Cooparation-info-section------------------
+// COOPARATION-INFO
 
 .cooparation-info {
   &__inner {
+    height: 100%;
     position: relative;
-    padding: 40px 0 90px 0;
+    padding: 40px 0 91px 0;
+  }
 
-    &__txt,
-    &__link {
-      font-family: $ff-rubik;
-      font-style: normal;
-      font-weight: 400;
-      font-size: 18px;
-      line-height: 28px;
-      text-align: justify;
-      text-decoration: none;
-      color: $color__black;
-    }
+  &__txt,
+  &__link {
+    font-family: $ff-rubik;
+    font-style: normal;
+    font-weight: $fw-regular;
+    font-size: 18px;
+    line-height: 28px;
+    text-align: justify;
+    text-decoration: none;
+    color: $color__black;
+  }
 
-    &__link:hover {
-      border-bottom: 1px solid $color__black;
-    }
+  &__link:hover {
+    border-bottom: 1px solid $color__black;
+  }
 
-    &__txt--bold {
-      font-weight: 500;
-      padding-top: 30px;
-    }
+  &__txt--bold {
+    font-weight: $fw-medium;
+    padding-top: 28px;
+  }
 
-    &__img {
-      margin: 60px auto 0;
-      max-width: 610px;
-      height: 427px;
-    }
+  &__img {
+    margin: 60px auto 0;
+    max-width: 610px;
+    max-height: 427px;
+  }
 
-    &__photo {
-      width: 100%;
-      border-radius: 15px;
-    }
+  &__photo {
+    width: 100%;
+    border-radius: 15px;
+  }
 
-    &__balloon-pink {
-      position: absolute;
+  &__balloon-pink {
+    position: absolute;
 
-      left: 3px;
-      top: 396px;
-    }
+    left: 3px;
+    top: 396px;
+  }
 
-    &__balloon-yellow {
-      position: absolute;
-      top: 104px;
-      right: -18px;
-    }
+  &__balloon-yellow {
+    position: absolute;
+    top: 104px;
+    right: -18px;
+  }
 
-    &__finger {
-      position: absolute;
-      right: 9px;
-      top: 498px;
-    }
+  &__finger {
+    position: absolute;
+    right: 0;
+    top: 498px;
   }
 }
 
-@media screen and (max-width: 1000.98px) {
-  .breadcrumb {
+@media screen and (max-width: 999.99px) {
+  .breadcrumbs {
     &__menu {
       padding: 20px 0 40px;
     }
   }
 
   .legal-entities {
-    &__inner {
-      &__txt {
-        padding: 30px 0 40px;
+    &__txt {
+      padding: 30px 0 40px;
 
-        font-size: 20px;
-        line-height: 30px;
-        text-align: justify;
-      }
+      font-size: 20px;
+      line-height: 30px;
+      text-align: justify;
     }
   }
 
-  .legal-programs-first-kids-hospice {
-    //  width: 100%;
+  .legal-programs {
     padding: 20px 0 25px;
 
-    &__inner {
-      &__title {
-        margin-bottom: 20px;
-        margin-left: 0;
+    &__title {
+      margin-bottom: 20px;
+      margin-left: 0;
 
-        font-size: 30px;
-      }
+      font-size: 30px;
+    }
 
-      &__all-accordions {
-        &__accordion__body__description {
-          text-align: justify;
-        }
-
-        &__accordion + &__accordion {
-          margin-top: 20px;
-        }
-      }
+    &__accordion + &__accordion {
+      margin-top: 20px;
     }
   }
 
   .cooparation-info {
     &__inner {
       padding: 40px 0 60px 0;
-      &__img {
-        margin: 40px auto 0;
-        max-width: 500px;
-        height: 350px;
-      }
+    }
+    &__img {
+      margin: 40px auto 0;
+      max-width: 500px;
+      max-height: 350px;
+    }
 
-      &__balloon-pink {
-        left: 88px;
-        top: 397px;
-        img {
-          max-width: 115px;
-          height: 221px;
-        }
-      }
+    &__balloon-pink {
+      left: 88px;
+      top: 397px;
+    }
+    &__balloon-pink-svg {
+      max-width: 115px;
+      height: 221px;
+    }
 
-      &__balloon-yellow {
-        top: 205px;
-        right: 93.9px;
+    &__balloon-yellow {
+      top: 205px;
+      right: 93.9px;
+    }
 
-        img {
-          max-width: 107.44px;
-          height: 209.93px;
-        }
-      }
+    &__balloon-yellow-svg {
+      max-width: 107.44px;
+      height: 209.93px;
+    }
 
-      &__finger {
-        right: 120px;
-        top: 455.37px;
+    &__finger {
+      right: 120px;
+      top: 455.37px;
+    }
 
-        img {
-          max-width: 75.34px;
-          //  height: 71.37px;
-        }
-      }
+    &__finger-svg {
+      max-width: 75.34px;
     }
   }
 }
 
 @media screen and (max-width: 768px) {
-  .breadcrumb {
+  .breadcrumbs {
     &__menu {
       padding: 20px 0 30px;
     }
   }
 
   .legal-entities {
-    &__inner {
-      &__title {
-        font-size: 36px;
-        line-height: 41px;
-      }
-      &__txt {
-        padding: 20px 0;
+    &__title {
+      font-size: 36px;
+      line-height: 41px;
+    }
+    &__txt {
+      padding: 20px 0;
 
-        font-size: 18px;
-      }
+      font-size: 18px;
     }
   }
 
-  .legal-programs-first-kids-hospice {
+  .legal-programs {
     padding: 10px 0 20px;
 
-    &__inner {
-      &__title {
-        margin-bottom: 20px;
+    &__title {
+      margin-bottom: 20px;
 
-        font-size: 24px;
-      }
+      font-size: 24px;
     }
   }
 
   .cooparation-info {
     &__inner {
       padding: 30px 0 60px 0;
-      &__img {
-        margin: 30px auto 0;
-        max-width: 732px;
-        height: 492px;
-      }
+    }
 
-      &__balloon-pink,
-      &__balloon-yellow,
-      &__finger {
-        display: none;
-      }
+    &__img {
+      margin: 30px auto 0;
+      max-width: 732px;
+      max-height: 492px;
+    }
+
+    &__balloon-pink,
+    &__balloon-yellow,
+    &__finger {
+      display: none;
     }
   }
 }
 
-@media screen and (max-width: 480px) {
-  .breadcrumb {
+@media screen and (max-width: 475.99px) {
+  .breadcrumbs {
     display: none;
   }
 
   .legal-entities {
-    &__inner {
-      &__title {
-        padding-top: 20px;
+    &__title {
+      padding-top: 20px;
 
-        font-size: 26px;
-        line-height: 30px;
-      }
-      &__txt {
-        padding: 20px 0 15px 0;
+      font-size: 26px;
+      line-height: 30px;
+    }
+    &__txt {
+      padding: 20px 0 15px 0;
 
-        font-size: 16px;
-        line-height: 24px;
-      }
+      font-size: 16px;
+      line-height: 24px;
     }
   }
 
-  .legal-programs-first-kids-hospice {
+  .legal-programs {
     padding: 15px 0 10px;
 
-    &__inner {
-      &__title {
-        margin-bottom: 20px;
+    &__title {
+      margin-bottom: 20px;
 
-        font-size: 18px;
-        line-height: 30px;
-      }
+      font-size: 18px;
+      line-height: 30px;
     }
   }
 
   .cooparation-info {
     &__inner {
       padding: 20px 0 40px 0;
+    }
 
-      &__txt,
-      &__link {
-        font-size: 16px;
-        line-height: 24px;
-      }
-      &__img {
-        margin: 20px auto 0;
-        max-width: 450px;
-        height: 307px;
-      }
+    &__txt,
+    &__link {
+      font-size: 16px;
+      line-height: 24px;
+    }
+    &__img {
+      margin: 20px auto 0;
+      max-width: 450px;
+      max-height: 307px;
+    }
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .legal-programs {
+    &__header {
+      font-size: 16px;
+    }
+
+    &__desc {
+      font-size: 16px;
     }
   }
 }

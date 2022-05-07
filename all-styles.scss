@@ -23,8 +23,9 @@
 @import "./styles/want-to-help";
 @import "./styles/header";
 @import "./styles/footer";
+@import "./styles/call-to-action";
 
-.body{
+.body {
   overflow-x: hidden;
   min-height: 100%;
 }
@@ -39,5 +40,4 @@
     max-width: 1000px;
     margin: 0 auto;
   }
-  
 }
